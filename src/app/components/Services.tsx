@@ -15,7 +15,7 @@ import {
   CardTitle,
 } from "./ui/card";
 import PanchakarmaDetox from "../../assets/panchakarma-detox.png";
-import HerbalTreatments from "../../assets/herbal-treatments.jpeg";
+import HerbalTreatments from "../../assets/herbal-treatments.png";
 import TherapeuticMassages from "../../assets/therapeutic-massages.png";
 import ChronicDiseaseManagement from "../../assets/chronic-disease-management.png";
 import StressAndAnxietyRelief from "../../assets/stress-and-anxiety-relief.png";
