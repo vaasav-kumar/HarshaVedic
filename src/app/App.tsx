@@ -10,9 +10,9 @@ import { Footer } from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       <Header />
-      <main>
+      <main className="min-w-0">
         <Hero />
         <About />
         <PrakritiAssessment />

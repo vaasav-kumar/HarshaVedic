@@ -12,8 +12,8 @@ export function Footer() {
         }}
       ></div>
 
-      <div className="container mx-auto px-4 py-16 relative z-10">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <div className="container mx-auto px-4 sm:px-6 py-12 md:py-16 relative z-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 mb-10 md:mb-12">
           <div>
             <div className="flex items-center gap-3 mb-4 group">
               <div className="w-14 h-14 bg-white/10 backdrop-blur-sm rounded-2xl p-2 flex items-center justify-center shadow-xl transform group-hover:rotate-6 transition-transform border border-white/20">
@@ -180,7 +180,7 @@ export function Footer() {
                 <div className="w-10 h-10 bg-green-700/50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-green-600 transition">
                   <MapPin size={18} className="text-white" />
                 </div>
-                <span className="pt-2">
+                <span className="pt-2 break-words">
                   Casagrand Firstcity, Cheran Nagar, Perumbakkam, Chennai -
                   600100
                 </span>
@@ -216,7 +216,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-green-700/50 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center sm:text-left">
             <p className="text-green-200 text-center md:text-left">
               © 2026 Harsha Vedic Ayurvedic Clinic. All rights reserved.
             </p>

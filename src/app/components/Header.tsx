@@ -16,7 +16,7 @@ export function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md shadow-lg z-50 border-b border-green-100">
-      <div className="container mx-auto px-4 py-3">
+      <div className="container mx-auto px-4 sm:px-6 py-3">
         <div className="flex items-center justify-between">
           <div
             className="flex items-center gap-2 cursor-pointer"
@@ -25,7 +25,7 @@ export function Header() {
             <img
               src={logoWithTitle}
               alt="Harsha Vedic Logo"
-              className="h-18 w-auto object-contain hover:scale-105 transition-transform"
+              className="h-10 sm:h-12 md:h-14 w-auto max-h-14 object-contain hover:scale-105 transition-transform"
             />
           </div>
 
@@ -133,12 +133,6 @@ export function Header() {
               className="text-gray-700 hover:text-green-700 transition text-left py-2"
             >
               Services
-            </button>
-            <button
-              onClick={() => scrollToSection("products")}
-              className="text-gray-700 hover:text-green-700 transition text-left py-2"
-            >
-              Products
             </button>
             <button
               onClick={() => scrollToSection("consultation")}

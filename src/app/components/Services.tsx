@@ -76,7 +76,7 @@ export function Services() {
   return (
     <section
       id="services"
-      className="py-20 bg-gradient-to-br from-white via-green-50 to-amber-50 relative overflow-hidden"
+      className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-white via-green-50 to-amber-50 relative overflow-hidden"
     >
       {/* Decorative background pattern */}
       <div
@@ -86,33 +86,33 @@ export function Services() {
         }}
       ></div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="text-center mb-10 md:mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm mb-4 shadow-md">
             <Sparkles size={16} className="text-green-600" />
             <span className="font-semibold">Our Services</span>
           </div>
-          <h2 className="text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Comprehensive{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-800">
               Ayurvedic Care
             </span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-2">
             From detox therapies to chronic disease management, we offer a
             complete range of authentic Ayurvedic treatments tailored to your
             needs
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
           {services.map((service, index) => (
             <Card
               key={index}
               className="group hover:shadow-2xl transition-all duration-500 border-0 bg-white overflow-hidden relative transform hover:-translate-y-2"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <div className="relative h-56 overflow-hidden">
+              <div className="relative h-44 sm:h-52 md:h-56 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
                 <ImageWithFallback
                   src={service.image}

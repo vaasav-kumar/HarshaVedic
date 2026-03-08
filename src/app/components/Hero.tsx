@@ -18,32 +18,32 @@ export function Hero() {
     >
       {/* Decorative background elements */}
       <div className="absolute inset-0 bg-gradient-to-br from-green-50 via-amber-50 to-green-100"></div>
-      <div className="absolute top-20 right-10 w-72 h-72 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
-      <div className="absolute top-40 left-10 w-72 h-72 bg-amber-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
-      <div className="absolute -bottom-8 right-1/4 w-72 h-72 bg-green-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
+      <div className="absolute top-20 right-10 w-40 h-40 md:w-72 md:h-72 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+      <div className="absolute top-40 left-10 w-40 h-40 md:w-72 md:h-72 bg-amber-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+      <div className="absolute -bottom-8 right-1/4 w-40 h-40 md:w-72 md:h-72 bg-green-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
 
-      {/* Floating leaf decorations */}
-      <div className="absolute top-32 left-20 opacity-20 animate-float">
+      {/* Floating leaf decorations - hidden on small screens to reduce clutter */}
+      <div className="hidden md:block absolute top-32 left-20 opacity-20 animate-float">
         <Leaf className="text-green-600 w-16 h-16 rotate-45" />
       </div>
-      <div className="absolute bottom-32 right-32 opacity-20 animate-float animation-delay-2000">
+      <div className="hidden md:block absolute bottom-32 right-32 opacity-20 animate-float animation-delay-2000">
         <Leaf className="text-green-600 w-20 h-20 -rotate-12" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="space-y-6 animate-fade-in">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm text-green-800 rounded-full text-sm shadow-lg border border-green-200">
               <Star className="text-amber-500 fill-amber-500" size={16} />
               <span className="font-semibold">Ancient Wisdom, Modern Care</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
               Heal Naturally with{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-800">
                 Ayurveda
               </span>
             </h1>
-            <p className="text-xl text-gray-700 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
               Experience authentic Ayurvedic treatments by{" "}
               <span className="font-semibold text-green-700">
                 Dr. Harsita Devi
@@ -71,34 +71,34 @@ export function Hero() {
                 Take Prakriti Test
               </Button>
             </div>
-            <div className="flex gap-8 pt-6">
-              <div className="relative group">
+            <div className="flex flex-wrap gap-3 sm:gap-4 md:gap-8 pt-6">
+              <div className="relative group min-w-0 flex-1 basis-[calc(50%-0.375rem)] sm:basis-auto">
                 <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-amber-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition"></div>
-                <div className="relative bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-lg">
-                  <div className="text-3xl font-bold text-green-700">100+</div>
-                  <div className="text-gray-600 text-sm">Happy Patients</div>
+                <div className="relative bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-2xl shadow-lg">
+                  <div className="text-2xl sm:text-3xl font-bold text-green-700">100+</div>
+                  <div className="text-gray-600 text-xs sm:text-sm">Happy Patients</div>
                 </div>
               </div>
-              <div className="relative group">
+              <div className="relative group min-w-0 flex-1 basis-[calc(50%-0.375rem)] sm:basis-auto">
                 <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-amber-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition"></div>
-                <div className="relative bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-lg">
-                  <div className="text-3xl font-bold text-green-700">75+</div>
-                  <div className="text-gray-600 text-sm">
+                <div className="relative bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-2xl shadow-lg">
+                  <div className="text-2xl sm:text-3xl font-bold text-green-700">75+</div>
+                  <div className="text-gray-600 text-xs sm:text-sm">
                     Online Consultations
                   </div>
                 </div>
               </div>
-              <div className="relative group">
+              <div className="relative group min-w-0 flex-1 basis-full sm:basis-auto">
                 <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-amber-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition"></div>
-                <div className="relative bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-lg">
-                  <div className="text-3xl font-bold text-green-700">100%</div>
-                  <div className="text-gray-600 text-sm">Natural Care</div>
+                <div className="relative bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-2xl shadow-lg">
+                  <div className="text-2xl sm:text-3xl font-bold text-green-700">100%</div>
+                  <div className="text-gray-600 text-xs sm:text-sm">Natural Care</div>
                 </div>
               </div>
             </div>
           </div>
           <div className="relative animate-fade-in animation-delay-500">
-            <div className="relative rounded-[3rem] overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
+            <div className="relative rounded-2xl md:rounded-[3rem] overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
               <div className="absolute inset-0 bg-gradient-to-tr from-green-600/20 to-transparent z-10"></div>
               <ImageWithFallback
                 src={AyurvedaFlower}

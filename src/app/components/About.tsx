@@ -33,7 +33,7 @@ export function About() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white relative overflow-hidden">
+    <section id="about" className="py-12 sm:py-16 md:py-20 bg-white relative overflow-hidden">
       {/* Decorative background pattern */}
       <div
         className="absolute inset-0 opacity-5"
@@ -44,11 +44,11 @@ export function About() {
         }}
       ></div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="relative group">
             <div className="absolute -inset-4 bg-gradient-to-r from-green-600 to-amber-500 rounded-[4rem] blur-2xl opacity-20 group-hover:opacity-30 transition"></div>
-            <div className="relative rounded-[3rem] overflow-hidden shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
+            <div className="relative rounded-2xl md:rounded-[3rem] overflow-hidden shadow-2xl transform group-hover:scale-105 transition-transform duration-500">
               <div className="absolute inset-0 bg-gradient-to-br from-green-600/10 to-transparent z-10"></div>
               <ImageWithFallback
                 src={Doctor}
@@ -67,13 +67,13 @@ export function About() {
               <Sparkles size={16} className="text-green-600" />
               <span className="font-semibold">About Dr. Harsita Devi</span>
             </div>
-            <h2 className="text-5xl font-bold text-gray-900 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
               Your Journey to{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-800">
                 Natural Wellness
               </span>
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-base md:text-lg text-gray-600 leading-relaxed">
               At Harsha Vedic, we believe in the power of ancient Ayurvedic
               wisdom combined with modern understanding. Our clinic is dedicated
               to providing authentic Ayurvedic treatments that address the root

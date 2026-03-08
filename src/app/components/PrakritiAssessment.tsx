@@ -59,25 +59,25 @@ export function PrakritiAssessment() {
   return (
     <section
       id="prakriti"
-      className="py-20 bg-gradient-to-br from-white via-amber-50 to-green-50 relative overflow-hidden"
+      className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-white via-amber-50 to-green-50 relative overflow-hidden"
     >
       {/* Decorative elements */}
       <div className="absolute top-20 right-10 w-72 h-72 bg-amber-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
       <div className="absolute bottom-20 left-10 w-72 h-72 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="text-center mb-10 md:mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-100 text-amber-800 rounded-full text-sm mb-4 shadow-md">
             <ClipboardList size={16} className="text-amber-600" />
             <span className="font-semibold">Know Your Dosha</span>
           </div>
-          <h2 className="text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Prakriti{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-800">
               Assessment
             </span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-2">
             Discover your unique Ayurvedic body constitution through our
             comprehensive Prakriti Assessment. Understanding your Prakriti is
             the foundation of personalized Ayurvedic treatment and optimal
@@ -85,7 +85,7 @@ export function PrakritiAssessment() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center mb-10 md:mb-16">
           <div className="space-y-6">
             <Card className="border-0 shadow-xl bg-white/80 backdrop-blur-sm">
               <CardContent className="pt-6 pb-6">
@@ -159,11 +159,11 @@ export function PrakritiAssessment() {
                     backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l30 30-30 30L0 30 30 0z' fill='%23ffffff' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E")`,
                   }}
                 ></div>
-                <CardContent className="py-10 px-8 relative z-10">
+                <CardContent className="py-6 px-4 sm:py-8 sm:px-6 md:py-10 md:px-8 relative z-10">
                   <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-3xl flex items-center justify-center mb-6 shadow-xl">
                     <ClipboardList className="text-white" size={32} />
                   </div>
-                  <h3 className="text-3xl font-bold text-white mb-4">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4">
                     Take Your Prakriti Assessment
                   </h3>
                   <p className="text-green-50 mb-6 leading-relaxed">

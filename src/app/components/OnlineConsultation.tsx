@@ -103,7 +103,7 @@ export function OnlineConsultation() {
   return (
     <section
       id="consultation"
-      className="py-20 bg-white relative overflow-hidden"
+      className="py-12 sm:py-16 md:py-20 bg-white relative overflow-hidden"
     >
       {/* Decorative elements */}
       <div
@@ -117,19 +117,19 @@ export function OnlineConsultation() {
       <div className="absolute top-20 right-10 w-72 h-72 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
       <div className="absolute bottom-20 left-10 w-72 h-72 bg-amber-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="text-center mb-10 md:mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm mb-4 shadow-md">
             <Video size={16} className="text-green-600" />
             <span className="font-semibold">Online Consultations</span>
           </div>
-          <h2 className="text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Consult from{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-800">
               Anywhere
             </span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-2">
             Can't visit in person? No problem! Get expert Ayurvedic consultation
             from{" "}
             <span className="font-semibold text-green-700">
@@ -139,7 +139,7 @@ export function OnlineConsultation() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-start max-w-6xl mx-auto">
           <div className="space-y-6">
             <div className="grid sm:grid-cols-2 gap-4">
               {benefits.map((benefit, index) => (
@@ -212,7 +212,7 @@ export function OnlineConsultation() {
             </Card>
           </div>
 
-          <Card className="shadow-2xl border-0 overflow-hidden sticky top-24">
+          <Card className="shadow-2xl border-0 overflow-hidden md:sticky md:top-24">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-green-600 via-green-700 to-green-800"></div>
               <div
