@@ -7,10 +7,12 @@ import { Services } from "./components/Services";
 import { Testimonials } from "./components/Testimonials";
 import { OnlineConsultation } from "./components/OnlineConsultation";
 import { Footer } from "./components/Footer";
+import { SeoStructuredData } from "./components/SeoStructuredData";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
+      <SeoStructuredData />
       <Header />
       <main className="min-w-0">
         <Hero />
