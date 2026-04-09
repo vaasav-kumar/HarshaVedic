@@ -21,9 +21,11 @@ export function OnlineConsultation() {
     time: "",
     concern: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
     let errorMessage = "";
     try {
       const response = await fetch("/api/consultation", {
@@ -61,6 +63,8 @@ export function OnlineConsultation() {
     } catch (err) {
       console.error(err);
       alert(errorMessage || "Something went wrong. Please try again or call us at 7904094949.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -337,10 +341,11 @@ export function OnlineConsultation() {
                 </div>
                 <Button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 py-6 text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all"
+                  disabled={isSubmitting}
+                  className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 py-6 text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all disabled:transform-none"
                 >
                   <Send className="mr-2" size={20} />
-                  Schedule Consultation
+                  {isSubmitting ? "Scheduling…" : "Schedule Consultation"}
                 </Button>
                 <p className="text-center text-sm text-gray-500 pt-2">
                   Or call us directly at{" "}
