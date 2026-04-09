@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://harshavedic.in/sitemap.xml
+Sitemap: https://harshavedic.vercel.app//sitemap.xml

@@ -2,7 +2,7 @@
  * Injects JSON-LD structured data for SEO (MedicalBusiness + Physician).
  * Helps search engines understand the clinic and show rich results.
  */
-const SITE_URL = "https://harshavedic.in";
+const SITE_URL = "https://harshavedic.vercel.app/";
 
 const structuredData = {
   "@context": "https://schema.org",
