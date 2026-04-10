@@ -60,7 +60,7 @@ export function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/in/harsita-kamlesh-335a4b238/"
+                href="https://www.linkedin.com/in/dr-harsita-kamlesh-335a4b238/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Connect with us on LinkedIn"

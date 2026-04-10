@@ -17,7 +17,7 @@ const structuredData = {
       logo: `${SITE_URL}/logo.png`,
       sameAs: [
         "https://www.instagram.com/harsha_vedic",
-        "https://www.linkedin.com/in/harsita-kamlesh-335a4b238/",
+        "https://www.linkedin.com/in/dr-harsita-kamlesh-335a4b238/",
       ],
       medicalSpecialty: "Ayurvedic medicine",
     },
