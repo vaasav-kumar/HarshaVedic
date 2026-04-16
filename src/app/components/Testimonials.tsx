@@ -4,32 +4,36 @@ import { Card, CardContent } from "./ui/card";
 export function Testimonials() {
   const testimonials = [
     {
-      name: "Priya Sharma",
+      name: "Gowsalya",
       condition: "Chronic Migraine",
       text: "After years of suffering from migraines, Dr. Harsita Devi's Ayurvedic treatment gave me relief within weeks. Her personalized approach made all the difference.",
       rating: 5,
       image: "👩",
+      location: "Madurai",
     },
     {
-      name: "Rajesh Kumar",
+      name: "Promod",
       condition: "Digestive Issues",
       text: "The Panchakarma detox program was life-changing. I feel energized and my digestive problems have completely resolved. Highly recommend!",
       rating: 5,
       image: "👨",
+      location: "Chennai",
     },
     {
-      name: "Anita Desai",
+      name: "Prathiba",
       condition: "Stress & Anxiety",
       text: "The holistic treatments and Dr. Harsita's compassionate care helped me overcome anxiety naturally. I'm grateful for the online consultation option.",
       rating: 5,
       image: "👩‍🦰",
+      location: "Madurai",
     },
     {
-      name: "Vikram Singh",
+      name: "Vikram",
       condition: "Joint Pain",
       text: "My arthritis pain reduced significantly with the Ayurvedic therapies. The herbal oils and massages work wonders. Thank you, Harsha Vedic!",
       rating: 5,
       image: "👴",
+      location: "Chennai",
     },
   ];
 
@@ -74,9 +78,13 @@ export function Testimonials() {
                     />
                   ))}
                 </div>
-                <p className="text-gray-700 mb-6 text-sm leading-relaxed italic">
+                <p className="text-gray-700 mb-2 text-sm leading-relaxed italic">
                   "{testimonial.text}"
                 </p>
+                <div className="text-xs text-green-600 mb-4">
+                  <span className="mr-2">-</span>
+                  {testimonial.location}
+                </div>
                 <div className="flex items-center gap-3 pt-4 border-t border-green-100">
                   <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-700 rounded-full flex items-center justify-center text-2xl shadow-md">
                     {testimonial.image}
@@ -98,18 +106,30 @@ export function Testimonials() {
         <div className="mt-8 md:mt-12 text-center px-2">
           <div className="inline-flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 bg-white/80 backdrop-blur-sm px-6 py-5 sm:px-8 sm:py-6 rounded-3xl shadow-xl border border-green-100">
             <div className="text-center">
-              <div className="text-3xl sm:text-4xl font-bold text-green-700">4.9/5</div>
-              <div className="text-xs sm:text-sm text-gray-600">Average Rating</div>
+              <div className="text-3xl sm:text-4xl font-bold text-green-700">
+                4.9/5
+              </div>
+              <div className="text-xs sm:text-sm text-gray-600">
+                Average Rating
+              </div>
             </div>
             <div className="hidden sm:block h-12 w-px bg-green-200 flex-shrink-0"></div>
             <div className="text-center">
-              <div className="text-3xl sm:text-4xl font-bold text-green-700">100+</div>
-              <div className="text-xs sm:text-sm text-gray-600">Happy Patients</div>
+              <div className="text-3xl sm:text-4xl font-bold text-green-700">
+                100+
+              </div>
+              <div className="text-xs sm:text-sm text-gray-600">
+                Happy Patients
+              </div>
             </div>
             <div className="hidden sm:block h-12 w-px bg-green-200 flex-shrink-0"></div>
             <div className="text-center">
-              <div className="text-3xl sm:text-4xl font-bold text-green-700">100%</div>
-              <div className="text-xs sm:text-sm text-gray-600">Satisfaction</div>
+              <div className="text-3xl sm:text-4xl font-bold text-green-700">
+                100%
+              </div>
+              <div className="text-xs sm:text-sm text-gray-600">
+                Satisfaction
+              </div>
             </div>
           </div>
         </div>
