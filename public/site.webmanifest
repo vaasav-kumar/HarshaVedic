@@ -1,0 +1,22 @@
+{
+  "name": "Harsha Vedic – Ayurveda Clinic and Wellness Center",
+  "short_name": "Harsha Vedic",
+  "description": "Authentic Ayurvedic treatments by Dr. Harsita Devi. Specializations: Panchakarma detox, herbal medicine, therapeutic massages, chronic disease management, stress & anxiety relief, and Prakriti assessment. Online and in-person consultation in Chennai.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#166534",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

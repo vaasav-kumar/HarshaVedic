@@ -9,19 +9,27 @@ import { OnlineConsultation } from "./components/OnlineConsultation";
 import { Footer } from "./components/Footer";
 import { FloatingCTA } from "./components/FloatingCTA";
 import { SeoStructuredData } from "./components/SeoStructuredData";
+import { FaqSection } from "./components/FaqSection";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
       <SeoStructuredData />
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-green-700 focus:text-white focus:rounded-lg"
+      >
+        Skip to main content
+      </a>
       <Header />
-      <main className="min-w-0">
+      <main id="main-content" className="min-w-0">
         <Hero />
         <About />
         <PrakritiAssessment />
         <Services />
         {/* <Products /> */}
         <Testimonials />
+        <FaqSection />
         <OnlineConsultation />
       </main>
       <Footer />

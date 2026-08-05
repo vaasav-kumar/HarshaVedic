@@ -138,6 +138,14 @@ export function Footer() {
               </li>
               <li>
                 <a
+                  href="#faq"
+                  className="text-green-100 hover:text-white transition hover:pl-2 inline-block"
+                >
+                  → FAQ
+                </a>
+              </li>
+              <li>
+                <a
                   href="#consultation"
                   className="text-green-100 hover:text-white transition hover:pl-2 inline-block"
                 >

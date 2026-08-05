@@ -38,7 +38,7 @@ export function Testimonials() {
   ];
 
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-green-50 via-white to-amber-50 relative overflow-hidden">
+    <section id="testimonials" className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-green-50 via-white to-amber-50 relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-10 left-10 w-64 h-64 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
       <div className="absolute bottom-10 right-10 w-64 h-64 bg-amber-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
