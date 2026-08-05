@@ -1,0 +1,494 @@
+import PanchakarmaDetox from "../../assets/panchakarma-detox.png";
+import ChronicDiseaseManagement from "../../assets/chronic-disease-management.png";
+import StressAndAnxietyRelief from "../../assets/stress-and-anxiety-relief.png";
+import HerbalTreatments from "../../assets/herbal-treatments.png";
+import DietManagement from "../../assets/diet-management.png";
+import TherapeuticMassages from "../../assets/therapeutic-massages.png";
+import { BUSINESS, FORMATTED_ADDRESS, SITE_NAME, SITE_URL } from "./seo";
+
+export type ServicePage = {
+  slug: string;
+  title: string;
+  metaDescription: string;
+  keywords: string;
+  h1: string;
+  subtitle: string;
+  heroImage: string;
+  overview: string;
+  benefits: string[];
+  treatments: { name: string; description: string }[];
+  whyChooseUs: string[];
+  faq: { question: string; answer: string }[];
+  relatedSlugs: string[];
+};
+
+const LOCAL_AREAS =
+  "Medavakkam, Velachery, Perumbakkam, Pallikaranai, Selaiyur, Vengaivasal, and Tambaram";
+
+export const SERVICE_PAGES: ServicePage[] = [
+  {
+    slug: "panchakarma",
+    title: `Panchakarma in Medavakkam, Chennai | ${SITE_NAME}`,
+    metaDescription: `Authentic Panchakarma detox therapy in Medavakkam, Chennai by Dr. Harsita Devi. Deep cleansing, toxin elimination & rejuvenation. Book in-person or online consultation.`,
+    keywords: `Panchakarma Medavakkam, Panchakarma Chennai, Ayurvedic detox near me, Panchakarma treatment Velachery, Ayurvedic clinic Medavakkam, Dr. Harsita Devi`,
+    h1: "Panchakarma Treatment in Medavakkam, Chennai",
+    subtitle:
+      "Deep Ayurvedic detox and rejuvenation therapy to eliminate toxins and restore your natural balance",
+    heroImage: PanchakarmaDetox,
+    overview: `Panchakarma is Ayurveda's most comprehensive detoxification and rejuvenation program. At ${SITE_NAME} in Medavakkam, Dr. Harsita Devi offers authentic Panchakarma therapies tailored to your body constitution (Prakriti) and current imbalances. Whether you live in ${LOCAL_AREAS}, our clinic is easily accessible for in-person treatments, and online consultations are available for pre-assessment and follow-up care.`,
+    benefits: [
+      "Eliminates accumulated toxins (Ama) from deep tissues",
+      "Restores digestive fire (Agni) and metabolic balance",
+      "Boosts immunity and natural energy levels",
+      "Relieves chronic fatigue, bloating, and skin issues",
+      "Rejuvenates body and mind for long-term wellness",
+    ],
+    treatments: [
+      {
+        name: "Vamana (Therapeutic Emesis)",
+        description:
+          "Controlled cleansing to remove excess Kapha toxins from the upper respiratory and digestive tract.",
+      },
+      {
+        name: "Virechana (Purgation Therapy)",
+        description:
+          "Herbal purgation to eliminate Pitta-related toxins from the liver, gallbladder, and intestines.",
+      },
+      {
+        name: "Basti (Medicated Enema)",
+        description:
+          "The most effective Panchakarma procedure for Vata disorders, using herbal oils and decoctions.",
+      },
+      {
+        name: "Nasya (Nasal Administration)",
+        description:
+          "Herbal oils administered through the nose to treat headaches, sinus issues, and neurological conditions.",
+      },
+      {
+        name: "Pre-Panchakarma (Purvakarma)",
+        description:
+          "Snehana (oleation) and Swedana (sudation) to prepare the body for main Panchakarma procedures.",
+      },
+    ],
+    whyChooseUs: [
+      `Conveniently located on Velachery Main Road, Medavakkam – serving all of South Chennai`,
+      "Personalized Panchakarma protocols by certified Ayurvedic physician Dr. Harsita Devi",
+      "Authentic herbal preparations and traditional therapy techniques",
+      "Flexible in-person and online consultation options",
+    ],
+    faq: [
+      {
+        question: "How long does a Panchakarma program take?",
+        answer:
+          "A standard Panchakarma program typically runs 7 to 21 days depending on your condition and constitution. Dr. Harsita Devi will recommend the ideal duration after your initial consultation.",
+      },
+      {
+        question: "Is Panchakarma safe?",
+        answer:
+          "Yes, when performed under the supervision of a qualified Ayurvedic physician. At Harsha Vedic, every Panchakarma protocol is customized after a thorough Prakriti assessment to ensure safety and effectiveness.",
+      },
+      {
+        question: "Who should consider Panchakarma?",
+        answer:
+          "Panchakarma is beneficial for chronic fatigue, digestive disorders, skin problems, joint pain, stress, and seasonal detox. It is also recommended as a preventive wellness practice.",
+      },
+      {
+        question: "Where is your Panchakarma clinic located?",
+        answer: `Our clinic is at ${FORMATTED_ADDRESS}. We serve patients from ${LOCAL_AREAS}, and across Chennai.`,
+      },
+    ],
+    relatedSlugs: [
+      "weight-loss",
+      "skin-care",
+      "migraine-treatment",
+    ],
+  },
+  {
+    slug: "knee-pain-treatment",
+    title: `Knee Pain Ayurvedic Treatment in Chennai | ${SITE_NAME}`,
+    metaDescription: `Natural Ayurvedic knee pain treatment in Chennai by Dr. Harsita Devi. Herbal oils, Janu Basti, Panchakarma & personalized care for arthritis and joint pain. Book consultation.`,
+    keywords: `Knee pain Ayurvedic treatment, Ayurvedic doctor near me, knee arthritis Chennai, Janu Basti Medavakkam, joint pain Ayurveda, Ayurvedic clinic Chennai`,
+    h1: "Ayurvedic Knee Pain Treatment in Chennai",
+    subtitle:
+      "Natural, drug-free relief for knee pain, arthritis, and joint stiffness through authentic Ayurvedic therapies",
+    heroImage: ChronicDiseaseManagement,
+    overview: `Chronic knee pain affects mobility and quality of life. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi treats knee pain at its root cause using Ayurvedic therapies including Janu Basti, herbal poultices, medicated oils, and Panchakarma. Patients from ${LOCAL_AREAS} and across Chennai trust our personalized approach for lasting relief from osteoarthritis, rheumatoid arthritis, and sports-related knee injuries.`,
+    benefits: [
+      "Reduces inflammation and joint stiffness naturally",
+      "Strengthens muscles and ligaments around the knee",
+      "Improves mobility without dependency on painkillers",
+      "Addresses root cause rather than masking symptoms",
+      "Suitable for long-term arthritis management",
+    ],
+    treatments: [
+      {
+        name: "Janu Basti",
+        description:
+          "Warm medicated oil retained over the knee joint in a dough ring – highly effective for osteoarthritis and chronic knee pain.",
+      },
+      {
+        name: "Pinda Sweda (Bolus Fomentation)",
+        description:
+          "Herbal bolus massage to reduce inflammation, improve circulation, and relieve stiffness.",
+      },
+      {
+        name: "Abhyanga (Therapeutic Oil Massage)",
+        description:
+          "Full-body or localized massage with anti-inflammatory herbal oils to nourish joints and tissues.",
+      },
+      {
+        name: "Herbal Internal Medicine",
+        description:
+          "Custom Ayurvedic formulations to reduce Ama (toxins), balance Vata dosha, and support cartilage health.",
+      },
+      {
+        name: "Diet & Lifestyle Guidance",
+        description:
+          "Personalized recommendations to avoid aggravating foods and activities that worsen knee pain.",
+      },
+    ],
+    whyChooseUs: [
+      "Experienced in treating arthritis, ligament injuries, and age-related knee degeneration",
+      "Combination of external therapies and internal herbal medicine for comprehensive care",
+      "Clinic located in Medavakkam – easy access from Velachery, Tambaram, and Pallikaranai",
+      "Online follow-up consultations available for outstation patients",
+    ],
+    faq: [
+      {
+        question: "Can Ayurveda cure knee arthritis?",
+        answer:
+          "Ayurveda can significantly reduce pain, improve mobility, and slow disease progression in knee arthritis. Early intervention yields the best results. Dr. Harsita Devi creates a tailored plan based on your condition severity.",
+      },
+      {
+        question: "How many sessions of Janu Basti are needed?",
+        answer:
+          "Typically 7 to 14 sessions are recommended, depending on the severity of your condition. Improvement is often noticed within the first few sessions.",
+      },
+      {
+        question: "Is Ayurvedic knee treatment safe alongside allopathy?",
+        answer:
+          "Yes, Ayurvedic therapies can complement conventional treatment. Inform Dr. Harsita Devi about any medications you are taking for a coordinated care plan.",
+      },
+      {
+        question: "Do you treat sports knee injuries?",
+        answer:
+          "Yes, we treat ligament strains, meniscus issues, and post-injury stiffness using Ayurvedic rehabilitation protocols alongside rest and herbal support.",
+      },
+    ],
+    relatedSlugs: ["panchakarma", "weight-loss", "migraine-treatment"],
+  },
+  {
+    slug: "migraine-treatment",
+    title: `Migraine Ayurvedic Treatment in Chennai | ${SITE_NAME}`,
+    metaDescription: `Effective Ayurvedic migraine treatment in Chennai by Dr. Harsita Devi. Shirodhara, Nasya, herbal medicine & root-cause care. Clinic in Medavakkam. Book consultation today.`,
+    keywords: `Migraine Ayurvedic treatment, headache Ayurveda Chennai, Shirodhara Medavakkam, Ayurvedic doctor near me, chronic migraine treatment, Ayurvedic clinic Chennai`,
+    h1: "Ayurvedic Migraine Treatment in Chennai",
+    subtitle:
+      "Root-cause treatment for chronic migraines and headaches – not just temporary pain relief",
+    heroImage: StressAndAnxietyRelief,
+    overview: `Migraines are often linked to dosha imbalances, digestive issues, stress, and lifestyle factors. At ${SITE_NAME} in Medavakkam, Dr. Harsita Devi has helped patients across Chennai – including ${LOCAL_AREAS} – find lasting relief from chronic migraines through Shirodhara, Nasya, herbal formulations, and personalized diet plans. Our approach treats the underlying cause, reducing both frequency and intensity of migraine episodes.`,
+    benefits: [
+      "Reduces frequency and severity of migraine attacks",
+      "Calms the nervous system and relieves stress-related triggers",
+      "Improves sleep quality and mental clarity",
+      "Addresses digestive and hormonal root causes",
+      "Minimal side effects compared to long-term medication use",
+    ],
+    treatments: [
+      {
+        name: "Shirodhara",
+        description:
+          "Continuous stream of warm medicated oil on the forehead – deeply calming for migraine-prone nervous systems.",
+      },
+      {
+        name: "Nasya Therapy",
+        description:
+          "Herbal oil administration through the nostrils to clear sinuses and treat headaches originating from the head and neck region.",
+      },
+      {
+        name: "Herbal Medicine",
+        description:
+          "Custom formulations to balance Pitta and Vata doshas, improve digestion, and reduce migraine triggers.",
+      },
+      {
+        name: "Panchakarma Detox",
+        description:
+          "Recommended for chronic migraine sufferers to eliminate deep-seated toxins contributing to recurring headaches.",
+      },
+      {
+        name: "Diet & Trigger Management",
+        description:
+          "Identification and elimination of dietary and lifestyle triggers specific to your constitution.",
+      },
+    ],
+    whyChooseUs: [
+      "Proven track record – patients report relief within weeks of starting treatment",
+      "Holistic approach addressing stress, digestion, and hormonal factors",
+      "Convenient Medavakkam location with online consultation for follow-ups",
+      "Gentle, natural therapies suitable for long-term migraine management",
+    ],
+    faq: [
+      {
+        question: "How quickly can I expect relief from migraines?",
+        answer:
+          "Many patients notice improvement within 2–4 weeks of starting Ayurvedic treatment. Chronic cases may require 2–3 months of consistent therapy for significant reduction in frequency.",
+      },
+      {
+        question: "Can Ayurveda replace my migraine medication?",
+        answer:
+          "Ayurveda can reduce your dependency on painkillers over time. Dr. Harsita Devi will guide you on gradually transitioning under medical supervision – never stop prescribed medication abruptly.",
+      },
+      {
+        question: "What causes migraines according to Ayurveda?",
+        answer:
+          "Ayurveda links migraines to aggravated Pitta (heat/inflammation) and Vata (nervous system imbalance), often triggered by poor digestion, stress, irregular sleep, and incompatible foods.",
+      },
+      {
+        question: "Is Shirodhara effective for migraines?",
+        answer:
+          "Yes, Shirodhara is one of the most effective Ayurvedic therapies for migraines. It calms the mind, balances Vata-Pitta, and provides deep nervous system relaxation.",
+      },
+    ],
+    relatedSlugs: ["panchakarma", "pcos-treatment", "skin-care"],
+  },
+  {
+    slug: "pcos-treatment",
+    title: `PCOS Ayurvedic Treatment in Chennai | ${SITE_NAME}`,
+    metaDescription: `Holistic PCOS Ayurvedic treatment in Chennai by Dr. Harsita Devi. Natural hormone balance, weight management & fertility support. Clinic in Medavakkam. Book consultation.`,
+    keywords: `PCOS Ayurvedic treatment, PCOS Chennai, Ayurvedic doctor near me, hormonal imbalance Ayurveda, PCOS Medavakkam, Ayurvedic clinic Chennai, fertility Ayurveda`,
+    h1: "Ayurvedic PCOS Treatment in Chennai",
+    subtitle:
+      "Natural hormone balancing and holistic care for PCOS – addressing root cause, not just symptoms",
+    heroImage: HerbalTreatments,
+    overview: `Polycystic Ovary Syndrome (PCOS) affects hormonal balance, metabolism, and fertility. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi offers comprehensive Ayurvedic PCOS treatment combining herbal medicine, Panchakarma, diet management, and lifestyle guidance. Women from ${LOCAL_AREAS} and across Chennai choose our clinic for a natural, personalized approach to managing PCOS symptoms and restoring hormonal health.`,
+    benefits: [
+      "Regulates menstrual cycles naturally",
+      "Supports healthy weight management",
+      "Reduces acne, hair fall, and skin issues linked to PCOS",
+      "Improves fertility and reproductive health",
+      "Addresses insulin resistance and metabolic imbalance",
+    ],
+    treatments: [
+      {
+        name: "Herbal Formulations",
+        description:
+          "Custom Ayurvedic medicines to balance hormones, reduce androgen levels, and support ovarian function.",
+      },
+      {
+        name: "Panchakarma Detox",
+        description:
+          "Deep cleansing to eliminate toxins, reset metabolism, and improve hormonal receptivity.",
+      },
+      {
+        name: "Uttara Basti",
+        description:
+          "Specialized Ayurvedic procedure for reproductive health and uterine cleansing in selected cases.",
+      },
+      {
+        name: "Diet & Nutrition Plan",
+        description:
+          "Anti-inflammatory, low-glycemic diet tailored to your dosha to manage insulin resistance and weight.",
+      },
+      {
+        name: "Yoga & Lifestyle Guidance",
+        description:
+          "Stress reduction techniques and exercise recommendations to support hormonal balance.",
+      },
+    ],
+    whyChooseUs: [
+      "Compassionate, women-focused care by Dr. Harsita Devi",
+      "Integrative approach combining herbs, detox, and lifestyle modification",
+      "Online consultations available for busy professionals across India",
+      "Located in Medavakkam – accessible from Velachery, Tambaram, and Pallikaranai",
+    ],
+    faq: [
+      {
+        question: "Can Ayurveda cure PCOS permanently?",
+        answer:
+          "Ayurveda can effectively manage and significantly improve PCOS symptoms, restore regular cycles, and support fertility. Consistent treatment and lifestyle adherence are key to long-term results.",
+      },
+      {
+        question: "How long does Ayurvedic PCOS treatment take?",
+        answer:
+          "Most women see noticeable improvement in 3–6 months. Treatment duration varies based on severity, age, and lifestyle factors. Dr. Harsita Devi monitors progress and adjusts the plan accordingly.",
+      },
+      {
+        question: "Can I take Ayurvedic treatment alongside birth control pills?",
+        answer:
+          "Yes, but inform Dr. Harsita Devi about all medications. Ayurvedic herbs can complement conventional treatment, and your plan will be adjusted for safe integration.",
+      },
+      {
+        question: "Does Ayurveda help with PCOS-related weight gain?",
+        answer:
+          "Yes, Ayurvedic PCOS treatment includes personalized diet plans and metabolic support herbs that address insulin resistance – a key driver of PCOS-related weight gain.",
+      },
+    ],
+    relatedSlugs: ["weight-loss", "skin-care", "migraine-treatment"],
+  },
+  {
+    slug: "weight-loss",
+    title: `Weight Loss Ayurveda in Chennai | ${SITE_NAME}`,
+    metaDescription: `Natural Ayurvedic weight loss treatment in Chennai by Dr. Harsita Devi. Metabolic detox, personalized diet & herbal support. Clinic in Medavakkam. Book consultation.`,
+    keywords: `Weight loss Ayurveda, Ayurvedic weight loss Chennai, Ayurvedic doctor near me, weight management Medavakkam, Ayurvedic clinic Chennai, metabolic detox Ayurveda`,
+    h1: "Ayurvedic Weight Loss Treatment in Chennai",
+    subtitle:
+      "Sustainable, natural weight management through metabolic balance – not crash diets or harmful supplements",
+    heroImage: DietManagement,
+    overview: `Ayurvedic weight loss focuses on restoring metabolic fire (Agni), eliminating toxins, and balancing Kapha dosha – the root cause of weight gain in Ayurveda. At ${SITE_NAME} in Medavakkam, Dr. Harsita Devi creates personalized weight loss programs combining herbal medicine, Udvartana (herbal powder massage), Panchakarma, and constitution-based diet plans. Patients from ${LOCAL_AREAS} and across Chennai achieve sustainable results without extreme dieting.`,
+    benefits: [
+      "Boosts metabolism and digestive fire naturally",
+      "Reduces fat accumulation without muscle loss",
+      "Eliminates water retention and bloating",
+      "Improves energy levels and overall vitality",
+      "Sustainable results through lifestyle transformation",
+    ],
+    treatments: [
+      {
+        name: "Udvartana (Herbal Powder Massage)",
+        description:
+          "Dry herbal powder massage that breaks down subcutaneous fat, improves circulation, and tones the body.",
+      },
+      {
+        name: "Panchakarma Detox",
+        description:
+          "Deep cleansing to reset metabolism and eliminate toxins that block effective weight loss.",
+      },
+      {
+        name: "Herbal Metabolic Support",
+        description:
+          "Ayurvedic formulations to enhance Agni, reduce Kapha, and support healthy fat metabolism.",
+      },
+      {
+        name: "Personalized Diet Plan",
+        description:
+          "Dosha-based nutrition guidance – what to eat, when to eat, and foods to avoid for your body type.",
+      },
+      {
+        name: "Lifestyle & Exercise Guidance",
+        description:
+          "Daily routine (Dinacharya) recommendations including yoga and walking tailored to your constitution.",
+      },
+    ],
+    whyChooseUs: [
+      "No harmful supplements or extreme calorie restriction",
+      "Addresses underlying causes like thyroid issues, PCOS, and slow metabolism",
+      "Dr. Harsita Devi provides ongoing support and plan adjustments",
+      "Convenient Medavakkam clinic with online consultation option",
+    ],
+    faq: [
+      {
+        question: "How much weight can I lose with Ayurveda?",
+        answer:
+          "Ayurvedic weight loss is gradual and sustainable – typically 2–4 kg per month. Results depend on your constitution, adherence to the plan, and underlying health conditions.",
+      },
+      {
+        question: "Is Ayurvedic weight loss safe?",
+        answer:
+          "Yes, Ayurvedic weight loss uses natural herbs, dietary changes, and traditional therapies with no harmful side effects when prescribed by a qualified physician like Dr. Harsita Devi.",
+      },
+      {
+        question: "Can Ayurveda help with weight gain due to PCOS or thyroid?",
+        answer:
+          "Absolutely. Ayurveda treats the root hormonal and metabolic imbalances causing weight gain in PCOS and hypothyroidism, not just the weight itself.",
+      },
+      {
+        question: "Do I need to follow a strict diet?",
+        answer:
+          "Dr. Harsita Devi provides practical, sustainable diet guidance based on your dosha – not restrictive fad diets. The focus is on eating the right foods at the right times.",
+      },
+    ],
+    relatedSlugs: ["panchakarma", "pcos-treatment", "knee-pain-treatment"],
+  },
+  {
+    slug: "skin-care",
+    title: `Ayurvedic Skin Care Treatment in Chennai | ${SITE_NAME}`,
+    metaDescription: `Natural Ayurvedic skin care treatment in Chennai by Dr. Harsita Devi. Acne, eczema, psoriasis & pigmentation care. Herbal facials & internal medicine. Medavakkam clinic.`,
+    keywords: `Ayurvedic skin care Chennai, Ayurvedic skin treatment, acne Ayurveda Medavakkam, Ayurvedic doctor near me, psoriasis Ayurveda, Ayurvedic clinic Chennai`,
+    h1: "Ayurvedic Skin Care Treatment in Chennai",
+    subtitle:
+      "Heal skin from within with authentic Ayurvedic treatments for acne, eczema, pigmentation, and more",
+    heroImage: TherapeuticMassages,
+    overview: `Healthy skin reflects internal balance. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi treats skin conditions at their root cause using Ayurvedic internal medicine, herbal facials, Panchakarma, and personalized diet plans. Whether you struggle with acne, eczema, psoriasis, pigmentation, or premature aging, our holistic approach delivers lasting results. Patients from ${LOCAL_AREAS} and across Chennai trust our natural, side-effect-free skin care treatments.`,
+    benefits: [
+      "Treats root cause of skin issues, not just surface symptoms",
+      "Safe, natural alternatives to harsh chemical treatments",
+      "Improves skin texture, tone, and natural glow",
+      "Addresses acne, eczema, psoriasis, and pigmentation",
+      "Anti-aging benefits through rejuvenation therapies",
+    ],
+    treatments: [
+      {
+        name: "Mukh Lepam (Herbal Facial)",
+        description:
+          "Custom herbal face packs to treat acne, pigmentation, and dull skin using natural ingredients.",
+      },
+      {
+        name: "Internal Herbal Medicine",
+        description:
+          "Blood-purifying and skin-healing formulations to address skin issues from within.",
+      },
+      {
+        name: "Panchakarma for Skin",
+        description:
+          "Detox therapies including Virechana to eliminate toxins causing chronic skin conditions.",
+      },
+      {
+        name: "Abhyanga & Skin Rejuvenation",
+        description:
+          "Full-body oil massage with skin-nourishing herbal oils for overall skin health and anti-aging.",
+      },
+      {
+        name: "Diet & Lifestyle for Clear Skin",
+        description:
+          "Identification of Pitta-aggravating foods and habits that trigger breakouts and inflammation.",
+      },
+    ],
+    whyChooseUs: [
+      "Gentle, natural treatments suitable for sensitive skin",
+      "Experienced in treating chronic and recurring skin conditions",
+      "Combination of external therapies and internal medicine for best results",
+      "Clinic in Medavakkam – serving all of South Chennai",
+    ],
+    faq: [
+      {
+        question: "Can Ayurveda treat chronic acne?",
+        answer:
+          "Yes, Ayurveda effectively treats chronic acne by addressing hormonal imbalances, digestive issues, and Pitta aggravation – the root causes of persistent breakouts.",
+      },
+      {
+        question: "How long before I see skin improvement?",
+        answer:
+          "Most patients notice improvement within 4–6 weeks. Chronic conditions like psoriasis or eczema may require 2–3 months of consistent treatment.",
+      },
+      {
+        question: "Is Ayurvedic skin treatment safe for all skin types?",
+        answer:
+          "Yes, all treatments are customized to your skin type and dosha constitution. Dr. Harsita Devi selects herbs and therapies appropriate for sensitive, oily, or dry skin.",
+      },
+      {
+        question: "Do you treat pigmentation and dark spots?",
+        answer:
+          "Yes, we treat hyperpigmentation, melasma, and dark spots using herbal facials, internal blood-purifying medicines, and sun protection guidance.",
+      },
+    ],
+    relatedSlugs: ["panchakarma", "pcos-treatment", "migraine-treatment"],
+  },
+];
+
+export function getServicePage(slug: string): ServicePage | undefined {
+  return SERVICE_PAGES.find((page) => page.slug === slug);
+}
+
+export function getServicePageUrl(slug: string): string {
+  return `${SITE_URL}/${slug}`;
+}
+
+export const LOCAL_SEO_KEYWORDS = [
+  "Ayurvedic clinic in Medavakkam",
+  "Ayurvedic doctor near me",
+  "Ayurvedic treatment in Chennai",
+  "Panchakarma in Medavakkam",
+  ...SERVICE_PAGES.map((p) => p.h1),
+];
+
+export const CLINIC_LOCATION_TEXT = `${BUSINESS.name} is located at ${FORMATTED_ADDRESS}, easily accessible from ${LOCAL_AREAS}.`;

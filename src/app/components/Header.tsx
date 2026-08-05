@@ -1,16 +1,21 @@
 import { useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "./ui/button";
 import logoWithTitle from "../../assets/logo-with-title.png";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHome = location.pathname === "/";
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsMenuOpen(false);
+  const goToSection = (id: string) => {
+    setIsMenuOpen(false);
+    if (isHome) {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate(`/#${id}`);
     }
   };
 
@@ -18,63 +23,61 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md shadow-lg z-50 border-b border-green-100">
       <div className="container mx-auto px-4 sm:px-6 py-3">
         <div className="flex items-center justify-between">
-          <div
-            className="flex items-center gap-2 cursor-pointer"
-            onClick={() => scrollToSection("home")}
+          <Link
+            to="/"
+            className="flex items-center gap-2"
+            onClick={() => {
+              if (isHome) {
+                goToSection("home");
+              }
+            }}
           >
             <img
               src={logoWithTitle}
               alt="Harsha Vedic Logo"
               className="h-10 sm:h-12 md:h-14 w-auto max-h-14 object-contain hover:scale-105 transition-transform"
             />
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <button
-              onClick={() => scrollToSection("home")}
+              onClick={() => goToSection("home")}
               className="text-gray-700 hover:text-green-700 transition font-medium relative group"
             >
               Home
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-700 group-hover:w-full transition-all"></span>
             </button>
             <button
-              onClick={() => scrollToSection("about")}
+              onClick={() => goToSection("about")}
               className="text-gray-700 hover:text-green-700 transition font-medium relative group"
             >
               About
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-700 group-hover:w-full transition-all"></span>
             </button>
             <button
-              onClick={() => scrollToSection("prakriti")}
+              onClick={() => goToSection("prakriti")}
               className="text-gray-700 hover:text-green-700 transition font-medium relative group"
             >
               Prakriti Test
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-700 group-hover:w-full transition-all"></span>
             </button>
             <button
-              onClick={() => scrollToSection("services")}
+              onClick={() => goToSection("services")}
               className="text-gray-700 hover:text-green-700 transition font-medium relative group"
             >
               Services
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-700 group-hover:w-full transition-all"></span>
             </button>
-            {/* <button
-              onClick={() => scrollToSection("products")}
-              className="text-gray-700 hover:text-green-700 transition font-medium relative group"
-            >
-              Products
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-700 group-hover:w-full transition-all"></span>
-            </button> */}
             <button
-              onClick={() => scrollToSection("consultation")}
+              onClick={() => goToSection("consultation")}
               className="text-gray-700 hover:text-green-700 transition font-medium relative group"
             >
               Consultation
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-700 group-hover:w-full transition-all"></span>
             </button>
             <button
-              onClick={() => scrollToSection("contact")}
+              onClick={() => goToSection("contact")}
               className="text-gray-700 hover:text-green-700 transition font-medium relative group"
             >
               Contact
@@ -109,7 +112,7 @@ export function Header() {
               <span className="font-semibold">WhatsApp</span>
             </a>
             <Button
-              onClick={() => scrollToSection("consultation")}
+              onClick={() => goToSection("consultation")}
               className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 shadow-lg"
             >
               Book Appointment
@@ -129,37 +132,37 @@ export function Header() {
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 flex flex-col gap-3">
             <button
-              onClick={() => scrollToSection("home")}
+              onClick={() => goToSection("home")}
               className="text-gray-700 hover:text-green-700 transition text-left py-2"
             >
               Home
             </button>
             <button
-              onClick={() => scrollToSection("about")}
+              onClick={() => goToSection("about")}
               className="text-gray-700 hover:text-green-700 transition text-left py-2"
             >
               About
             </button>
             <button
-              onClick={() => scrollToSection("prakriti")}
+              onClick={() => goToSection("prakriti")}
               className="text-gray-700 hover:text-green-700 transition text-left py-2"
             >
               Prakriti Test
             </button>
             <button
-              onClick={() => scrollToSection("services")}
+              onClick={() => goToSection("services")}
               className="text-gray-700 hover:text-green-700 transition text-left py-2"
             >
               Services
             </button>
             <button
-              onClick={() => scrollToSection("consultation")}
+              onClick={() => goToSection("consultation")}
               className="text-gray-700 hover:text-green-700 transition text-left py-2"
             >
               Consultation
             </button>
             <button
-              onClick={() => scrollToSection("contact")}
+              onClick={() => goToSection("contact")}
               className="text-gray-700 hover:text-green-700 transition text-left py-2"
             >
               Contact
@@ -189,7 +192,7 @@ export function Header() {
               <span className="font-semibold">WhatsApp</span>
             </a>
             <Button
-              onClick={() => scrollToSection("consultation")}
+              onClick={() => goToSection("consultation")}
               className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 w-full"
             >
               Book Appointment

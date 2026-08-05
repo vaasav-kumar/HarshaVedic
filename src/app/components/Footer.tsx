@@ -1,6 +1,8 @@
+import { Link } from "react-router";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import logoIcon from "../../assets/logo.png";
 import { FORMATTED_ADDRESS } from "../config/seo";
+import { SERVICE_PAGES } from "../config/servicePages";
 
 export function Footer() {
   return (
@@ -106,60 +108,52 @@ export function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#home"
+                <Link
+                  to="/"
                   className="text-green-100 hover:text-white transition hover:pl-2 inline-block"
                 >
                   → Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#about"
+                <Link
+                  to="/#about"
                   className="text-green-100 hover:text-white transition hover:pl-2 inline-block"
                 >
                   → About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#services"
+                <Link
+                  to="/#services"
                   className="text-green-100 hover:text-white transition hover:pl-2 inline-block"
                 >
                   → Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#products"
-                  className="text-green-100 hover:text-white transition hover:pl-2 inline-block"
-                >
-                  → Products
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#faq"
+                <Link
+                  to="/#faq"
                   className="text-green-100 hover:text-white transition hover:pl-2 inline-block"
                 >
                   → FAQ
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#consultation"
+                <Link
+                  to="/#consultation"
                   className="text-green-100 hover:text-white transition hover:pl-2 inline-block"
                 >
                   → Online Consultation
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#contact"
+                <Link
+                  to="/#contact"
                   className="text-green-100 hover:text-white transition hover:pl-2 inline-block"
                 >
                   → Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -170,30 +164,17 @@ export function Footer() {
               Our Services
             </h4>
             <ul className="space-y-3 text-green-100">
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-amber-400 rounded-full"></span>
-                Panchakarma Detox
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-amber-400 rounded-full"></span>
-                Herbal Treatments
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-amber-400 rounded-full"></span>
-                Therapeutic Massages
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-amber-400 rounded-full"></span>
-                Chronic Disease Care
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-amber-400 rounded-full"></span>
-                Stress Management
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-amber-400 rounded-full"></span>
-                Online Consultations
-              </li>
+              {SERVICE_PAGES.map((page) => (
+                <li key={page.slug}>
+                  <Link
+                    to={`/${page.slug}`}
+                    className="flex items-center gap-2 hover:text-white transition hover:pl-1"
+                  >
+                    <span className="w-1.5 h-1.5 bg-amber-400 rounded-full flex-shrink-0"></span>
+                    {page.h1.replace(" in Chennai", "").replace(" in Medavakkam, Chennai", "")}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 

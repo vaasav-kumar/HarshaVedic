@@ -60,6 +60,37 @@ export const SERVICES = [
     name: "Panchakarma Detox",
     description:
       "Deep cleansing and rejuvenation therapy to eliminate toxins and restore balance",
+    url: "/panchakarma",
+  },
+  {
+    name: "Knee Pain Ayurvedic Treatment",
+    description:
+      "Natural Ayurvedic treatment for knee pain, arthritis, and joint stiffness in Chennai",
+    url: "/knee-pain-treatment",
+  },
+  {
+    name: "Migraine Ayurvedic Treatment",
+    description:
+      "Root-cause Ayurvedic treatment for chronic migraines and headaches",
+    url: "/migraine-treatment",
+  },
+  {
+    name: "PCOS Ayurvedic Treatment",
+    description:
+      "Holistic Ayurvedic care for PCOS, hormonal balance, and fertility support",
+    url: "/pcos-treatment",
+  },
+  {
+    name: "Weight Loss Ayurveda",
+    description:
+      "Sustainable Ayurvedic weight management through metabolic balance and detox",
+    url: "/weight-loss",
+  },
+  {
+    name: "Ayurvedic Skin Care",
+    description:
+      "Natural Ayurvedic skin treatments for acne, eczema, pigmentation, and rejuvenation",
+    url: "/skin-care",
   },
   {
     name: "Herbal Treatments",
@@ -70,16 +101,6 @@ export const SERVICES = [
     name: "Therapeutic Massages",
     description:
       "Traditional Ayurvedic massages including Abhyanga, Shirodhara, and more",
-  },
-  {
-    name: "Chronic Disease Management",
-    description:
-      "Natural treatment for diabetes, arthritis, digestive disorders, and more",
-  },
-  {
-    name: "Stress & Anxiety Relief",
-    description:
-      "Holistic therapies to calm the mind and restore emotional balance",
   },
   {
     name: "Online Consultations",

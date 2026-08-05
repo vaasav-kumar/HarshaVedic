@@ -59,6 +59,9 @@ const structuredData = {
             "@type": "MedicalTherapy",
             name: service.name,
             description: service.description,
+            ...("url" in service && service.url
+              ? { url: `${SITE_URL}${service.url}` }
+              : {}),
           },
         })),
       },

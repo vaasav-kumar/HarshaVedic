@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import {
   Droplets,
@@ -6,6 +7,7 @@ import {
   Stethoscope,
   HeartPulse,
   User,
+  ArrowRight,
 } from "lucide-react";
 import {
   Card,
@@ -20,6 +22,7 @@ import TherapeuticMassages from "../../assets/therapeutic-massages.png";
 import ChronicDiseaseManagement from "../../assets/chronic-disease-management.png";
 import StressAndAnxietyRelief from "../../assets/stress-and-anxiety-relief.png";
 import DietManagement from "../../assets/diet-management.png";
+import { SERVICE_PAGES } from "../config/servicePages";
 
 export function Services() {
   const services = [
@@ -145,6 +148,44 @@ export function Services() {
               ></div>
             </Card>
           ))}
+        </div>
+
+        {/* Specialized Treatment Pages */}
+        <div className="mt-16 md:mt-20">
+          <div className="text-center mb-10">
+            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
+              Specialized{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-800">
+                Ayurvedic Treatments
+              </span>
+            </h3>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Targeted Ayurvedic care in Medavakkam, Chennai — book a consultation
+              for your specific health concern
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+            {SERVICE_PAGES.map((page) => (
+              <Link
+                key={page.slug}
+                to={`/${page.slug}`}
+                className="group flex items-center justify-between bg-white p-5 rounded-xl shadow-sm hover:shadow-lg transition-all border border-green-100 hover:border-green-300"
+              >
+                <div className="min-w-0 pr-3">
+                  <h4 className="font-semibold text-gray-900 group-hover:text-green-700 transition-colors">
+                    {page.h1.replace(" in Chennai", "").replace(" in Medavakkam, Chennai", "")}
+                  </h4>
+                  <p className="text-sm text-gray-500 mt-1 line-clamp-2">
+                    {page.subtitle}
+                  </p>
+                </div>
+                <ArrowRight
+                  className="text-green-600 flex-shrink-0 group-hover:translate-x-1 transition-transform"
+                  size={20}
+                />
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </section>
