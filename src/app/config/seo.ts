@@ -1,10 +1,10 @@
 export const SITE_URL = "https://harshavedic.in";
 
 export const SITE_NAME = "Harsha Vedic";
-export const SITE_TAGLINE = "Ayurvedic Wellness Clinic";
+export const SITE_TAGLINE = "Ayurveda Clinic and Wellness Center";
 
 export const DEFAULT_TITLE =
-  "Harsha Vedic | Ayurvedic Clinic – Dr. Harsita Devi | Online & In-Person Consultation";
+  "Harsha Vedic | Ayurveda Clinic and Wellness Center – Dr. Harsita Devi | Online & In-Person Consultation";
 
 export const DEFAULT_DESCRIPTION =
   "Authentic Ayurvedic treatments by Dr. Harsita Devi. Book online or in-person consultation. Prakriti assessment, holistic wellness, and personalized care at Harsha Vedic.";
@@ -17,18 +17,30 @@ export const BUSINESS = {
   phoneTel: "tel:+917904094949",
   whatsapp: "https://wa.me/917904094949",
   address: {
-    street: "Casagrand Firstcity, Cheran Nagar, Perumbakkam",
+    street:
+      "Plot no 4, shop no 7, 1st floor, Velachery main road, Medavakkam",
     city: "Chennai",
     region: "Tamil Nadu",
     postalCode: "600100",
     country: "IN",
   },
   geo: {
-    latitude: 12.9048,
-    longitude: 80.2128,
+    latitude: 12.9193,
+    longitude: 80.1873,
   },
   hours: [
-    { days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], opens: "09:00", closes: "19:00" },
+    {
+      days: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ],
+      opens: "09:00",
+      closes: "19:00",
+    },
     { days: ["Sunday"], opens: "10:00", closes: "16:00" },
   ],
   social: {
@@ -40,6 +52,8 @@ export const BUSINESS = {
     count: 100,
   },
 } as const;
+
+export const FORMATTED_ADDRESS = `${BUSINESS.address.street}, ${BUSINESS.address.city} - ${BUSINESS.address.postalCode}`;
 
 export const SERVICES = [
   {
@@ -69,8 +83,7 @@ export const SERVICES = [
   },
   {
     name: "Online Consultations",
-    description:
-      "Get expert Ayurvedic guidance from the comfort of your home",
+    description: "Get expert Ayurvedic guidance from the comfort of your home",
   },
 ] as const;
 
@@ -125,7 +138,7 @@ export const FAQ_ITEMS = [
   {
     question: "Where is Harsha Vedic clinic located?",
     answer:
-      "Harsha Vedic is located at Casagrand Firstcity, Cheran Nagar, Perumbakkam, Chennai – 600100. We are open Monday to Saturday, 9:00 AM – 7:00 PM, and Sunday, 10:00 AM – 4:00 PM. Online consultations are available for patients across India.",
+      "Harsha Vedic is located at Plot no 4, shop no 7, 1st floor, Velachery main road, Medavakkam, Chennai – 600100. We are open Monday to Saturday, 9:00 AM – 7:00 PM, and Sunday, 10:00 AM – 4:00 PM. Online consultations are available for patients across India.",
   },
   {
     question: "Are Ayurvedic treatments safe?",

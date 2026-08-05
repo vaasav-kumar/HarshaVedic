@@ -1,5 +1,6 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import logoIcon from "../../assets/logo.png";
+import { FORMATTED_ADDRESS } from "../config/seo";
 
 export function Footer() {
   return (
@@ -206,10 +207,7 @@ export function Footer() {
                 <div className="w-10 h-10 bg-green-700/50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-green-600 transition">
                   <MapPin size={18} className="text-white" />
                 </div>
-                <span className="pt-2 break-words">
-                  Casagrand Firstcity, Cheran Nagar, Perumbakkam, Chennai -
-                  600100
-                </span>
+                <span className="pt-2 break-words">{FORMATTED_ADDRESS}</span>
               </li>
               <li className="flex gap-3 text-green-100 group">
                 <div className="w-10 h-10 bg-green-700/50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-green-600 transition">
