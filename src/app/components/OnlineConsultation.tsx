@@ -348,12 +348,21 @@ export function OnlineConsultation() {
                   {isSubmitting ? "Scheduling…" : "Schedule Consultation"}
                 </Button>
                 <p className="text-center text-sm text-gray-500 pt-2">
-                  Or call us directly at{" "}
+                  Or call us at{" "}
                   <a
                     href="tel:7904094949"
                     className="text-green-700 font-semibold hover:underline"
                   >
                     7904094949
+                  </a>
+                  {" "}or{" "}
+                  <a
+                    href="https://wa.me/917904094949"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#25D366] font-semibold hover:underline"
+                  >
+                    WhatsApp us
                   </a>
                 </p>
               </form>
