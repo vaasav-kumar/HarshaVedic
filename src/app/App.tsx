@@ -7,6 +7,7 @@ import { Services } from "./components/Services";
 import { Testimonials } from "./components/Testimonials";
 import { OnlineConsultation } from "./components/OnlineConsultation";
 import { Footer } from "./components/Footer";
+import { FloatingCTA } from "./components/FloatingCTA";
 import { SeoStructuredData } from "./components/SeoStructuredData";
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
         <OnlineConsultation />
       </main>
       <Footer />
+      <FloatingCTA />
     </div>
   );
 }
