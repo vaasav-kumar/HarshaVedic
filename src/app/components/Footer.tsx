@@ -136,6 +136,14 @@ export function Footer() {
               </li>
               <li>
                 <Link
+                  to="/blog"
+                  className="text-green-100 hover:text-white transition hover:pl-2 inline-block"
+                >
+                  → Articles
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/#faq"
                   className="text-green-100 hover:text-white transition hover:pl-2 inline-block"
                 >

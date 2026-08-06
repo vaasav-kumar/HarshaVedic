@@ -6,6 +6,9 @@ type SeoHeadProps = {
   description: string;
   keywords?: string;
   path?: string;
+  ogType?: "website" | "article";
+  publishedTime?: string;
+  author?: string;
 };
 
 function setMeta(name: string, content: string, property = false) {
@@ -29,7 +32,15 @@ function setLink(rel: string, href: string) {
   el.href = href;
 }
 
-export function SeoHead({ title, description, keywords, path = "/" }: SeoHeadProps) {
+export function SeoHead({
+  title,
+  description,
+  keywords,
+  path = "/",
+  ogType = "website",
+  publishedTime,
+  author,
+}: SeoHeadProps) {
   const url = `${SITE_URL}${path === "/" ? "" : path}`;
   const ogTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`;
 
@@ -39,19 +50,25 @@ export function SeoHead({ title, description, keywords, path = "/" }: SeoHeadPro
     if (keywords) setMeta("keywords", keywords);
     setLink("canonical", url);
 
-    setMeta("og:type", "website", true);
+    setMeta("og:type", ogType, true);
     setMeta("og:url", url, true);
     setMeta("og:title", ogTitle, true);
     setMeta("og:description", description, true);
     setMeta("og:image", `${SITE_URL}/og-image.jpg`, true);
     setMeta("og:site_name", SITE_NAME, true);
+    if (publishedTime) {
+      setMeta("article:published_time", publishedTime, true);
+    }
+    if (author) {
+      setMeta("article:author", author, true);
+    }
 
     setMeta("twitter:card", "summary_large_image");
     setMeta("twitter:url", url);
     setMeta("twitter:title", ogTitle);
     setMeta("twitter:description", description);
     setMeta("twitter:image", `${SITE_URL}/og-image.jpg`);
-  }, [title, description, keywords, url, ogTitle]);
+  }, [title, description, keywords, url, ogTitle, ogType, publishedTime, author]);
 
   return null;
 }
