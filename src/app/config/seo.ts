@@ -1,4 +1,4 @@
-export const SITE_URL = "https://harshavedic.in";
+export const SITE_URL = "https://www.harshavedic.in";
 
 export const SITE_NAME = "Harsha Vedic";
 export const SITE_TAGLINE =
