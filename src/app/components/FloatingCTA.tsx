@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { Calendar, Phone, X } from "lucide-react";
 import { Button } from "./ui/button";
+import { useScrollToSection } from "../hooks/useScrollToSection";
 
 export function FloatingCTA() {
   const [visible, setVisible] = useState(false);
   const [dismissed, setDismissed] = useState(false);
+  const scrollToSection = useScrollToSection();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,10 +16,7 @@ export function FloatingCTA() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToConsultation = () => {
-    const element = document.getElementById("consultation");
-    if (element) element.scrollIntoView({ behavior: "smooth" });
-  };
+  const scrollToConsultation = () => scrollToSection("consultation");
 
   if (dismissed || !visible) return null;
 
@@ -39,7 +38,11 @@ export function FloatingCTA() {
             Same-week appointments available
           </p>
         </div>
-        <Button onClick={scrollToConsultation} className="btn-cta-gold shrink-0 px-4 py-2 h-auto text-sm">
+        <Button
+          type="button"
+          onClick={scrollToConsultation}
+          className="bg-gradient-to-r from-green-600 to-green-700 shrink-0 px-4 py-2 h-auto text-sm"
+        >
           <Calendar size={16} />
           Book Now
         </Button>
@@ -54,8 +57,10 @@ export function FloatingCTA() {
           <X size={14} />
         </button>
         <Button
+          type="button"
           onClick={scrollToConsultation}
-          className="btn-cta-gold animate-pulse-glow px-6 py-6 text-base rounded-2xl shadow-2xl"
+          className="cursor-pointer animate-pulse-glow px-6 py-6 text-base rounded-2xl shadow-2xl
+          bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800"
         >
           <Calendar className="mr-2" size={20} />
           Book Consultation

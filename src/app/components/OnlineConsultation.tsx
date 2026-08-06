@@ -107,7 +107,7 @@ export function OnlineConsultation() {
   return (
     <section
       id="consultation"
-      className="py-12 sm:py-16 md:py-20 bg-white relative overflow-hidden"
+      className="scroll-mt-24 py-12 sm:py-16 md:py-20 bg-white relative overflow-hidden"
     >
       {/* Decorative elements */}
       <div
