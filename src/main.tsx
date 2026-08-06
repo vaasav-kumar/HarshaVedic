@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router";
 import App from "./app/App.tsx";
+import { initAnalytics } from "./app/analytics.ts";
 import "./styles/index.css";
 
 createRoot(document.getElementById("root")!).render(
@@ -8,3 +9,5 @@ createRoot(document.getElementById("root")!).render(
     <App />
   </BrowserRouter>,
 );
+
+initAnalytics();

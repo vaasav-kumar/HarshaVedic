@@ -15,19 +15,8 @@
   ],
   "redirects": [
     {
-      "source": "/index.html",
-      "destination": "/",
-      "permanent": true
-    },
-    {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "www.harshavedic.in" }],
-      "destination": "https://harshavedic.in/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "harshavedic.vercel.app" }],
       "destination": "https://harshavedic.in/:path*",
       "permanent": true
     }
