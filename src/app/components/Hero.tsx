@@ -38,19 +38,24 @@ export function Hero() {
               <span className="font-semibold">Ancient Wisdom, Modern Care</span>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
-              Heal Naturally with{" "}
+              Natural Healing at{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-800">
-                Ayurveda
+                Harsha Vedic
               </span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
-              Experience authentic Ayurvedic treatments by{" "}
+              Your trusted{" "}
+              <span className="font-semibold text-green-700">
+                Ayurveda Clinic & Wellness Center in Medavakkam, Chennai
+              </span>
+              , easily accessible from Tambaram, Pallikaranai, Velachery, and
+              Perumbakkam. Experience Kerala Panchakarma, detox therapy, pain
+              management, and women's health care with{" "}
               <span className="font-semibold text-green-700">
                 Dr. Harsita Devi
               </span>
-              , an experienced and certified Ayurvedic physician. Personalized
-              care for your holistic wellness journey, both in-person and
-              online.
+              , an experienced Ayurveda doctor. Book an Ayurvedic consultation
+              in-person or online.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button
@@ -75,14 +80,20 @@ export function Hero() {
               <div className="relative group min-w-0 flex-1 basis-[calc(50%-0.375rem)] sm:basis-auto">
                 <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-amber-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition"></div>
                 <div className="relative bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-2xl shadow-lg">
-                  <div className="text-2xl sm:text-3xl font-bold text-green-700">100+</div>
-                  <div className="text-gray-600 text-xs sm:text-sm">Happy Patients</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-green-700">
+                    100+
+                  </div>
+                  <div className="text-gray-600 text-xs sm:text-sm">
+                    Happy Patients
+                  </div>
                 </div>
               </div>
               <div className="relative group min-w-0 flex-1 basis-[calc(50%-0.375rem)] sm:basis-auto">
                 <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-amber-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition"></div>
                 <div className="relative bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-2xl shadow-lg">
-                  <div className="text-2xl sm:text-3xl font-bold text-green-700">75+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-green-700">
+                    75+
+                  </div>
                   <div className="text-gray-600 text-xs sm:text-sm">
                     Online Consultations
                   </div>
@@ -91,8 +102,12 @@ export function Hero() {
               <div className="relative group min-w-0 flex-1 basis-full sm:basis-auto">
                 <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-amber-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition"></div>
                 <div className="relative bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-2xl shadow-lg">
-                  <div className="text-2xl sm:text-3xl font-bold text-green-700">100%</div>
-                  <div className="text-gray-600 text-xs sm:text-sm">Natural Care</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-green-700">
+                    100%
+                  </div>
+                  <div className="text-gray-600 text-xs sm:text-sm">
+                    Natural Care
+                  </div>
                 </div>
               </div>
             </div>

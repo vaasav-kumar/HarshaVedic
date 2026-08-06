@@ -1,9 +1,11 @@
 import {
   BUSINESS,
   FAQ_ITEMS,
+  LOCAL_AREAS,
   SERVICES,
   SITE_NAME,
   SITE_URL,
+  SURROUNDING_AREAS,
   TESTIMONIALS,
 } from "../config/seo";
 
@@ -24,7 +26,7 @@ const structuredData = {
       "@id": `${SITE_URL}/#organization`,
       name: SITE_NAME,
       description:
-        "Authentic Ayurvedic treatments by Dr. Harsita Devi. Book online or in-person consultation. Prakriti assessment, holistic wellness, and personalized care.",
+        `Harsha Vedic is an Ayurvedic clinic in Medavakkam, Chennai serving ${LOCAL_AREAS}. Kerala Panchakarma detox therapy, pain management, women's health care, stress relief, and natural healing by Dr. Harsita Devi.`,
       url: SITE_URL,
       logo: `${SITE_URL}/logo.png`,
       image: `${SITE_URL}/og-image.jpg`,
@@ -46,6 +48,13 @@ const structuredData = {
         latitude: BUSINESS.geo.latitude,
         longitude: BUSINESS.geo.longitude,
       },
+      areaServed: [
+        { "@type": "Place", name: "Medavakkam, Chennai" },
+        ...SURROUNDING_AREAS.map((area) => ({
+          "@type": "Place",
+          name: `${area}, Chennai`,
+        })),
+      ],
       openingHoursSpecification: openingHoursSpecification(),
       sameAs: [BUSINESS.social.instagram, BUSINESS.social.linkedin],
       medicalSpecialty: "Ayurvedic medicine",
@@ -88,7 +97,7 @@ const structuredData = {
       "@id": `${SITE_URL}/#physician`,
       name: BUSINESS.doctor,
       description:
-        "Experienced and certified Ayurvedic physician. Personalized care for holistic wellness, in-person and online consultation.",
+        "Experienced Ayurveda doctor at Harsha Vedic, Medavakkam, Chennai. Personalized natural healing through Ayurvedic consultation — in-person and online.",
       url: SITE_URL,
       medicalSpecialty: "Ayurvedic medicine",
       worksFor: { "@id": `${SITE_URL}/#organization` },
@@ -97,9 +106,9 @@ const structuredData = {
       "@type": "WebSite",
       "@id": `${SITE_URL}/#website`,
       url: SITE_URL,
-      name: `${SITE_NAME} – Ayurvedic Clinic`,
+      name: `${SITE_NAME} – Ayurvedic Clinic in Medavakkam, Chennai`,
       description:
-        "Authentic Ayurvedic treatments by Dr. Harsita Devi. Book online or in-person consultation.",
+        "Kerala Panchakarma detox therapy, pain management, women's health, stress relief, and Ayurvedic consultation by Dr. Harsita Devi.",
       publisher: { "@id": `${SITE_URL}/#organization` },
       inLanguage: "en-IN",
     },

@@ -29,13 +29,16 @@ export function Footer() {
               <div>
                 <h3 className="font-bold text-xl text-white">Harsha Vedic</h3>
                 <p className="text-xs text-green-200">
-                  Ayurvedic Wellness Clinic
+                  Ayurveda Clinic & Wellness Center in Medavakkam, Chennai
                 </p>
               </div>
             </div>
             <p className="text-green-100 mb-6 leading-relaxed">
-              Bringing the ancient wisdom of Ayurveda to modern healthcare. Your
-              trusted partner in holistic wellness.
+              Harsha Vedic brings Kerala Panchakarma, detox therapy, pain
+              management, women's health, and stress relief from our Medavakkam
+              clinic — serving Tambaram, Pallikaranai, Velachery, Perumbakkam,
+              and surrounding areas. Your trusted partner in natural healing and
+              holistic wellness.
             </p>
             <div className="flex gap-3">
               <a
@@ -171,7 +174,9 @@ export function Footer() {
                     className="flex items-center gap-2 hover:text-white transition hover:pl-1"
                   >
                     <span className="w-1.5 h-1.5 bg-amber-400 rounded-full flex-shrink-0"></span>
-                    {page.h1.replace(" in Chennai", "").replace(" in Medavakkam, Chennai", "")}
+                    {page.h1
+                      .replace(" in Chennai", "")
+                      .replace(" in Medavakkam, Chennai", "")}
                   </Link>
                 </li>
               ))}

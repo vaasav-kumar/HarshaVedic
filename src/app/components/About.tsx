@@ -68,27 +68,29 @@ export function About() {
               <span className="font-semibold">About Dr. Harsita Devi</span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-              Your Journey to{" "}
+              Your Ayurveda Doctor for{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-800">
-                Natural Wellness
+                Natural Healing
               </span>
             </h2>
             <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-              At Harsha Vedic, we believe in the power of ancient Ayurvedic
-              wisdom combined with modern understanding. Our clinic is dedicated
-              to providing authentic Ayurvedic treatments that address the root
-              cause of health issues, not just symptoms.
+              At Harsha Vedic, our Ayurvedic clinic in Medavakkam, Chennai, we
+              combine ancient Ayurvedic wisdom with modern understanding. We
+              serve patients from Tambaram, Pallikaranai, Velachery,
+              Perumbakkam, and surrounding areas with authentic Kerala
+              Panchakarma, detox therapy, pain management, women's health care,
+              and stress relief — addressing the root cause of health issues,
+              not just symptoms.
             </p>
             <p className="text-gray-600 leading-relaxed">
               Led by{" "}
               <span className="font-semibold text-green-700">
                 Dr. Harsita Devi
               </span>
-              , an experienced and certified Ayurvedic physician, we offer
-              personalized treatment plans based on your unique body
-              constitution (Prakriti). Whether you visit us in person or opt for
-              online consultations, you receive the same quality of care and
-              attention.
+              , a certified Ayurveda doctor, we provide personalized treatment
+              plans based on your unique body constitution (Prakriti). Whether
+              you visit our Medavakkam clinic or book an Ayurvedic consultation
+              online, you receive the same quality of care and attention.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6 pt-4">

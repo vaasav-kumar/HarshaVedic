@@ -30,7 +30,8 @@ export function FaqSection() {
             </span>
           </h2>
           <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
-            Everything you need to know about Ayurvedic care at Harsha Vedic
+            Everything you need to know about Ayurvedic care at Harsha Vedic,
+            your Ayurvedic clinic in Medavakkam, Chennai
           </p>
         </div>
 

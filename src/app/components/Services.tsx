@@ -28,9 +28,9 @@ export function Services() {
   const services = [
     {
       icon: Droplets,
-      title: "Panchakarma Detox",
+      title: "Kerala Panchakarma & Detox Therapy",
       description:
-        "Deep cleansing and rejuvenation therapy to eliminate toxins and restore balance",
+        "Authentic Kerala Panchakarma detox therapy for deep cleansing, toxin elimination, and natural healing",
       image: PanchakarmaDetox,
       color: "from-cyan-500 to-blue-600",
     },
@@ -52,25 +52,25 @@ export function Services() {
     },
     {
       icon: Stethoscope,
-      title: "Chronic Disease Management",
+      title: "Pain Management",
       description:
-        "Natural treatment for diabetes, arthritis, digestive disorders, and more",
+        "Natural pain management for arthritis, joint pain, and chronic conditions without dependency on painkillers",
       image: ChronicDiseaseManagement,
       color: "from-orange-500 to-red-600",
     },
     {
       icon: HeartPulse,
-      title: "Stress & Anxiety Relief",
+      title: "Stress Relief",
       description:
-        "Holistic therapies to calm the mind and restore emotional balance",
+        "Ayurvedic therapies for stress relief, anxiety, and emotional balance through natural healing",
       image: StressAndAnxietyRelief,
       color: "from-rose-500 to-pink-600",
     },
     {
       icon: User,
-      title: "Online Consultations",
+      title: "Ayurvedic Consultation",
       description:
-        "Get expert Ayurvedic guidance from the comfort of your home",
+        "Book an Ayurvedic consultation with our Ayurveda doctor — in-person at Medavakkam, Chennai or online",
       image: DietManagement,
       color: "from-lime-500 to-green-600",
     },
@@ -99,12 +99,13 @@ export function Services() {
             Comprehensive{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-800">
               Ayurvedic Care
-            </span>
+            </span>{" "}
+            in Medavakkam, Chennai
           </h2>
           <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-2">
-            From detox therapies to chronic disease management, we offer a
-            complete range of authentic Ayurvedic treatments tailored to your
-            needs
+            From Kerala Panchakarma and detox therapy to pain management,
+            women's health, and stress relief — Harsha Vedic offers a complete
+            range of natural healing treatments tailored to your needs
           </p>
         </div>
 

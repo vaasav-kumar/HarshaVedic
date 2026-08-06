@@ -128,18 +128,19 @@ export function OnlineConsultation() {
             <span className="font-semibold">Online Consultations</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Consult from{" "}
+            Ayurvedic Consultation from{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-800">
               Anywhere
             </span>
           </h2>
           <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-2">
-            Can't visit in person? No problem! Get expert Ayurvedic consultation
-            from{" "}
+            Can't visit our Medavakkam clinic? Book an Ayurvedic consultation
+            with{" "}
             <span className="font-semibold text-green-700">
               Dr. Harsita Devi
-            </span>{" "}
-            through our online platform
+            </span>
+            , your Ayurveda doctor in Chennai — for pain management, women's
+            health, stress relief, and more
           </p>
         </div>
 

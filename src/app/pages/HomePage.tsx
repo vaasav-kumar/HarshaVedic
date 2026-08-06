@@ -10,7 +10,7 @@ import { FloatingCTA } from "../components/FloatingCTA";
 import { SeoStructuredData } from "../components/SeoStructuredData";
 import { FaqSection } from "../components/FaqSection";
 import { SeoHead } from "../components/SeoHead";
-import { DEFAULT_DESCRIPTION, DEFAULT_TITLE } from "../config/seo";
+import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, SEO_KEYWORDS } from "../config/seo";
 
 export function HomePage() {
   return (
@@ -18,6 +18,7 @@ export function HomePage() {
       <SeoHead
         title={DEFAULT_TITLE}
         description={DEFAULT_DESCRIPTION}
+        keywords={SEO_KEYWORDS}
         path="/"
       />
       <SeoStructuredData />
