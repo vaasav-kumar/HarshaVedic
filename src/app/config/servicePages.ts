@@ -1,9 +1,12 @@
 import PanchakarmaDetox from "../../assets/panchakarma-detox.png";
 import ChronicDiseaseManagement from "../../assets/chronic-disease-management.png";
 import StressAndAnxietyRelief from "../../assets/stress-and-anxiety-relief.png";
-import HerbalTreatments from "../../assets/herbal-treatments.png";
+import AyurvedicDiabetesTreatment from "../../assets/ayurvedic-diabetes-treatment.png";
+import AyurvedicFattyLiverTreatment from "../../assets/ayurvedic-fatty-liver-treatment.png";
 import DietManagement from "../../assets/diet-management.png";
-import TherapeuticMassages from "../../assets/therapeutic-massages.png";
+import PCOSTreatment from "../../assets/pcos-treatment.png";
+import SkinCare from "../../assets/ayurvedic-skin-care.png";
+
 import {
   BUSINESS,
   FORMATTED_ADDRESS,
@@ -100,11 +103,7 @@ export const SERVICE_PAGES: ServicePage[] = [
         answer: `Our clinic is at ${FORMATTED_ADDRESS}. We serve patients from ${LOCAL_AREAS}, and across Chennai.`,
       },
     ],
-    relatedSlugs: [
-      "weight-loss",
-      "skin-care",
-      "migraine-treatment",
-    ],
+    relatedSlugs: ["weight-loss", "skin-care", "migraine-treatment"],
   },
   {
     slug: "knee-pain-treatment",
@@ -178,7 +177,12 @@ export const SERVICE_PAGES: ServicePage[] = [
           "Yes, we treat ligament strains, meniscus issues, and post-injury stiffness using Ayurvedic rehabilitation protocols alongside rest and herbal support.",
       },
     ],
-    relatedSlugs: ["panchakarma", "back-pain-treatment", "weight-loss", "migraine-treatment"],
+    relatedSlugs: [
+      "panchakarma",
+      "back-pain-treatment",
+      "weight-loss",
+      "migraine-treatment",
+    ],
   },
   {
     slug: "migraine-treatment",
@@ -262,7 +266,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     h1: "Women's Health & PCOS Treatment in Chennai",
     subtitle:
       "Holistic women's health care for PCOS, hormonal balance, and fertility — natural healing that addresses root cause",
-    heroImage: HerbalTreatments,
+    heroImage: PCOSTreatment,
     overview: `Polycystic Ovary Syndrome (PCOS) affects hormonal balance, metabolism, and fertility. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi offers comprehensive Ayurvedic PCOS treatment combining herbal medicine, Panchakarma, diet management, and lifestyle guidance. Women from ${LOCAL_AREAS} and across Chennai choose our clinic for a natural, personalized approach to managing PCOS symptoms and restoring hormonal health.`,
     benefits: [
       "Regulates menstrual cycles naturally",
@@ -316,7 +320,8 @@ export const SERVICE_PAGES: ServicePage[] = [
           "Most women see noticeable improvement in 3–6 months. Treatment duration varies based on severity, age, and lifestyle factors. Dr. Harsita Devi monitors progress and adjusts the plan accordingly.",
       },
       {
-        question: "Can I take Ayurvedic treatment alongside birth control pills?",
+        question:
+          "Can I take Ayurvedic treatment alongside birth control pills?",
         answer:
           "Yes, but inform Dr. Harsita Devi about all medications. Ayurvedic herbs can complement conventional treatment, and your plan will be adjusted for safe integration.",
       },
@@ -410,7 +415,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     h1: "Ayurvedic Skin Care Treatment in Chennai",
     subtitle:
       "Heal skin from within with authentic Ayurvedic treatments for acne, eczema, pigmentation, and more",
-    heroImage: TherapeuticMassages,
+    heroImage: SkinCare,
     overview: `Healthy skin reflects internal balance. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi treats skin conditions at their root cause using Ayurvedic internal medicine, herbal facials, Panchakarma, and personalized diet plans. Whether you struggle with acne, eczema, psoriasis, pigmentation, or premature aging, our holistic approach delivers lasting results. Patients from ${LOCAL_AREAS} and across Chennai trust our natural, side-effect-free skin care treatments.`,
     benefits: [
       "Treats root cause of skin issues, not just surface symptoms",
@@ -538,7 +543,8 @@ export const SERVICE_PAGES: ServicePage[] = [
           "Typically 7 to 14 sessions are recommended depending on severity. Improvement is often noticed within the first few sessions.",
       },
       {
-        question: "Is Ayurvedic back pain treatment safe alongside physiotherapy?",
+        question:
+          "Is Ayurvedic back pain treatment safe alongside physiotherapy?",
         answer:
           "Yes, Ayurvedic therapies complement physiotherapy well. Dr. Harsita Devi can coordinate your care plan for optimal recovery.",
       },
@@ -558,7 +564,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     h1: "Ayurvedic Diabetes Treatment in Chennai",
     subtitle:
       "Natural blood sugar management through metabolic balance, herbal medicine, and lifestyle transformation — not just symptom control",
-    heroImage: DietManagement,
+    heroImage: AyurvedicDiabetesTreatment,
     overview: `Ayurveda views diabetes (Madhumeha) as a metabolic disorder rooted in Kapha and Pitta imbalances. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi offers comprehensive Ayurvedic diabetes treatment combining herbal formulations, Panchakarma detox, personalized diet plans, and lifestyle guidance. Patients from ${LOCAL_AREAS} and across Chennai achieve better blood sugar control and reduced medication dependency through our holistic, root-cause approach.`,
     benefits: [
       "Supports healthy blood sugar levels naturally",
@@ -632,7 +638,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     h1: "Ayurvedic Fatty Liver Treatment in Chennai",
     subtitle:
       "Restore liver health naturally through detox therapy, herbal medicine, and metabolic balance — addressing NAFLD at its root",
-    heroImage: PanchakarmaDetox,
+    heroImage: AyurvedicFattyLiverTreatment,
     overview: `Fatty liver disease (NAFLD) is increasingly common and often linked to metabolic syndrome, obesity, and poor diet. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi treats fatty liver through Ayurvedic liver detox, herbal formulations, Panchakarma, and personalized diet plans. Patients from ${LOCAL_AREAS} and across Chennai achieve improved liver function and reduced fat accumulation through our holistic approach targeting Pitta and Kapha imbalances.`,
     benefits: [
       "Supports liver detoxification and regeneration naturally",
@@ -691,7 +697,8 @@ export const SERVICE_PAGES: ServicePage[] = [
           "Virechana is performed under strict medical supervision by Dr. Harsita Devi after a thorough assessment. It is one of the most effective Ayurvedic therapies for liver detox when properly administered.",
       },
       {
-        question: "Can I take Ayurvedic treatment alongside my hepatologist's care?",
+        question:
+          "Can I take Ayurvedic treatment alongside my hepatologist's care?",
         answer:
           "Yes, Ayurvedic treatment complements conventional monitoring. Share your latest liver function reports with Dr. Harsita Devi for a coordinated care plan.",
       },

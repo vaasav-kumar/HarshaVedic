@@ -1,6 +1,6 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Award, GraduationCap, Heart, Users, Sparkles } from "lucide-react";
-import Doctor from "../../assets/doctor.png";
+import Doctor from "../../assets/doctor-harsita-devi.png";
 
 export function About() {
   const features = [
@@ -33,7 +33,10 @@ export function About() {
   ];
 
   return (
-    <section id="about" className="py-12 sm:py-16 md:py-20 bg-white relative overflow-hidden">
+    <section
+      id="about"
+      className="py-12 sm:py-16 md:py-20 bg-white relative overflow-hidden"
+    >
       {/* Decorative background pattern */}
       <div
         className="absolute inset-0 opacity-5"
