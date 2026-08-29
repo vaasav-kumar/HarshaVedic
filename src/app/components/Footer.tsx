@@ -1,7 +1,11 @@
 import { Link } from "react-router";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import logoIcon from "../../assets/logo.png";
-import { FORMATTED_ADDRESS } from "../config/seo";
+import {
+  FORMATTED_ADDRESS,
+  GOOGLE_MAPS_DIRECTIONS_URL,
+  GOOGLE_MAPS_EMBED_URL,
+} from "../config/seo";
 import { SERVICE_PAGES } from "../config/servicePages";
 
 export function Footer() {
@@ -199,12 +203,6 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex gap-3 text-green-100 group">
                 <div className="w-10 h-10 bg-green-700/50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-green-600 transition">
-                  <MapPin size={18} className="text-white" />
-                </div>
-                <span className="pt-2 break-words">{FORMATTED_ADDRESS}</span>
-              </li>
-              <li className="flex gap-3 text-green-100 group">
-                <div className="w-10 h-10 bg-green-700/50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-green-600 transition">
                   <Phone size={18} className="text-white" />
                 </div>
                 <a
@@ -252,6 +250,46 @@ export function Footer() {
                 </div>
               </li>
             </ul>
+          </div>
+        </div>
+
+        <div className="mb-10 md:mb-12">
+          <h4 className="font-bold text-lg mb-4 text-white flex items-center gap-2">
+            <span className="w-1 h-6 bg-gradient-to-b from-amber-400 to-green-600 rounded-full"></span>
+            Visit Us
+          </h4>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
+            <div className="space-y-4">
+              <div className="flex gap-3 text-green-100">
+                <div className="w-10 h-10 bg-green-700/50 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <MapPin size={18} className="text-white" />
+                </div>
+                <div className="pt-1">
+                  <p className="font-semibold text-white mb-1">
+                    Harsha Vedic Ayurveda Clinic & Wellness Center
+                  </p>
+                  <p className="leading-relaxed">{FORMATTED_ADDRESS}</p>
+                  <a
+                    href={GOOGLE_MAPS_DIRECTIONS_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-3 text-amber-300 hover:text-amber-200 font-medium transition"
+                  >
+                    Get Directions →
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-green-700/50 shadow-xl">
+              <iframe
+                src={GOOGLE_MAPS_EMBED_URL}
+                className="absolute inset-0 w-full h-full border-0"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                title="Harsha Vedic Ayurveda Clinic location on Google Maps"
+              />
+            </div>
           </div>
         </div>
 

@@ -68,6 +68,11 @@ export const BUSINESS = {
 
 export const FORMATTED_ADDRESS = `${BUSINESS.address.street}, ${BUSINESS.address.city} - ${BUSINESS.address.postalCode}`;
 
+export const GOOGLE_MAPS_EMBED_URL =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.851904383731!2d80.1872607763563!3d12.917238387393244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d1df7440411%3A0x1bbbbda3e6ba5d18!2sHarsha%20Vedic%20Ayurveda%20Clinic%20%26%20Wellness%20Center!5e0!3m2!1sen!2sin!4v1787947168322!5m2!1sen!2sin";
+
+export const GOOGLE_MAPS_DIRECTIONS_URL = `https://www.google.com/maps/dir/?api=1&destination=${BUSINESS.geo.latitude},${BUSINESS.geo.longitude}`;
+
 export const SERVICES = [
   {
     name: "Kerala Panchakarma & Detox Therapy",
