@@ -175,6 +175,12 @@ export const SERVICES = [
     description:
       "Book an Ayurvedic consultation Medavakkam with Dr. Harsita Devi — in-person at our wellness centre or online",
   },
+  {
+    name: "Wellness Programs",
+    description:
+      "Personalised multi-day Ayurvedic wellness programmes — weekend rejuvenation, 7-day reset, women's wellness, and lifestyle management in Medavakkam, Chennai",
+    url: "/wellness-programs",
+  },
 ] as const;
 
 export const TESTIMONIALS = [

@@ -6,6 +6,7 @@ import AyurvedicFattyLiverTreatment from "../../assets/ayurvedic-fatty-liver-tre
 import DietManagement from "../../assets/diet-management.webp";
 import PCOSTreatment from "../../assets/pcos-treatment.webp";
 import SkinCare from "../../assets/ayurvedic-skin-care.webp";
+import TherapeuticMassages from "../../assets/therapeutic-massages.webp";
 
 import {
   BUSINESS,
@@ -704,6 +705,94 @@ export const SERVICE_PAGES: ServicePage[] = [
       },
     ],
     relatedSlugs: ["panchakarma", "weight-loss", "diabetes-treatment"],
+  },
+  {
+    slug: "wellness-programs",
+    title: `Ayurvedic Wellness Programs in Medavakkam, Chennai | ${SITE_NAME}`,
+    metaDescription: `Personalised Ayurvedic wellness programs in Medavakkam, Chennai by Dr. Harsita Devi. Weekend rejuvenation, 7-day reset, women's wellness, weight management & stress relief. Book consultation.`,
+    keywords: `Ayurvedic wellness programs Medavakkam, wellness centre Chennai, Ayurveda rejuvenation program, weekend wellness Ayurveda, women's wellness program, stress relief wellness Ayurveda, Ayurvedic lifestyle program Medavakkam`,
+    h1: "Ayurvedic Wellness Programs in Medavakkam, Chennai",
+    subtitle:
+      "Personalised multi-day wellness programmes combining traditional therapies, lifestyle guidance, and rejuvenation — what sets Harsha Vedic apart in Medavakkam",
+    heroImage: TherapeuticMassages,
+    overview: `Structured wellness programmes go beyond single therapy sessions to deliver lasting transformation. At ${SITE_NAME}, our Ayurvedic wellness centre in Medavakkam, Chennai, Dr. Harsita Devi designs personalised programmes that combine selected therapies such as Abhyanga, Shirodhara, and Swedana with diet guidance, daily routines, and relaxation practices. Whether you need a weekend reset or a two-week weight management journey, our programmes help you build healthier habits — a key differentiator from other Ayurvedic clinics in ${LOCAL_AREAS}. In-person programmes are available at our Medavakkam clinic, with online consultations for assessment and follow-up.`,
+    benefits: [
+      "Structured multi-day programmes for deeper healing than single sessions",
+      "Personalised to your body constitution (Prakriti) and wellness goals",
+      "Combines therapies, diet guidance, and lifestyle recommendations",
+      "Flexible durations from weekend retreats to two-week programmes",
+      "Focus on prevention, rejuvenation, and sustainable daily habits",
+    ],
+    treatments: [
+      {
+        name: "Ayurveda Weekend Rejuvenation Program",
+        description:
+          "A 2 or 3-day Ayurvedic wellness experience featuring selected therapies such as Abhyanga, Bashpa Sweda, Shiro Abhyanga, Pada Abhyanga and Shirodhara.",
+      },
+      {
+        name: "Ayurveda Reset Program – 7 Days",
+        description:
+          "A 7-day personalised Ayurveda wellness programme combining selected therapies, lifestyle guidance, relaxation and Ayurvedic wellness practices.",
+      },
+      {
+        name: "Women's Wellness Journey – 7 Days",
+        description:
+          "A 7-day personalised Ayurvedic wellness programme focusing on women's wellbeing through selected therapies, lifestyle guidance, relaxation and healthy routines.",
+      },
+      {
+        name: "Healthy Weight Management Program – 2 Weeks",
+        description:
+          "A 2-week personalised wellness programme combining Ayurvedic diet guidance, lifestyle recommendations and suitable therapies to support healthy weight management.",
+      },
+      {
+        name: "Ayurvedic Rejuvenation Program",
+        description:
+          "A personalised Ayurveda wellness programme combining traditional therapies, relaxation practices, diet guidance and lifestyle recommendations.",
+      },
+      {
+        name: "Stress Relief & Wellness Program",
+        description:
+          "A personalised Ayurvedic wellness programme incorporating suitable therapies, relaxation practices, lifestyle guidance and healthy daily routines.",
+      },
+      {
+        name: "Ayurvedic Lifestyle Management Program",
+        description:
+          "Personalised Ayurvedic guidance combining diet, daily routine, lifestyle practices and suitable therapies to support healthier long-term habits.",
+      },
+      {
+        name: "Preventive Ayurveda & Wellness Program",
+        description:
+          "Ayurvedic wellness guidance focused on maintaining wellbeing through personalised diet, lifestyle, daily routines and traditional rejuvenation practices.",
+      },
+    ],
+    whyChooseUs: [
+      "Comprehensive wellness programmes rarely offered at other Medavakkam clinics",
+      "Every programme is personalised by Dr. Harsita Devi after Prakriti assessment",
+      "Authentic therapies including Abhyanga, Shirodhara, and Swedana under physician supervision",
+      "Convenient Velachery Main Road location — serving all of South Chennai",
+    ],
+    faq: [
+      {
+        question: "Which wellness program is right for me?",
+        answer:
+          "Dr. Harsita Devi recommends the ideal programme after assessing your constitution, health goals, and schedule. A brief consultation — in-person or online — helps determine whether a weekend rejuvenation, 7-day reset, or longer programme suits you best.",
+      },
+      {
+        question: "How is a wellness program different from a single therapy session?",
+        answer:
+          "Wellness programmes combine multiple therapies, diet guidance, and lifestyle recommendations over several days for deeper, lasting results. Single sessions address immediate relief; programmes build sustainable wellbeing.",
+      },
+      {
+        question: "Can I do a wellness program while working?",
+        answer:
+          "Weekend rejuvenation programmes (2–3 days) are designed for busy schedules. Longer programmes may require dedicated time — Dr. Harsita Devi will help you choose an option that fits your lifestyle.",
+      },
+      {
+        question: "Where are wellness programmes conducted?",
+        answer: `All in-person programmes take place at our clinic at ${FORMATTED_ADDRESS}. We serve patients from ${LOCAL_AREAS}, and across Chennai.`,
+      },
+    ],
+    relatedSlugs: ["panchakarma", "weight-loss", "pcos-treatment"],
   },
 ];
 
