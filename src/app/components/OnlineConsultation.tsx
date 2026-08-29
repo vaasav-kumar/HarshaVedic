@@ -11,6 +11,14 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
+import { ConfirmationAlert } from "./ConfirmationAlert";
+
+type AlertState = {
+  open: boolean;
+  title: string;
+  message: string;
+  variant: "success" | "error";
+};
 
 export function OnlineConsultation() {
   const [formData, setFormData] = useState({
@@ -22,6 +30,20 @@ export function OnlineConsultation() {
     concern: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [alert, setAlert] = useState<AlertState>({
+    open: false,
+    title: "",
+    message: "",
+    variant: "success",
+  });
+
+  const showAlert = (
+    title: string,
+    message: string,
+    variant: AlertState["variant"] = "success",
+  ) => {
+    setAlert({ open: true, title, message, variant });
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -36,7 +58,8 @@ export function OnlineConsultation() {
       const text = await response.text();
       if (!response.ok) {
         if (response.status === 401) {
-          errorMessage = "Form backend requires 'Anyone, even anonymous' in Google Apps Script deployment.";
+          errorMessage =
+            "Form backend requires 'Anyone, even anonymous' in Google Apps Script deployment.";
         }
         throw new Error(`Submission failed (${response.status})`);
       }
@@ -44,14 +67,20 @@ export function OnlineConsultation() {
       try {
         result = text && text.trim().startsWith("{") ? JSON.parse(text) : {};
       } catch {
-        if (text.includes("doPost") || text.includes("Script function not found")) {
+        if (
+          text.includes("doPost") ||
+          text.includes("Script function not found")
+        ) {
           errorMessage =
             "Form backend not configured: add a doPost function in your Google Apps Script. See docs/google-apps-script-doPost.gs in this project.";
           throw new Error(errorMessage);
         }
         throw new Error("Invalid response from server");
       }
-      alert("Consultation scheduled successfully!");
+      showAlert(
+        "Consultation Scheduled!",
+        "Your consultation has been scheduled successfully. We'll contact you shortly to confirm the details.",
+      );
       setFormData({
         name: "",
         email: "",
@@ -62,7 +91,12 @@ export function OnlineConsultation() {
       });
     } catch (err) {
       console.error(err);
-      alert(errorMessage || "Something went wrong. Please try again or call us at 7904094949.");
+      showAlert(
+        "Unable to Schedule",
+        errorMessage ||
+          "Something went wrong. Please try again or call us at 7904094949.",
+        "error",
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -105,272 +139,286 @@ export function OnlineConsultation() {
   ];
 
   return (
-    <section
-      id="consultation"
-      className="scroll-mt-24 py-12 sm:py-16 md:py-20 bg-white relative overflow-hidden"
-    >
-      {/* Decorative elements */}
-      <div
-        className="absolute top-0 left-0 w-full h-full opacity-5"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 2px 2px, #16a34a 1px, transparent 0)",
-          backgroundSize: "40px 40px",
-        }}
-      ></div>
-      <div className="absolute top-20 right-10 w-72 h-72 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-      <div className="absolute bottom-20 left-10 w-72 h-72 bg-amber-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+    <>
+      <ConfirmationAlert
+        open={alert.open}
+        onOpenChange={(open) => setAlert((prev) => ({ ...prev, open }))}
+        title={alert.title}
+        message={alert.message}
+        variant={alert.variant}
+      />
+      <section
+        id="consultation"
+        className="scroll-mt-24 py-12 sm:py-16 md:py-20 bg-white relative overflow-hidden"
+      >
+        {/* Decorative elements */}
+        <div
+          className="absolute top-0 left-0 w-full h-full opacity-5"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 2px 2px, #16a34a 1px, transparent 0)",
+            backgroundSize: "40px 40px",
+          }}
+        ></div>
+        <div className="absolute top-20 right-10 w-72 h-72 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div className="absolute bottom-20 left-10 w-72 h-72 bg-amber-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10">
-        <div className="text-center mb-10 md:mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm mb-4 shadow-md">
-            <Video size={16} className="text-green-600" />
-            <span className="font-semibold">Online Consultations</span>
-          </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Ayurvedic Consultation from{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-800">
-              Anywhere
-            </span>
-          </h2>
-          <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-2">
-            Can't visit our Medavakkam clinic? Book an Ayurvedic consultation
-            with{" "}
-            <span className="font-semibold text-green-700">
-              Dr. Harsita Devi
-            </span>
-            , your Ayurveda doctor in Chennai — for pain management, women's
-            health, stress relief, and more
-          </p>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-start max-w-6xl mx-auto">
-          <div className="space-y-6">
-            <div className="grid sm:grid-cols-2 gap-4">
-              {benefits.map((benefit, index) => (
-                <div key={index} className="group relative">
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-r ${benefit.color} rounded-3xl blur opacity-20 group-hover:opacity-30 transition`}
-                  ></div>
-                  <div className="relative bg-gradient-to-br from-green-50 to-white p-6 rounded-3xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 border border-green-100">
-                    <div
-                      className={`w-12 h-12 bg-gradient-to-r ${benefit.color} rounded-2xl flex items-center justify-center flex-shrink-0 shadow-md mb-3`}
-                    >
-                      <benefit.icon className="text-white" size={24} />
-                    </div>
-                    <h4 className="font-semibold text-gray-900 mb-2">
-                      {benefit.title}
-                    </h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      {benefit.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
+          <div className="text-center mb-10 md:mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm mb-4 shadow-md">
+              <Video size={16} className="text-green-600" />
+              <span className="font-semibold">Online Consultations</span>
             </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Ayurvedic Consultation from{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-800">
+                Anywhere
+              </span>
+            </h2>
+            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-2">
+              Can't visit our Medavakkam clinic? Book an Ayurvedic consultation
+              with{" "}
+              <span className="font-semibold text-green-700">
+                Dr. Harsita Devi
+              </span>
+              , your Ayurveda doctor in Chennai — for pain management, women's
+              health, stress relief, and more
+            </p>
+          </div>
 
-            <Card className="border-0 shadow-xl bg-gradient-to-br from-green-50 to-amber-50">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <span className="w-8 h-8 bg-gradient-to-r from-green-600 to-green-700 rounded-full flex items-center justify-center">
-                    <CheckCircle className="text-white" size={16} />
-                  </span>
-                  Consultation Process
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                {[
-                  {
-                    step: 1,
-                    title: "Book Your Slot",
-                    desc: "Fill the form with your details and preferred time",
-                  },
-                  {
-                    step: 2,
-                    title: "Receive Confirmation",
-                    desc: "Get video call link and appointment details via email",
-                  },
-                  {
-                    step: 3,
-                    title: "Join Video Call",
-                    desc: "Connect with Dr. Harsita Devi at scheduled time",
-                  },
-                  {
-                    step: 4,
-                    title: "Get Treatment Plan",
-                    desc: "Receive personalized care plan and prescriptions",
-                  },
-                ].map((item) => (
-                  <div key={item.step} className="flex gap-4 items-start">
-                    <div className="w-10 h-10 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-2xl flex items-center justify-center flex-shrink-0 font-bold shadow-md">
-                      {item.step}
-                    </div>
-                    <div className="flex-1">
-                      <p className="font-semibold text-gray-900">
-                        {item.title}
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-start max-w-6xl mx-auto">
+            <div className="space-y-6">
+              <div className="grid sm:grid-cols-2 gap-4">
+                {benefits.map((benefit, index) => (
+                  <div key={index} className="group relative">
+                    <div
+                      className={`absolute inset-0 bg-gradient-to-r ${benefit.color} rounded-3xl blur opacity-20 group-hover:opacity-30 transition`}
+                    ></div>
+                    <div className="relative bg-gradient-to-br from-green-50 to-white p-6 rounded-3xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1 border border-green-100">
+                      <div
+                        className={`w-12 h-12 bg-gradient-to-r ${benefit.color} rounded-2xl flex items-center justify-center flex-shrink-0 shadow-md mb-3`}
+                      >
+                        <benefit.icon className="text-white" size={24} />
+                      </div>
+                      <h4 className="font-semibold text-gray-900 mb-2">
+                        {benefit.title}
+                      </h4>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        {benefit.description}
                       </p>
-                      <p className="text-sm text-gray-600 mt-1">{item.desc}</p>
                     </div>
                   </div>
                 ))}
+              </div>
+
+              <Card className="border-0 shadow-xl bg-gradient-to-br from-green-50 to-amber-50">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <span className="w-8 h-8 bg-gradient-to-r from-green-600 to-green-700 rounded-full flex items-center justify-center">
+                      <CheckCircle className="text-white" size={16} />
+                    </span>
+                    Consultation Process
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  {[
+                    {
+                      step: 1,
+                      title: "Book Your Slot",
+                      desc: "Fill the form with your details and preferred time",
+                    },
+                    {
+                      step: 2,
+                      title: "Receive Confirmation",
+                      desc: "Get video call link and appointment details via email",
+                    },
+                    {
+                      step: 3,
+                      title: "Join Video Call",
+                      desc: "Connect with Dr. Harsita Devi at scheduled time",
+                    },
+                    {
+                      step: 4,
+                      title: "Get Treatment Plan",
+                      desc: "Receive personalized care plan and prescriptions",
+                    },
+                  ].map((item) => (
+                    <div key={item.step} className="flex gap-4 items-start">
+                      <div className="w-10 h-10 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-2xl flex items-center justify-center flex-shrink-0 font-bold shadow-md">
+                        {item.step}
+                      </div>
+                      <div className="flex-1">
+                        <p className="font-semibold text-gray-900">
+                          {item.title}
+                        </p>
+                        <p className="text-sm text-gray-600 mt-1">
+                          {item.desc}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </CardContent>
+              </Card>
+            </div>
+
+            <Card className="shadow-2xl border-0 overflow-hidden md:sticky md:top-24">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-green-600 via-green-700 to-green-800"></div>
+                <div
+                  className="absolute inset-0 opacity-10"
+                  style={{
+                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l30 30-30 30L0 30 30 0z' fill='%23ffffff' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E")`,
+                  }}
+                ></div>
+                <CardHeader className="relative text-white">
+                  <CardTitle className="text-2xl">
+                    Book Your Consultation
+                  </CardTitle>
+                  <CardDescription className="text-green-50">
+                    Fill in your details and we'll get back to you
+                  </CardDescription>
+                </CardHeader>
+              </div>
+              <CardContent className="pt-6 pb-8">
+                <form onSubmit={handleSubmit} className="space-y-5">
+                  <div>
+                    <Label
+                      htmlFor="name"
+                      className="text-gray-700 font-semibold"
+                    >
+                      Full Name *
+                    </Label>
+                    <Input
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      placeholder="Enter your name"
+                      className="mt-2 border-green-200 focus:border-green-500"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <Label
+                      htmlFor="email"
+                      className="text-gray-700 font-semibold"
+                    >
+                      Email Address *
+                    </Label>
+                    <Input
+                      id="email"
+                      name="email"
+                      type="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="your.email@example.com"
+                      className="mt-2 border-green-200 focus:border-green-500"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <Label
+                      htmlFor="phone"
+                      className="text-gray-700 font-semibold"
+                    >
+                      Phone Number *
+                    </Label>
+                    <Input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      placeholder="Your contact number"
+                      className="mt-2 border-green-200 focus:border-green-500"
+                      required
+                    />
+                  </div>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <div>
+                      <Label
+                        htmlFor="date"
+                        className="text-gray-700 font-semibold"
+                      >
+                        Preferred Date *
+                      </Label>
+                      <Input
+                        id="date"
+                        name="date"
+                        type="date"
+                        value={formData.date}
+                        onChange={handleChange}
+                        className="mt-2 border-green-200 focus:border-green-500"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <Label
+                        htmlFor="time"
+                        className="text-gray-700 font-semibold"
+                      >
+                        Preferred Time *
+                      </Label>
+                      <Input
+                        id="time"
+                        name="time"
+                        type="time"
+                        value={formData.time}
+                        onChange={handleChange}
+                        className="mt-2 border-green-200 focus:border-green-500"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <Label
+                      htmlFor="concern"
+                      className="text-gray-700 font-semibold"
+                    >
+                      Health Concern
+                    </Label>
+                    <Textarea
+                      id="concern"
+                      name="concern"
+                      value={formData.concern}
+                      onChange={handleChange}
+                      placeholder="Briefly describe your health concern..."
+                      rows={4}
+                      className="mt-2 border-green-200 focus:border-green-500"
+                    />
+                  </div>
+                  <Button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 py-6 text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all disabled:transform-none"
+                  >
+                    <Send className="mr-2" size={20} />
+                    {isSubmitting ? "Scheduling…" : "Schedule Consultation"}
+                  </Button>
+                  <p className="text-center text-sm text-gray-500 pt-2">
+                    Or call us at{" "}
+                    <a
+                      href="tel:7904094949"
+                      className="text-green-700 font-semibold hover:underline"
+                    >
+                      7904094949
+                    </a>{" "}
+                    or{" "}
+                    <a
+                      href="https://wa.me/917904094949"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#25D366] font-semibold hover:underline"
+                    >
+                      WhatsApp us
+                    </a>
+                  </p>
+                </form>
               </CardContent>
             </Card>
           </div>
-
-          <Card className="shadow-2xl border-0 overflow-hidden md:sticky md:top-24">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-green-600 via-green-700 to-green-800"></div>
-              <div
-                className="absolute inset-0 opacity-10"
-                style={{
-                  backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l30 30-30 30L0 30 30 0z' fill='%23ffffff' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E")`,
-                }}
-              ></div>
-              <CardHeader className="relative text-white">
-                <CardTitle className="text-2xl">
-                  Book Your Consultation
-                </CardTitle>
-                <CardDescription className="text-green-50">
-                  Fill in your details and we'll get back to you
-                </CardDescription>
-              </CardHeader>
-            </div>
-            <CardContent className="pt-6 pb-8">
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div>
-                  <Label htmlFor="name" className="text-gray-700 font-semibold">
-                    Full Name *
-                  </Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Enter your name"
-                    className="mt-2 border-green-200 focus:border-green-500"
-                    required
-                  />
-                </div>
-                <div>
-                  <Label
-                    htmlFor="email"
-                    className="text-gray-700 font-semibold"
-                  >
-                    Email Address *
-                  </Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="your.email@example.com"
-                    className="mt-2 border-green-200 focus:border-green-500"
-                    required
-                  />
-                </div>
-                <div>
-                  <Label
-                    htmlFor="phone"
-                    className="text-gray-700 font-semibold"
-                  >
-                    Phone Number *
-                  </Label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="Your contact number"
-                    className="mt-2 border-green-200 focus:border-green-500"
-                    required
-                  />
-                </div>
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <Label
-                      htmlFor="date"
-                      className="text-gray-700 font-semibold"
-                    >
-                      Preferred Date *
-                    </Label>
-                    <Input
-                      id="date"
-                      name="date"
-                      type="date"
-                      value={formData.date}
-                      onChange={handleChange}
-                      className="mt-2 border-green-200 focus:border-green-500"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <Label
-                      htmlFor="time"
-                      className="text-gray-700 font-semibold"
-                    >
-                      Preferred Time *
-                    </Label>
-                    <Input
-                      id="time"
-                      name="time"
-                      type="time"
-                      value={formData.time}
-                      onChange={handleChange}
-                      className="mt-2 border-green-200 focus:border-green-500"
-                      required
-                    />
-                  </div>
-                </div>
-                <div>
-                  <Label
-                    htmlFor="concern"
-                    className="text-gray-700 font-semibold"
-                  >
-                    Health Concern
-                  </Label>
-                  <Textarea
-                    id="concern"
-                    name="concern"
-                    value={formData.concern}
-                    onChange={handleChange}
-                    placeholder="Briefly describe your health concern..."
-                    rows={4}
-                    className="mt-2 border-green-200 focus:border-green-500"
-                  />
-                </div>
-                <Button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 py-6 text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all disabled:transform-none"
-                >
-                  <Send className="mr-2" size={20} />
-                  {isSubmitting ? "Scheduling…" : "Schedule Consultation"}
-                </Button>
-                <p className="text-center text-sm text-gray-500 pt-2">
-                  Or call us at{" "}
-                  <a
-                    href="tel:7904094949"
-                    className="text-green-700 font-semibold hover:underline"
-                  >
-                    7904094949
-                  </a>
-                  {" "}or{" "}
-                  <a
-                    href="https://wa.me/917904094949"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#25D366] font-semibold hover:underline"
-                  >
-                    WhatsApp us
-                  </a>
-                </p>
-              </form>
-            </CardContent>
-          </Card>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
