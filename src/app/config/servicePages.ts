@@ -7,6 +7,8 @@ import DietManagement from "../../assets/diet-management.webp";
 import PCOSTreatment from "../../assets/pcos-treatment.webp";
 import SkinCare from "../../assets/ayurvedic-skin-care.webp";
 import TherapeuticMassages from "../../assets/therapeutic-massages.webp";
+import AyurvedaFlower from "../../assets/ayurveda-flower.webp";
+import HerbalTreatments from "../../assets/herbal-treatments.webp";
 
 import {
   BUSINESS,
@@ -15,6 +17,13 @@ import {
   SITE_NAME,
   SITE_URL,
 } from "./seo";
+
+export type ServiceTreatment = {
+  name: string;
+  description: string;
+  image?: string;
+  duration?: string;
+};
 
 export type ServicePage = {
   slug: string;
@@ -26,7 +35,9 @@ export type ServicePage = {
   heroImage: string;
   overview: string;
   benefits: string[];
-  treatments: { name: string; description: string }[];
+  treatments: ServiceTreatment[];
+  treatmentsSectionTitle?: string;
+  treatmentsSectionSubtitle?: string;
   whyChooseUs: string[];
   faq: { question: string; answer: string }[];
   relatedSlugs: string[];
@@ -716,6 +727,9 @@ export const SERVICE_PAGES: ServicePage[] = [
       "Personalised multi-day wellness programmes combining traditional therapies, lifestyle guidance, and rejuvenation — what sets Harsha Vedic apart in Medavakkam",
     heroImage: TherapeuticMassages,
     overview: `Structured wellness programmes go beyond single therapy sessions to deliver lasting transformation. At ${SITE_NAME}, our Ayurvedic wellness centre in Medavakkam, Chennai, Dr. Harsita Devi designs personalised programmes that combine selected therapies such as Abhyanga, Shirodhara, and Swedana with diet guidance, daily routines, and relaxation practices. Whether you need a weekend reset or a two-week weight management journey, our programmes help you build healthier habits — a key differentiator from other Ayurvedic clinics in ${LOCAL_AREAS}. In-person programmes are available at our Medavakkam clinic, with online consultations for assessment and follow-up.`,
+    treatmentsSectionTitle: "Our Wellness Programs",
+    treatmentsSectionSubtitle:
+      "Choose a structured programme tailored to your goals — from a weekend rejuvenation to a two-week wellness journey",
     benefits: [
       "Structured multi-day programmes for deeper healing than single sessions",
       "Personalised to your body constitution (Prakriti) and wellness goals",
@@ -726,41 +740,57 @@ export const SERVICE_PAGES: ServicePage[] = [
     treatments: [
       {
         name: "Ayurveda Weekend Rejuvenation Program",
+        duration: "2–3 Days",
+        image: TherapeuticMassages,
         description:
           "A 2 or 3-day Ayurvedic wellness experience featuring selected therapies such as Abhyanga, Bashpa Sweda, Shiro Abhyanga, Pada Abhyanga and Shirodhara.",
       },
       {
         name: "Ayurveda Reset Program – 7 Days",
+        duration: "7 Days",
+        image: PanchakarmaDetox,
         description:
           "A 7-day personalised Ayurveda wellness programme combining selected therapies, lifestyle guidance, relaxation and Ayurvedic wellness practices.",
       },
       {
         name: "Women's Wellness Journey – 7 Days",
+        duration: "7 Days",
+        image: PCOSTreatment,
         description:
           "A 7-day personalised Ayurvedic wellness programme focusing on women's wellbeing through selected therapies, lifestyle guidance, relaxation and healthy routines.",
       },
       {
         name: "Healthy Weight Management Program – 2 Weeks",
+        duration: "2 Weeks",
+        image: DietManagement,
         description:
           "A 2-week personalised wellness programme combining Ayurvedic diet guidance, lifestyle recommendations and suitable therapies to support healthy weight management.",
       },
       {
         name: "Ayurvedic Rejuvenation Program",
+        duration: "Personalised",
+        image: AyurvedaFlower,
         description:
           "A personalised Ayurveda wellness programme combining traditional therapies, relaxation practices, diet guidance and lifestyle recommendations.",
       },
       {
         name: "Stress Relief & Wellness Program",
+        duration: "Personalised",
+        image: StressAndAnxietyRelief,
         description:
           "A personalised Ayurvedic wellness programme incorporating suitable therapies, relaxation practices, lifestyle guidance and healthy daily routines.",
       },
       {
         name: "Ayurvedic Lifestyle Management Program",
+        duration: "Personalised",
+        image: HerbalTreatments,
         description:
           "Personalised Ayurvedic guidance combining diet, daily routine, lifestyle practices and suitable therapies to support healthier long-term habits.",
       },
       {
         name: "Preventive Ayurveda & Wellness Program",
+        duration: "Personalised",
+        image: PanchakarmaDetox,
         description:
           "Ayurvedic wellness guidance focused on maintaining wellbeing through personalised diet, lifestyle, daily routines and traditional rejuvenation practices.",
       },

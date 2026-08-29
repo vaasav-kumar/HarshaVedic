@@ -172,27 +172,78 @@ export function ServicePageView({ slug }: ServicePageProps) {
           </div>
         </section>
 
-        {/* Treatments */}
-        <section className="py-12 md:py-16 bg-white">
+        {/* Treatments / Programs */}
+        <section className="py-12 md:py-16 bg-gradient-to-br from-white via-green-50/50 to-amber-50/50">
           <div className="container mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
-              Our Treatment Approach
-            </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-              {page.treatments.map((treatment, i) => (
-                <Card key={i} className="border-green-100 hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <CardTitle className="text-lg text-green-800">
-                      {treatment.name}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-gray-600 leading-relaxed">
-                      {treatment.description}
-                    </CardDescription>
-                  </CardContent>
-                </Card>
-              ))}
+            <div className="text-center mb-10 md:mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+                {page.treatmentsSectionTitle ?? "Our Treatment Approach"}
+              </h2>
+              {page.treatmentsSectionSubtitle && (
+                <p className="text-gray-600 max-w-2xl mx-auto">
+                  {page.treatmentsSectionSubtitle}
+                </p>
+              )}
+            </div>
+            <div
+              className={
+                page.treatments.some((t) => t.image)
+                  ? "grid sm:grid-cols-2 xl:grid-cols-4 gap-5 md:gap-6 max-w-7xl mx-auto"
+                  : "grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto"
+              }
+            >
+              {page.treatments.map((treatment, i) =>
+                treatment.image ? (
+                  <Card
+                    key={i}
+                    className="group overflow-hidden border-0 bg-white shadow-md hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1"
+                  >
+                    <div className="relative h-44 sm:h-48 overflow-hidden">
+                      <ImageWithFallback
+                        src={treatment.image}
+                        alt={treatment.name}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                      {treatment.duration && (
+                        <span className="absolute top-3 right-3 px-3 py-1 bg-white/90 backdrop-blur-sm text-green-800 text-xs font-semibold rounded-full shadow-sm">
+                          {treatment.duration}
+                        </span>
+                      )}
+                      <span className="absolute bottom-3 left-3 w-8 h-8 bg-green-600/90 backdrop-blur-sm rounded-full flex items-center justify-center text-white text-sm font-bold">
+                        {i + 1}
+                      </span>
+                    </div>
+                    <CardHeader className="pb-2 pt-5">
+                      <CardTitle className="text-base sm:text-lg text-green-800 leading-snug group-hover:text-green-700 transition-colors">
+                        {treatment.name}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="pt-0 pb-5">
+                      <CardDescription className="text-gray-600 leading-relaxed text-sm">
+                        {treatment.description}
+                      </CardDescription>
+                    </CardContent>
+                    <div className="h-1 bg-gradient-to-r from-green-500 to-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+                  </Card>
+                ) : (
+                  <Card
+                    key={i}
+                    className="border-green-100 hover:shadow-lg transition-shadow"
+                  >
+                    <CardHeader>
+                      <CardTitle className="text-lg text-green-800">
+                        {treatment.name}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="text-gray-600 leading-relaxed">
+                        {treatment.description}
+                      </CardDescription>
+                    </CardContent>
+                  </Card>
+                ),
+              )}
             </div>
           </div>
         </section>
