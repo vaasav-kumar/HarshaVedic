@@ -1,9 +1,9 @@
-import PanchakarmaDetox from "../../assets/panchakarma-detox.png";
-import ChronicDiseaseManagement from "../../assets/chronic-disease-management.png";
-import DietManagement from "../../assets/diet-management.png";
-import HerbalTreatments from "../../assets/herbal-treatments.png";
-import TherapeuticMassages from "../../assets/therapeutic-massages.png";
-import StressAndAnxietyRelief from "../../assets/stress-and-anxiety-relief.png";
+import PanchakarmaDetox from "../../assets/panchakarma-detox.webp";
+import ChronicDiseaseManagement from "../../assets/chronic-disease-management.webp";
+import DietManagement from "../../assets/diet-management.webp";
+import HerbalTreatments from "../../assets/herbal-treatments.webp";
+import TherapeuticMassages from "../../assets/therapeutic-massages.webp";
+import StressAndAnxietyRelief from "../../assets/stress-and-anxiety-relief.webp";
 import {
   BUSINESS,
   LOCAL_AREAS,

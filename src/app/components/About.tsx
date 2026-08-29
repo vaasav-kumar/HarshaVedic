@@ -1,6 +1,6 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Award, GraduationCap, Heart, Users, Sparkles } from "lucide-react";
-import Doctor from "../../assets/doctor-harsita-devi.png";
+import Doctor from "../../assets/doctor-harsita-devi.webp";
 
 export function About() {
   const features = [

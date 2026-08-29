@@ -1,7 +1,7 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Button } from "./ui/button";
 import { ArrowRight, Star, Leaf } from "lucide-react";
-import AyurvedaFlower from "../../assets/ayurveda-flower.jpeg";
+import AyurvedaFlower from "../../assets/ayurveda-flower.webp";
 
 export function Hero() {
   const scrollToConsultation = () => {

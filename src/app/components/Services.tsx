@@ -16,12 +16,12 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import PanchakarmaDetox from "../../assets/panchakarma-detox.png";
-import HerbalTreatments from "../../assets/herbal-treatments.png";
-import TherapeuticMassages from "../../assets/therapeutic-massages.png";
-import ChronicDiseaseManagement from "../../assets/chronic-disease-management.png";
-import StressAndAnxietyRelief from "../../assets/stress-and-anxiety-relief.png";
-import DietManagement from "../../assets/diet-management.png";
+import PanchakarmaDetox from "../../assets/panchakarma-detox.webp";
+import HerbalTreatments from "../../assets/herbal-treatments.webp";
+import TherapeuticMassages from "../../assets/therapeutic-massages.webp";
+import ChronicDiseaseManagement from "../../assets/chronic-disease-management.webp";
+import StressAndAnxietyRelief from "../../assets/stress-and-anxiety-relief.webp";
+import DietManagement from "../../assets/diet-management.webp";
 import { SERVICE_PAGES } from "../config/servicePages";
 
 export function Services() {

@@ -1,11 +1,11 @@
-import PanchakarmaDetox from "../../assets/panchakarma-detox.png";
-import ChronicDiseaseManagement from "../../assets/chronic-disease-management.png";
-import StressAndAnxietyRelief from "../../assets/stress-and-anxiety-relief.png";
-import AyurvedicDiabetesTreatment from "../../assets/ayurvedic-diabetes-treatment.png";
-import AyurvedicFattyLiverTreatment from "../../assets/ayurvedic-fatty-liver-treatment.png";
-import DietManagement from "../../assets/diet-management.png";
-import PCOSTreatment from "../../assets/pcos-treatment.png";
-import SkinCare from "../../assets/ayurvedic-skin-care.png";
+import PanchakarmaDetox from "../../assets/panchakarma-detox.webp";
+import ChronicDiseaseManagement from "../../assets/chronic-disease-management.webp";
+import StressAndAnxietyRelief from "../../assets/stress-and-anxiety-relief.webp";
+import AyurvedicDiabetesTreatment from "../../assets/ayurvedic-diabetes-treatment.webp";
+import AyurvedicFattyLiverTreatment from "../../assets/ayurvedic-fatty-liver-treatment.webp";
+import DietManagement from "../../assets/diet-management.webp";
+import PCOSTreatment from "../../assets/pcos-treatment.webp";
+import SkinCare from "../../assets/ayurvedic-skin-care.webp";
 
 import {
   BUSINESS,
