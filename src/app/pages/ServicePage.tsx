@@ -79,6 +79,15 @@ export function ServicePageView({ slug }: ServicePageProps) {
                   </Link>
                 </li>
                 <li aria-hidden="true">/</li>
+                <li>
+                  <Link
+                    to="/treatments"
+                    className="hover:text-green-700 transition"
+                  >
+                    Treatments
+                  </Link>
+                </li>
+                <li aria-hidden="true">/</li>
                 <li className="text-green-700 font-medium">{page.h1}</li>
               </ol>
             </nav>

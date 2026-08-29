@@ -241,7 +241,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     relatedSlugs: ["ayurveda-for-diabetes", "benefits-of-panchakarma"],
-    relatedServiceSlugs: ["panchakarma", "weight-loss"],
+    relatedServiceSlugs: ["fatty-liver-treatment", "panchakarma", "weight-loss"],
   },
   {
     slug: "ayurveda-for-diabetes",
@@ -313,7 +313,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     relatedSlugs: ["ayurveda-for-fatty-liver", "home-remedies-for-acidity"],
-    relatedServiceSlugs: ["weight-loss", "panchakarma"],
+    relatedServiceSlugs: ["diabetes-treatment", "weight-loss", "panchakarma"],
   },
   {
     slug: "best-foods-after-panchakarma",
@@ -548,7 +548,7 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
     relatedSlugs: ["benefits-of-panchakarma", "home-remedies-for-acidity"],
-    relatedServiceSlugs: ["knee-pain-treatment", "migraine-treatment"],
+    relatedServiceSlugs: ["back-pain-treatment", "knee-pain-treatment", "migraine-treatment"],
   },
 ];
 

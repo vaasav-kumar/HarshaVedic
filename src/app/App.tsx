@@ -3,6 +3,7 @@ import { HomePage } from "./pages/HomePage";
 import { ServicePageView } from "./pages/ServicePage";
 import { BlogIndexPage } from "./pages/BlogIndexPage";
 import { BlogPostPageView } from "./pages/BlogPostPage";
+import { TreatmentsIndexPage } from "./pages/TreatmentsIndexPage";
 import { ScrollToHash } from "./components/ScrollToHash";
 import { SERVICE_PAGES } from "./config/servicePages";
 import { BLOG_POSTS } from "./config/blogPosts";
@@ -13,6 +14,7 @@ export default function App() {
       <ScrollToHash />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/treatments" element={<TreatmentsIndexPage />} />
         <Route path="/blog" element={<BlogIndexPage />} />
         {BLOG_POSTS.map((post) => (
           <Route

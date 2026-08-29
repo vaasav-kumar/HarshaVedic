@@ -111,6 +111,24 @@ export const SERVICES = [
     url: "/skin-care",
   },
   {
+    name: "Back Pain Ayurvedic Treatment",
+    description:
+      "Natural Ayurvedic back pain treatment for sciatica, lumbar pain, and cervical spondylosis at our clinic in Medavakkam, Chennai",
+    url: "/back-pain-treatment",
+  },
+  {
+    name: "Ayurvedic Diabetes Treatment",
+    description:
+      "Holistic Ayurvedic diabetes treatment for blood sugar management and metabolic balance",
+    url: "/diabetes-treatment",
+  },
+  {
+    name: "Ayurvedic Fatty Liver Treatment",
+    description:
+      "Natural Ayurvedic fatty liver treatment with liver detox, herbal medicine, and diet management",
+    url: "/fatty-liver-treatment",
+  },
+  {
     name: "Herbal Treatments",
     description:
       "Custom herbal formulations prepared according to your specific health needs",

@@ -1,35 +1,24 @@
 import { Link } from "react-router";
-import { ArrowRight, BookOpen, Calendar, Clock } from "lucide-react";
+import { ArrowRight, Stethoscope } from "lucide-react";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { FloatingCTA } from "../components/FloatingCTA";
 import { SeoHead } from "../components/SeoHead";
+import { TreatmentsIndexStructuredData } from "../components/TreatmentsIndexStructuredData";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
-import { Badge } from "../components/ui/badge";
-import { getAllBlogPosts, getReadingTimeMinutes } from "../config/blogPosts";
-import { BlogIndexStructuredData } from "../components/BlogIndexStructuredData";
-import { SITE_NAME } from "../config/seo";
+import { LOCAL_AREAS, SITE_NAME } from "../config/seo";
+import { SERVICE_PAGES } from "../config/servicePages";
 
-function formatDate(dateStr: string): string {
-  return new Date(dateStr).toLocaleDateString("en-IN", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-}
-
-export function BlogIndexPage() {
-  const posts = getAllBlogPosts();
-
+export function TreatmentsIndexPage() {
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
       <SeoHead
-        title={`Ayurveda Articles & Health Guides | ${SITE_NAME}`}
-        description="Expert Ayurveda articles on Panchakarma, chronic conditions, diet, and natural remedies. Written by Dr. Harsita Devi — your trusted Ayurvedic physician in Chennai."
-        keywords="Ayurveda articles, Panchakarma guide, Ayurvedic health tips, Ayurveda blog Chennai, natural remedies Ayurveda"
-        path="/blog"
+        title={`Ayurvedic Treatments in Medavakkam, Chennai | ${SITE_NAME}`}
+        description={`Explore Ayurvedic treatments at Harsha Vedic — Kerala Panchakarma, knee pain, back pain, migraine, PCOS, diabetes, fatty liver, weight loss & skin care. Dr. Harsita Devi, Medavakkam, Chennai.`}
+        keywords="Ayurvedic treatments Chennai, Panchakarma Medavakkam, knee pain Ayurveda, back pain treatment, PCOS Ayurveda, diabetes Ayurveda, fatty liver Ayurveda, Ayurvedic doctor near me"
+        path="/treatments"
       />
-      <BlogIndexStructuredData />
+      <TreatmentsIndexStructuredData />
       <Header />
       <main id="main-content" className="min-w-0">
         <section className="relative pt-24 pb-12 md:pt-32 md:pb-16 overflow-hidden">
@@ -43,22 +32,23 @@ export function BlogIndexPage() {
                   </Link>
                 </li>
                 <li aria-hidden="true">/</li>
-                <li className="text-green-700 font-medium">Articles</li>
+                <li className="text-green-700 font-medium">Treatments</li>
               </ol>
             </nav>
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm text-green-800 rounded-full text-sm shadow-lg border border-green-200 mb-6">
-                <BookOpen size={16} className="text-green-600" />
-                <span className="font-semibold">Ayurveda Health Guides</span>
+                <Stethoscope size={16} className="text-green-600" />
+                <span className="font-semibold">Ayurvedic Treatments</span>
               </div>
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
-                Ayurveda Articles & Wellness Guides
+                Ayurvedic Treatments in Medavakkam, Chennai
               </h1>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                Evidence-informed Ayurvedic insights on Panchakarma, chronic
-                conditions, diet, and natural remedies — written by{" "}
-                {SITE_NAME}'s certified physician to help you make informed health
-                decisions.
+                Harsha Vedic offers specialized Ayurvedic treatments for pain
+                management, women's health, metabolic conditions, and detox
+                therapy. Dr. Harsita Devi provides personalized natural healing
+                for patients from {LOCAL_AREAS}, and across Chennai — in-person
+                or online.
               </p>
             </div>
           </div>
@@ -67,49 +57,34 @@ export function BlogIndexPage() {
         <section className="py-12 md:py-16 bg-white">
           <div className="container mx-auto px-4 sm:px-6">
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-              {posts.map((post) => (
+              {SERVICE_PAGES.map((page) => (
                 <article
-                  key={post.slug}
+                  key={page.slug}
                   className="group flex flex-col bg-white rounded-2xl shadow-sm border border-green-100 hover:shadow-lg hover:border-green-300 transition-all overflow-hidden"
                 >
-                  <Link to={`/blog/${post.slug}`} className="block">
+                  <Link to={`/${page.slug}`} className="block">
                     <div className="relative h-48 overflow-hidden">
                       <ImageWithFallback
-                        src={post.heroImage}
-                        alt={post.h1}
+                        src={page.heroImage}
+                        alt={page.h1}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
-                      <div className="absolute top-3 left-3">
-                        <Badge className="bg-green-700/90 hover:bg-green-700 text-white border-0">
-                          {post.category}
-                        </Badge>
-                      </div>
                     </div>
                   </Link>
                   <div className="flex flex-col flex-1 p-5 md:p-6">
-                    <div className="flex items-center gap-4 text-xs text-gray-500 mb-3">
-                      <span className="flex items-center gap-1">
-                        <Calendar size={14} />
-                        {formatDate(post.publishedAt)}
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <Clock size={14} />
-                        {getReadingTimeMinutes(post)} min read
-                      </span>
-                    </div>
-                    <Link to={`/blog/${post.slug}`}>
+                    <Link to={`/${page.slug}`}>
                       <h2 className="text-lg font-bold text-gray-900 group-hover:text-green-700 transition-colors leading-snug mb-2">
-                        {post.h1}
+                        {page.h1}
                       </h2>
                     </Link>
                     <p className="text-gray-600 text-sm leading-relaxed flex-1 mb-4">
-                      {post.excerpt}
+                      {page.subtitle}
                     </p>
                     <Link
-                      to={`/blog/${post.slug}`}
+                      to={`/${page.slug}`}
                       className="inline-flex items-center gap-1 text-green-700 font-semibold text-sm hover:gap-2 transition-all"
                     >
-                      Read article
+                      Learn more
                       <ArrowRight size={16} />
                     </Link>
                   </div>

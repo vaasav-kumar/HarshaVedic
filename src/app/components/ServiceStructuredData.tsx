@@ -36,7 +36,7 @@ export function ServiceStructuredData({ page }: ServiceStructuredDataProps) {
         description: page.overview,
         url: pageUrl,
         provider: {
-          "@type": "MedicalBusiness",
+          "@type": ["MedicalBusiness", "MedicalClinic", "LocalBusiness"],
           name: SITE_NAME,
           url: SITE_URL,
           telephone: BUSINESS.phone,
@@ -63,6 +63,12 @@ export function ServiceStructuredData({ page }: ServiceStructuredDataProps) {
           {
             "@type": "ListItem",
             position: 2,
+            name: "Treatments",
+            item: `${SITE_URL}/treatments`,
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
             name: page.h1,
             item: pageUrl,
           },

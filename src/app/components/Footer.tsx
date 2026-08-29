@@ -140,10 +140,26 @@ export function Footer() {
               </li>
               <li>
                 <Link
+                  to="/treatments"
+                  className="text-green-100 hover:text-white transition hover:pl-2 inline-block"
+                >
+                  → Treatments
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/blog"
                   className="text-green-100 hover:text-white transition hover:pl-2 inline-block"
                 >
                   → Articles
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/#testimonials"
+                  className="text-green-100 hover:text-white transition hover:pl-2 inline-block"
+                >
+                  → Testimonials
                 </Link>
               </li>
               <li>
@@ -159,7 +175,7 @@ export function Footer() {
                   to="/#consultation"
                   className="text-green-100 hover:text-white transition hover:pl-2 inline-block"
                 >
-                  → Online Consultation
+                  → Book Appointment
                 </Link>
               </li>
               <li>

@@ -1,14 +1,31 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, ChevronDown } from "lucide-react";
 import { Button } from "./ui/button";
 import logoWithTitle from "../../assets/logo-with-title.png";
+import { SERVICE_PAGES } from "../config/servicePages";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isTreatmentsOpen, setIsTreatmentsOpen] = useState(false);
+  const [isMobileTreatmentsOpen, setIsMobileTreatmentsOpen] = useState(false);
+  const treatmentsRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
   const navigate = useNavigate();
   const isHome = location.pathname === "/";
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        treatmentsRef.current &&
+        !treatmentsRef.current.contains(event.target as Node)
+      ) {
+        setIsTreatmentsOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   const goToSection = (id: string) => {
     setIsMenuOpen(false);
@@ -67,6 +84,51 @@ export function Header() {
               className="text-gray-700 hover:text-green-700 transition font-medium relative group"
             >
               Services
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-700 group-hover:w-full transition-all"></span>
+            </button>
+            <div className="relative" ref={treatmentsRef}>
+              <button
+                onClick={() => setIsTreatmentsOpen(!isTreatmentsOpen)}
+                className="flex items-center gap-1 text-gray-700 hover:text-green-700 transition font-medium"
+                aria-expanded={isTreatmentsOpen}
+                aria-haspopup="true"
+              >
+                Treatments
+                <ChevronDown
+                  size={16}
+                  className={`transition-transform ${isTreatmentsOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+              {isTreatmentsOpen && (
+                <div className="absolute top-full left-0 mt-2 w-72 bg-white rounded-xl shadow-xl border border-green-100 py-2 z-50 max-h-96 overflow-y-auto">
+                  <Link
+                    to="/treatments"
+                    className="block px-4 py-2 text-sm font-semibold text-green-700 hover:bg-green-50 transition"
+                    onClick={() => setIsTreatmentsOpen(false)}
+                  >
+                    All Treatments
+                  </Link>
+                  <div className="border-t border-green-100 my-1" />
+                  {SERVICE_PAGES.map((page) => (
+                    <Link
+                      key={page.slug}
+                      to={`/${page.slug}`}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition"
+                      onClick={() => setIsTreatmentsOpen(false)}
+                    >
+                      {page.h1
+                        .replace(" in Chennai", "")
+                        .replace(" in Medavakkam, Chennai", "")}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+            <button
+              onClick={() => goToSection("testimonials")}
+              className="text-gray-700 hover:text-green-700 transition font-medium relative group"
+            >
+              Testimonials
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-700 group-hover:w-full transition-all"></span>
             </button>
             <Link
@@ -162,6 +224,47 @@ export function Header() {
               className="text-gray-700 hover:text-green-700 transition text-left py-2"
             >
               Services
+            </button>
+            <button
+              onClick={() => {
+                setIsMobileTreatmentsOpen(!isMobileTreatmentsOpen);
+              }}
+              className="flex items-center justify-between text-gray-700 hover:text-green-700 transition text-left py-2"
+            >
+              Treatments
+              <ChevronDown
+                size={16}
+                className={`transition-transform ${isMobileTreatmentsOpen ? "rotate-180" : ""}`}
+              />
+            </button>
+            {isMobileTreatmentsOpen && (
+              <div className="pl-4 flex flex-col gap-1 pb-2">
+                <Link
+                  to="/treatments"
+                  className="text-gray-600 hover:text-green-700 transition text-left py-1 text-sm font-medium"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  All Treatments
+                </Link>
+                {SERVICE_PAGES.map((page) => (
+                  <Link
+                    key={page.slug}
+                    to={`/${page.slug}`}
+                    className="text-gray-600 hover:text-green-700 transition text-left py-1 text-sm"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {page.h1
+                      .replace(" in Chennai", "")
+                      .replace(" in Medavakkam, Chennai", "")}
+                  </Link>
+                ))}
+              </div>
+            )}
+            <button
+              onClick={() => goToSection("testimonials")}
+              className="text-gray-700 hover:text-green-700 transition text-left py-2"
+            >
+              Testimonials
             </button>
             <Link
               to="/blog"

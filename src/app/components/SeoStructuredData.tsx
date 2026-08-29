@@ -22,7 +22,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "MedicalBusiness",
+      "@type": ["MedicalBusiness", "MedicalClinic", "LocalBusiness"],
       "@id": `${SITE_URL}/#organization`,
       name: SITE_NAME,
       description:
