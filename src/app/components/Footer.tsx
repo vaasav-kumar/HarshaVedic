@@ -261,8 +261,8 @@ export function Footer() {
                   <Clock size={18} className="text-white" />
                 </div>
                 <div className="pt-1">
-                  <div>Mon - Sat: 9:00 AM - 7:00 PM</div>
-                  <div>Sun: 10:00 AM - 4:00 PM</div>
+                  <div>Mon - Sat: 9:00 AM - 9:00 PM</div>
+                  <div>Sun: 9:00 AM - 9:00 PM</div>
                 </div>
               </li>
             </ul>
