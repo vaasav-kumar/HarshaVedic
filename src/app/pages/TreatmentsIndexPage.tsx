@@ -14,8 +14,8 @@ export function TreatmentsIndexPage() {
     <div className="min-h-screen bg-white overflow-x-hidden">
       <SeoHead
         title={`Ayurvedic Treatments in Medavakkam, Chennai | ${SITE_NAME}`}
-        description={`Explore Ayurvedic treatments at Harsha Vedic — Kerala Panchakarma, knee pain, back pain, migraine, PCOS, diabetes, fatty liver, weight loss & skin care. Dr. Harsita Devi, Medavakkam, Chennai.`}
-        keywords="Ayurvedic treatments Chennai, Panchakarma Medavakkam, knee pain Ayurveda, back pain treatment, PCOS Ayurveda, diabetes Ayurveda, fatty liver Ayurveda, Ayurvedic doctor near me"
+        description={`Explore Ayurveda treatment in Medavakkam at Harsha Vedic — Panchakarma, joint pain care, Shirodhara, PCOS & PCOD Ayurveda, weight management, skin & hair care, and more. Dr. Harsita Devi, Medavakkam, Chennai.`}
+        keywords="Ayurveda treatment Medavakkam, Panchakarma Medavakkam, Ayurvedic joint pain care, PCOS Ayurveda Medavakkam, Shirodhara Medavakkam, Ayurvedic wellness centre Medavakkam, Ayurvedic doctor Medavakkam"
         path="/treatments"
       />
       <TreatmentsIndexStructuredData />
@@ -44,11 +44,11 @@ export function TreatmentsIndexPage() {
                 Ayurvedic Treatments in Medavakkam, Chennai
               </h1>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                Harsha Vedic offers specialized Ayurvedic treatments for pain
-                management, women's health, metabolic conditions, and detox
-                therapy. Dr. Harsita Devi provides personalized natural healing
-                for patients from {LOCAL_AREAS}, and across Chennai — in-person
-                or online.
+                Harsha Vedic offers specialized Ayurveda treatment in Medavakkam
+                for joint pain, women's wellness, metabolic conditions, and
+                Panchakarma therapy. Dr. Harsita Devi provides personalized
+                natural healing for patients from {LOCAL_AREAS}, and across
+                Chennai — in-person or online.
               </p>
             </div>
           </div>

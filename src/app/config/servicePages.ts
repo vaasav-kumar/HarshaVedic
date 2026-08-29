@@ -35,13 +35,13 @@ export const SERVICE_PAGES: ServicePage[] = [
   {
     slug: "panchakarma",
     title: `Kerala Panchakarma in Medavakkam, Chennai | ${SITE_NAME}`,
-    metaDescription: `Authentic Kerala Panchakarma detox therapy in Medavakkam, Chennai by Dr. Harsita Devi. Deep cleansing, toxin elimination & natural healing. Book Ayurvedic consultation in-person or online.`,
-    keywords: `Kerala Panchakarma, Panchakarma Medavakkam, Detox Therapy Chennai, Ayurvedic Clinic Medavakkam, Ayurveda Doctor, Dr. Harsita Devi`,
+    metaDescription: `Authentic Kerala Panchakarma and Panchakarma therapy in Medavakkam, Chennai by Dr. Harsita Devi. Deep cleansing, toxin elimination & natural healing. Book Ayurvedic consultation in-person or online.`,
+    keywords: `Panchakarma Medavakkam, Panchakarma therapy Chennai, Kerala Panchakarma, Ayurveda treatment Medavakkam, Ayurvedic clinic in Medavakkam, Ayurvedic consultation Medavakkam`,
     h1: "Kerala Panchakarma Treatment in Medavakkam, Chennai",
     subtitle:
       "Authentic Kerala Panchakarma detox therapy for deep cleansing, toxin elimination, and natural healing",
     heroImage: PanchakarmaDetox,
-    overview: `Kerala Panchakarma is Ayurveda's most comprehensive detox therapy and rejuvenation program. At ${SITE_NAME}, our Ayurvedic clinic in Medavakkam, Chennai, Dr. Harsita Devi offers authentic Kerala Panchakarma therapies tailored to your body constitution (Prakriti) and current imbalances. Whether you live in ${LOCAL_AREAS}, our clinic is easily accessible for in-person detox therapy, and Ayurvedic consultations are available online for pre-assessment and follow-up care.`,
+    overview: `Kerala Panchakarma is Ayurveda's most comprehensive detox therapy and rejuvenation program. At ${SITE_NAME}, our Ayurvedic wellness centre in Medavakkam, Chennai, Dr. Harsita Devi offers authentic Panchakarma therapy tailored to your body constitution (Prakriti) and current imbalances. Whether you live in ${LOCAL_AREAS}, our clinic is easily accessible for in-person detox therapy, and Ayurvedic consultations are available online for pre-assessment and follow-up care.`,
     benefits: [
       "Eliminates accumulated toxins (Ama) from deep tissues",
       "Restores digestive fire (Agni) and metabolic balance",
@@ -107,14 +107,14 @@ export const SERVICE_PAGES: ServicePage[] = [
   },
   {
     slug: "knee-pain-treatment",
-    title: `Knee Pain Ayurvedic Treatment in Chennai | ${SITE_NAME}`,
-    metaDescription: `Natural Ayurvedic knee pain treatment in Chennai by Dr. Harsita Devi. Herbal oils, Janu Basti, Panchakarma & personalized care for arthritis and joint pain. Book consultation.`,
-    keywords: `Knee pain Ayurvedic treatment, Ayurvedic doctor near me, knee arthritis Chennai, Janu Basti Medavakkam, joint pain Ayurveda, Ayurvedic clinic Chennai`,
-    h1: "Ayurvedic Pain Management in Chennai",
+    title: `Ayurvedic Joint Pain Care in Medavakkam, Chennai | ${SITE_NAME}`,
+    metaDescription: `Natural Ayurvedic joint pain care in Medavakkam, Chennai by Dr. Harsita Devi. Abhyanga, Janu Basti, Panchakarma & personalized care for knee arthritis and stiffness. Book consultation.`,
+    keywords: `Ayurvedic joint pain care, knee pain Ayurvedic treatment, Abhyanga Medavakkam, Ayurvedic doctor Medavakkam, Janu Basti, Ayurveda treatment Medavakkam`,
+    h1: "Ayurvedic Joint Pain Care in Medavakkam, Chennai",
     subtitle:
-      "Natural pain management for knee pain, arthritis, and joint stiffness — drug-free relief through authentic Ayurvedic therapies",
+      "Natural Ayurvedic joint pain care for knee pain, arthritis, and stiffness — drug-free relief through Abhyanga, Janu Basti, and authentic therapies",
     heroImage: ChronicDiseaseManagement,
-    overview: `Chronic knee pain affects mobility and quality of life. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi treats knee pain at its root cause using Ayurvedic therapies including Janu Basti, herbal poultices, medicated oils, and Panchakarma. Patients from ${LOCAL_AREAS} and across Chennai trust our personalized approach for lasting relief from osteoarthritis, rheumatoid arthritis, and sports-related knee injuries.`,
+    overview: `Chronic knee pain affects mobility and quality of life. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi provides Ayurvedic joint pain care at its root cause using Janu Basti, Abhyanga, herbal poultices, medicated oils, and Panchakarma. Patients from ${LOCAL_AREAS} and across Chennai trust our personalized approach for lasting relief from osteoarthritis, rheumatoid arthritis, and sports-related knee injuries.`,
     benefits: [
       "Reduces inflammation and joint stiffness naturally",
       "Strengthens muscles and ligaments around the knee",
@@ -136,7 +136,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         name: "Abhyanga (Therapeutic Oil Massage)",
         description:
-          "Full-body or localized massage with anti-inflammatory herbal oils to nourish joints and tissues.",
+          "Ayurvedic massage in Medavakkam — full-body or localized Abhyanga with anti-inflammatory herbal oils to nourish joints and tissues.",
       },
       {
         name: "Herbal Internal Medicine",
@@ -186,10 +186,10 @@ export const SERVICE_PAGES: ServicePage[] = [
   },
   {
     slug: "migraine-treatment",
-    title: `Migraine Ayurvedic Treatment in Chennai | ${SITE_NAME}`,
-    metaDescription: `Effective Ayurvedic migraine treatment in Chennai by Dr. Harsita Devi. Shirodhara, Nasya, herbal medicine & root-cause care. Clinic in Medavakkam. Book consultation today.`,
-    keywords: `Migraine Ayurvedic treatment, headache Ayurveda Chennai, Shirodhara Medavakkam, Ayurvedic doctor near me, chronic migraine treatment, Ayurvedic clinic Chennai`,
-    h1: "Ayurvedic Migraine & Stress Relief in Chennai",
+    title: `Shirodhara & Migraine Treatment in Medavakkam | ${SITE_NAME}`,
+    metaDescription: `Effective Ayurvedic migraine treatment with Shirodhara in Medavakkam, Chennai by Dr. Harsita Devi. Nasya, herbal medicine & root-cause care. Book Ayurvedic consultation today.`,
+    keywords: `Shirodhara Medavakkam, migraine Ayurvedic treatment, headache Ayurveda Chennai, Ayurvedic doctor Medavakkam, Ayurveda treatment Medavakkam`,
+    h1: "Shirodhara & Migraine Treatment in Medavakkam, Chennai",
     subtitle:
       "Root-cause treatment for chronic migraines, headaches, and stress — natural healing, not just temporary pain relief",
     heroImage: StressAndAnxietyRelief,
@@ -205,7 +205,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         name: "Shirodhara",
         description:
-          "Continuous stream of warm medicated oil on the forehead – deeply calming for migraine-prone nervous systems.",
+          "Shirodhara in Medavakkam — continuous stream of warm medicated oil on the forehead, deeply calming for migraine-prone nervous systems.",
       },
       {
         name: "Nasya Therapy",
@@ -260,14 +260,14 @@ export const SERVICE_PAGES: ServicePage[] = [
   },
   {
     slug: "pcos-treatment",
-    title: `PCOS Ayurvedic Treatment in Chennai | ${SITE_NAME}`,
-    metaDescription: `Holistic PCOS Ayurvedic treatment in Chennai by Dr. Harsita Devi. Natural hormone balance, weight management & fertility support. Clinic in Medavakkam. Book consultation.`,
-    keywords: `PCOS Ayurvedic treatment, PCOS Chennai, Ayurvedic doctor near me, hormonal imbalance Ayurveda, PCOS Medavakkam, Ayurvedic clinic Chennai, fertility Ayurveda`,
-    h1: "Women's Health & PCOS Treatment in Chennai",
+    title: `PCOS & PCOD Ayurveda in Medavakkam | ${SITE_NAME}`,
+    metaDescription: `Holistic PCOS and PCOD Ayurveda in Medavakkam, Chennai by Dr. Harsita Devi. Women's wellness, hormone balance, weight management & fertility support. Book consultation.`,
+    keywords: `PCOS Ayurveda Medavakkam, PCOD Ayurveda Medavakkam, women's wellness Ayurveda, Ayurvedic doctor Medavakkam, hormonal imbalance Ayurveda, fertility Ayurveda Chennai`,
+    h1: "Women's Wellness & PCOS Treatment in Medavakkam, Chennai",
     subtitle:
-      "Holistic women's health care for PCOS, hormonal balance, and fertility — natural healing that addresses root cause",
+      "Women's wellness Ayurveda for PCOS, PCOD, hormonal balance, and fertility — natural healing that addresses root cause",
     heroImage: PCOSTreatment,
-    overview: `Polycystic Ovary Syndrome (PCOS) affects hormonal balance, metabolism, and fertility. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi offers comprehensive Ayurvedic PCOS treatment combining herbal medicine, Panchakarma, diet management, and lifestyle guidance. Women from ${LOCAL_AREAS} and across Chennai choose our clinic for a natural, personalized approach to managing PCOS symptoms and restoring hormonal health.`,
+    overview: `Polycystic Ovary Syndrome (PCOS) and PCOD affect hormonal balance, metabolism, and fertility. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi offers comprehensive women's wellness Ayurveda combining herbal medicine, Panchakarma, diet management, and lifestyle guidance. Women from ${LOCAL_AREAS} and across Chennai choose our clinic for a natural, personalized approach to managing PCOS and PCOD symptoms and restoring hormonal health.`,
     benefits: [
       "Regulates menstrual cycles naturally",
       "Supports healthy weight management",
@@ -335,10 +335,10 @@ export const SERVICE_PAGES: ServicePage[] = [
   },
   {
     slug: "weight-loss",
-    title: `Weight Loss Ayurveda in Chennai | ${SITE_NAME}`,
-    metaDescription: `Natural Ayurvedic weight loss treatment in Chennai by Dr. Harsita Devi. Metabolic detox, personalized diet & herbal support. Clinic in Medavakkam. Book consultation.`,
-    keywords: `Weight loss Ayurveda, Ayurvedic weight loss Chennai, Ayurvedic doctor near me, weight management Medavakkam, Ayurvedic clinic Chennai, metabolic detox Ayurveda`,
-    h1: "Ayurvedic Weight Loss Treatment in Chennai",
+    title: `Ayurvedic Weight Management in Chennai | ${SITE_NAME}`,
+    metaDescription: `Natural Ayurvedic weight management in Chennai by Dr. Harsita Devi. Metabolic detox, Udvartana, personalized diet & herbal support. Clinic in Medavakkam. Book consultation.`,
+    keywords: `Ayurvedic weight management Chennai, weight loss Ayurveda, Ayurveda treatment Medavakkam, Ayurvedic doctor Medavakkam, metabolic detox Ayurveda`,
+    h1: "Ayurvedic Weight Management in Chennai",
     subtitle:
       "Sustainable, natural weight management through metabolic balance – not crash diets or harmful supplements",
     heroImage: DietManagement,
@@ -409,19 +409,19 @@ export const SERVICE_PAGES: ServicePage[] = [
   },
   {
     slug: "skin-care",
-    title: `Ayurvedic Skin Care Treatment in Chennai | ${SITE_NAME}`,
-    metaDescription: `Natural Ayurvedic skin care treatment in Chennai by Dr. Harsita Devi. Acne, eczema, psoriasis & pigmentation care. Herbal facials & internal medicine. Medavakkam clinic.`,
-    keywords: `Ayurvedic skin care Chennai, Ayurvedic skin treatment, acne Ayurveda Medavakkam, Ayurvedic doctor near me, psoriasis Ayurveda, Ayurvedic clinic Chennai`,
-    h1: "Ayurvedic Skin Care Treatment in Chennai",
+    title: `Ayurvedic Skin & Hair Care in Medavakkam | ${SITE_NAME}`,
+    metaDescription: `Natural Ayurvedic skin and hair care in Medavakkam, Chennai by Dr. Harsita Devi. Acne, eczema, psoriasis, hair fall & pigmentation. Herbal facials & internal medicine.`,
+    keywords: `Ayurvedic skin and hair care, Ayurvedic skin care Chennai, acne Ayurveda Medavakkam, hair fall Ayurveda, Ayurvedic doctor Medavakkam, psoriasis Ayurveda`,
+    h1: "Ayurvedic Skin & Hair Care in Medavakkam, Chennai",
     subtitle:
-      "Heal skin from within with authentic Ayurvedic treatments for acne, eczema, pigmentation, and more",
+      "Ayurvedic skin and hair care — heal acne, eczema, pigmentation, and hair fall from within with authentic treatments",
     heroImage: SkinCare,
-    overview: `Healthy skin reflects internal balance. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi treats skin conditions at their root cause using Ayurvedic internal medicine, herbal facials, Panchakarma, and personalized diet plans. Whether you struggle with acne, eczema, psoriasis, pigmentation, or premature aging, our holistic approach delivers lasting results. Patients from ${LOCAL_AREAS} and across Chennai trust our natural, side-effect-free skin care treatments.`,
+    overview: `Healthy skin and hair reflect internal balance. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi treats skin and hair conditions at their root cause using Ayurvedic internal medicine, herbal facials, Panchakarma, and personalized diet plans. Whether you struggle with acne, eczema, psoriasis, hair fall, pigmentation, or premature aging, our holistic approach delivers lasting results. Patients from ${LOCAL_AREAS} and across Chennai trust our natural, side-effect-free skin and hair care treatments.`,
     benefits: [
       "Treats root cause of skin issues, not just surface symptoms",
       "Safe, natural alternatives to harsh chemical treatments",
       "Improves skin texture, tone, and natural glow",
-      "Addresses acne, eczema, psoriasis, and pigmentation",
+      "Addresses acne, eczema, psoriasis, hair fall, and pigmentation",
       "Anti-aging benefits through rejuvenation therapies",
     ],
     treatments: [
@@ -485,7 +485,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     slug: "back-pain-treatment",
     title: `Back Pain Ayurvedic Treatment in Chennai | ${SITE_NAME}`,
     metaDescription: `Natural Ayurvedic back pain treatment in Chennai by Dr. Harsita Devi. Kati Basti, herbal oils, Panchakarma & personalized care for sciatica and lumbar pain. Book consultation.`,
-    keywords: `Back pain Ayurvedic treatment, sciatica Ayurveda Chennai, Kati Basti Medavakkam, Ayurvedic doctor near me, lumbar pain Ayurveda, Ayurvedic clinic Chennai`,
+    keywords: `Back pain Ayurvedic treatment, Ayurvedic joint pain care, Kati Basti Medavakkam, sciatica Ayurveda Chennai, Ayurvedic doctor Medavakkam, lumbar pain Ayurveda`,
     h1: "Ayurvedic Back Pain Treatment in Chennai",
     subtitle:
       "Natural pain management for lower back pain, sciatica, and cervical spondylosis — drug-free relief through authentic Ayurvedic therapies",
@@ -714,21 +714,5 @@ export function getServicePage(slug: string): ServicePage | undefined {
 export function getServicePageUrl(slug: string): string {
   return `${SITE_URL}/${slug}`;
 }
-
-export const LOCAL_SEO_KEYWORDS = [
-  "Ayurvedic Clinic in Medavakkam",
-  "Ayurveda Doctor Chennai",
-  "Kerala Panchakarma Medavakkam",
-  "Detox Therapy Chennai",
-  "Pain Management Ayurveda",
-  "Women's Health Ayurveda",
-  "Stress Relief Chennai",
-  "Ayurvedic Consultation Medavakkam",
-  "Ayurvedic Clinic Tambaram",
-  "Ayurvedic Clinic Pallikaranai",
-  "Ayurvedic Clinic Velachery",
-  "Ayurvedic Clinic Perumbakkam",
-  ...SERVICE_PAGES.map((p) => p.h1),
-];
 
 export const CLINIC_LOCATION_TEXT = `${BUSINESS.name} is located at ${FORMATTED_ADDRESS}, easily accessible from ${LOCAL_AREAS}.`;

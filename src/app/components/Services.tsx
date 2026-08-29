@@ -46,7 +46,7 @@ export function Services() {
       icon: Sparkles,
       title: "Therapeutic Massages",
       description:
-        "Traditional Ayurvedic massages including Abhyanga, Shirodhara, and more",
+        "Ayurvedic massage in Medavakkam — Abhyanga, Shirodhara, and traditional therapeutic bodywork",
       image: TherapeuticMassages,
       color: "from-purple-500 to-pink-600",
     },
@@ -70,7 +70,7 @@ export function Services() {
       icon: User,
       title: "Ayurvedic Consultation",
       description:
-        "Book an Ayurvedic consultation with our Ayurveda doctor — in-person at Medavakkam, Chennai or online",
+        "Book an Ayurvedic consultation with our Ayurveda doctor — in-person at our wellness centre in Medavakkam, Chennai or online",
       image: DietManagement,
       color: "from-lime-500 to-green-600",
     },
@@ -103,9 +103,10 @@ export function Services() {
             in Medavakkam, Chennai
           </h2>
           <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-2">
-            From Kerala Panchakarma and detox therapy to pain management,
-            women's health, and stress relief — Harsha Vedic offers a complete
-            range of natural healing treatments tailored to your needs
+            From Panchakarma therapy and detox to Ayurvedic joint pain care,
+            women's wellness, and Shirodhara — Harsha Vedic is your Ayurvedic
+            wellness centre in Medavakkam, offering natural healing tailored to
+            your needs
           </p>
         </div>
 

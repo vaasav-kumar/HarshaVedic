@@ -21,7 +21,34 @@ export const DEFAULT_DESCRIPTION =
   "Harsha Vedic is your trusted Ayurvedic clinic in Medavakkam, Chennai, serving Tambaram, Pallikaranai, Velachery, Perumbakkam, and surrounding areas. Dr. Harsita Devi offers Kerala Panchakarma detox therapy, pain management, women's health care, stress relief, and natural healing through personalized Ayurvedic consultation — in-person or online.";
 
 export const SEO_KEYWORDS =
-  "Harsha Vedic, Ayurvedic Clinic, Wellness Center, Panchakarma, Ayurveda Doctor, Natural Healing, Ayurvedic Consultation, Kerala Panchakarma, Detox Therapy, Pain Management, Women's Health, Stress Relief, Chennai, Medavakkam, Tambaram, Pallikaranai, Velachery, Perumbakkam";
+  "Ayurvedic clinic in Medavakkam, Ayurveda clinic Medavakkam, Ayurvedic doctor Medavakkam, Ayurveda treatment Medavakkam, Panchakarma Medavakkam, Ayurvedic consultation Medavakkam, Ayurvedic wellness centre Medavakkam, Harsha Vedic, Chennai";
+
+/** Target local search themes — distribute naturally across pages, not in Business Profile description. */
+export const LOCAL_SEO_KEYWORDS = {
+  core: [
+    "Ayurvedic clinic in Medavakkam",
+    "Ayurveda clinic Medavakkam",
+    "Ayurvedic doctor Medavakkam",
+    "Ayurveda treatment Medavakkam",
+    "Panchakarma Medavakkam",
+    "Ayurvedic consultation Medavakkam",
+  ],
+  therapy: [
+    "Abhyanga Medavakkam",
+    "Shirodhara Medavakkam",
+    "Ayurvedic massage Medavakkam",
+    "Panchakarma therapy Chennai",
+    "Ayurvedic wellness centre Medavakkam",
+  ],
+  conditions: [
+    "PCOS Ayurveda Medavakkam",
+    "PCOD Ayurveda Medavakkam",
+    "Ayurvedic weight management Chennai",
+    "Ayurvedic joint pain care",
+    "Ayurvedic skin and hair care",
+    "women's wellness Ayurveda",
+  ],
+} as const;
 
 export const BUSINESS = {
   name: SITE_NAME,
@@ -83,7 +110,7 @@ export const SERVICES = [
   {
     name: "Pain Management",
     description:
-      "Natural pain management for knee pain, arthritis, and joint stiffness at our Ayurvedic clinic in Medavakkam, Chennai",
+      "Ayurvedic joint pain care for knee pain, arthritis, and stiffness at our clinic in Medavakkam, Chennai",
     url: "/knee-pain-treatment",
   },
   {
@@ -95,19 +122,19 @@ export const SERVICES = [
   {
     name: "Women's Health",
     description:
-      "Holistic women's health care for PCOS, hormonal balance, and fertility support by an experienced Ayurveda doctor",
+      "Women's wellness Ayurveda for PCOS, PCOD, hormonal balance, and fertility support by an experienced Ayurveda doctor in Medavakkam",
     url: "/pcos-treatment",
   },
   {
     name: "Weight Loss Ayurveda",
     description:
-      "Sustainable Ayurvedic weight management through metabolic balance and detox",
+      "Ayurvedic weight management through metabolic balance and detox — sustainable results in Chennai",
     url: "/weight-loss",
   },
   {
     name: "Ayurvedic Skin Care",
     description:
-      "Natural Ayurvedic skin treatments for acne, eczema, pigmentation, and rejuvenation",
+      "Ayurvedic skin and hair care for acne, eczema, pigmentation, hair fall, and rejuvenation",
     url: "/skin-care",
   },
   {
@@ -136,7 +163,7 @@ export const SERVICES = [
   {
     name: "Therapeutic Massages",
     description:
-      "Traditional Ayurvedic massages including Abhyanga, Shirodhara, and more",
+      "Ayurvedic massage in Medavakkam — Abhyanga, Shirodhara, and traditional therapeutic bodywork",
   },
   {
     name: "Stress Relief",
@@ -146,7 +173,7 @@ export const SERVICES = [
   {
     name: "Ayurvedic Consultation",
     description:
-      "Book an Ayurvedic consultation with Dr. Harsita Devi — in-person at Medavakkam, Chennai or online",
+      "Book an Ayurvedic consultation Medavakkam with Dr. Harsita Devi — in-person at our wellness centre or online",
   },
 ] as const;
 
@@ -196,7 +223,7 @@ export const FAQ_ITEMS = [
   {
     question: "What conditions does Harsha Vedic treat?",
     answer:
-      "We treat a wide range of conditions including chronic migraines, digestive disorders, arthritis, diabetes, stress, anxiety, skin issues, and lifestyle-related imbalances. Our services include Kerala Panchakarma detox therapy, pain management, women's health care, stress relief, herbal medicine, therapeutic massages, and diet management.",
+      "We treat a wide range of conditions including chronic migraines, digestive disorders, arthritis, diabetes, stress, anxiety, skin and hair issues, PCOS, and lifestyle-related imbalances. Our Ayurveda treatment in Medavakkam includes Kerala Panchakarma, Ayurvedic joint pain care, women's wellness, Abhyanga and Shirodhara therapies, herbal medicine, and personalized diet management.",
   },
   {
     question: "Where is Harsha Vedic clinic located?",
