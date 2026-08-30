@@ -1,8 +1,15 @@
 const GOOGLE_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbzij5bvouKTw7OFjk00T5hARSj5XkRP3T_qGbImui_urvkaUse5YyktIlLguosp6oUPVw/exec";
+  "https://script.google.com/macros/s/AKfycbyGHm1ONO8lMkyYC_z4l1QIt3ZWYx3Qx82vHjnuF9lXu275irxS6BT6_tYhLnCwGUF6/exec";
 
 /** Vercel serverless handler: proxies POST to Google Apps Script to avoid CORS. */
-export default async function handler(req: { method?: string; body?: unknown }, res: { setHeader: (k: string, v: string) => void; status: (n: number) => { json: (d: unknown) => void }; json: (d: unknown) => void }) {
+export default async function handler(
+  req: { method?: string; body?: unknown },
+  res: {
+    setHeader: (k: string, v: string) => void;
+    status: (n: number) => { json: (d: unknown) => void };
+    json: (d: unknown) => void;
+  },
+) {
   if (req.method !== "POST") {
     res.setHeader("Allow", "POST");
     return res.status(405).json({ error: "Method not allowed" });
