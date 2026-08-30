@@ -54,7 +54,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What Is Panchakarma?",
         paragraphs: [
           "Panchakarma — meaning 'five actions' in Sanskrit — is Ayurveda's flagship detox and rejuvenation therapy. Developed over thousands of years in Kerala, it uses five primary cleansing procedures (Vamana, Virechana, Basti, Nasya, and Raktamokshana) along with preparatory and follow-up therapies to remove accumulated toxins (Ama) from deep tissues.",
-          `At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi offers authentic Kerala Panchakarma tailored to each patient's Prakriti (body constitution) and current imbalances. Unlike quick detox fads, Panchakarma works systematically — preparing the body, eliminating toxins, and restoring balance over 7 to 21 days.`,
+          `At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi J.K. offers authentic Kerala Panchakarma tailored to each patient's Prakriti (body constitution) and current imbalances. Unlike quick detox fads, Panchakarma works systematically — preparing the body, eliminating toxins, and restoring balance over 7 to 21 days.`,
         ],
       },
       {
@@ -80,7 +80,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "What Happens During a Panchakarma Program?",
         paragraphs: [
-          "A typical program at our clinic follows three phases: Purvakarma (preparation with oil massage and steam), Pradhanakarma (main cleansing procedures selected for your dosha), and Paschatkarma (post-treatment diet and lifestyle guidance). Each phase is supervised by Dr. Harsita Devi to ensure safety and maximum benefit.",
+          "A typical program at our clinic follows three phases: Purvakarma (preparation with oil massage and steam), Pradhanakarma (main cleansing procedures selected for your dosha), and Paschatkarma (post-treatment diet and lifestyle guidance). Each phase is supervised by Dr. Harsita Devi J.K. to ensure safety and maximum benefit.",
           `Patients from ${LOCAL_AREAS} and across Chennai visit our Medavakkam clinic for in-person Panchakarma. Online consultations are available for pre-assessment and follow-up care.`,
         ],
       },
@@ -99,7 +99,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         question: "Can I do Panchakarma if I am on medication?",
         answer:
-          "Yes, but it must be supervised by a qualified Ayurvedic physician who can coordinate with your existing treatment plan. Dr. Harsita Devi reviews all medications during your consultation.",
+          "Yes, but it must be supervised by a qualified Ayurvedic physician who can coordinate with your existing treatment plan. Dr. Harsita Devi J.K. reviews all medications during your consultation.",
       },
     ],
     relatedSlugs: ["is-panchakarma-painful", "best-foods-after-panchakarma"],
@@ -109,7 +109,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "is-panchakarma-painful",
     title: `Is Panchakarma Painful? What to Expect | ${SITE_NAME}`,
     metaDescription:
-      "Worried Panchakarma might be painful? Learn what each procedure feels like, common side effects, and how Dr. Harsita Devi ensures a comfortable, safe detox experience.",
+      "Worried Panchakarma might be painful? Learn what each procedure feels like, common side effects, and how Dr. Harsita Devi J.K. ensures a comfortable, safe detox experience.",
     keywords:
       "is Panchakarma painful, Panchakarma side effects, Panchakarma experience, Virechana, Basti therapy, Panchakarma Chennai",
     h1: "Is Panchakarma Painful? What Patients Actually Experience",
@@ -124,7 +124,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The Short Answer: Panchakarma Is Not Painful",
         paragraphs: [
           "Panchakarma is a therapeutic cleansing process, not a painful medical procedure. Most patients describe the experience as deeply relaxing — especially the preparatory therapies like Abhyanga (oil massage) and Shirodhara (warm oil stream on the forehead). Some procedures cause temporary discomfort, but this is manageable and monitored closely by your physician.",
-          "At Harsha Vedic, Dr. Harsita Devi customizes every protocol to your tolerance level. If you feel excessive discomfort at any point, the treatment is adjusted immediately.",
+          "At Harsha Vedic, Dr. Harsita Devi J.K. customizes every protocol to your tolerance level. If you feel excessive discomfort at any point, the treatment is adjusted immediately.",
         ],
       },
       {
@@ -149,7 +149,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "How We Keep You Comfortable",
         paragraphs: [
-          "Our Medavakkam clinic provides a calm, private treatment environment. Each patient has a dedicated treatment room, warm herbal oils prepared fresh, and daily check-ins with Dr. Harsita Devi. We also provide detailed pre- and post-treatment dietary guidelines to minimize discomfort.",
+          "Our Medavakkam clinic provides a calm, private treatment environment. Each patient has a dedicated treatment room, warm herbal oils prepared fresh, and daily check-ins with Dr. Harsita Devi J.K. We also provide detailed pre- and post-treatment dietary guidelines to minimize discomfort.",
           "If you have specific concerns — such as a low pain threshold, anxiety, or a chronic condition — share them during your consultation. Protocols can be modified without compromising effectiveness.",
         ],
       },
@@ -178,7 +178,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "ayurveda-for-fatty-liver",
     title: `Ayurveda for Fatty Liver: Natural Treatment Guide | ${SITE_NAME}`,
     metaDescription:
-      "Ayurvedic approach to fatty liver (NAFLD) — herbal medicines, diet changes, Panchakarma detox, and lifestyle tips. Root-cause treatment by Dr. Harsita Devi in Chennai.",
+      "Ayurvedic approach to fatty liver (NAFLD) — herbal medicines, diet changes, Panchakarma detox, and lifestyle tips. Root-cause treatment by Dr. Harsita Devi J.K. in Chennai.",
     keywords:
       "Ayurveda for fatty liver, fatty liver treatment Ayurveda, NAFLD Ayurvedic treatment, liver detox Ayurveda, Medavakkam Ayurvedic clinic",
     h1: "Ayurveda for Fatty Liver: A Root-Cause Approach to NAFLD",
@@ -218,7 +218,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "When to Seek Professional Help",
         paragraphs: [
-          "If your ultrasound or blood tests show elevated liver enzymes or grade 2–3 fatty liver, professional Ayurvedic treatment is recommended alongside regular medical monitoring. Dr. Harsita Devi creates personalized protocols based on your Prakriti, liver status, and associated conditions like diabetes or obesity.",
+          "If your ultrasound or blood tests show elevated liver enzymes or grade 2–3 fatty liver, professional Ayurvedic treatment is recommended alongside regular medical monitoring. Dr. Harsita Devi J.K. creates personalized protocols based on your Prakriti, liver status, and associated conditions like diabetes or obesity.",
           `Our clinic in Medavakkam serves patients from ${LOCAL_AREAS} with both in-person treatment and online consultations for diet and herbal guidance.`,
         ],
       },
@@ -237,7 +237,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         question: "Can I take Ayurvedic herbs alongside my doctor's medication?",
         answer:
-          "Yes, but inform both your Ayurvedic physician and allopathic doctor. Dr. Harsita Devi coordinates treatment plans to avoid interactions.",
+          "Yes, but inform both your Ayurvedic physician and allopathic doctor. Dr. Harsita Devi J.K. coordinates treatment plans to avoid interactions.",
       },
     ],
     relatedSlugs: ["ayurveda-for-diabetes", "benefits-of-panchakarma"],
@@ -247,7 +247,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "ayurveda-for-diabetes",
     title: `Ayurveda for Diabetes: Madhumeha Management | ${SITE_NAME}`,
     metaDescription:
-      "Ayurvedic treatment for diabetes (Madhumeha) — herbal medicines, diet plan, Panchakarma, and lifestyle changes. Personalized care by Dr. Harsita Devi in Chennai.",
+      "Ayurvedic treatment for diabetes (Madhumeha) — herbal medicines, diet plan, Panchakarma, and lifestyle changes. Personalized care by Dr. Harsita Devi J.K. in Chennai.",
     keywords:
       "Ayurveda for diabetes, Madhumeha treatment, Ayurvedic diabetes management, diabetes diet Ayurveda, Ayurvedic doctor Chennai",
     h1: "Ayurveda for Diabetes: Managing Madhumeha Naturally",
@@ -291,7 +291,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Integrating Ayurveda with Modern Diabetes Care",
         paragraphs: [
           "Ayurveda works best as a complementary approach alongside conventional diabetes management. Many patients at Harsha Vedic successfully reduce medication dependency over time under medical supervision — but never stop prescribed medications without your doctor's approval.",
-          "Dr. Harsita Devi creates individualized treatment plans considering your HbA1c levels, BMI, comorbidities, and Prakriti. Regular follow-ups track progress through both blood reports and Ayurvedic assessment.",
+          "Dr. Harsita Devi J.K. creates individualized treatment plans considering your HbA1c levels, BMI, comorbidities, and Prakriti. Regular follow-ups track progress through both blood reports and Ayurvedic assessment.",
         ],
       },
     ],
@@ -334,7 +334,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Why Post-Panchakarma Diet Matters",
         paragraphs: [
           "After Panchakarma, your digestive fire (Agni) is in a delicate reset state. The channels (Srotas) are open and clean, but your body is also weakened from the cleansing process. Eating the wrong foods at this stage can reintroduce toxins and undo weeks of treatment.",
-          "Paschatkarma — the post-treatment phase — typically lasts 7 to 14 days after the main procedures. During this time, food is considered medicine. Dr. Harsita Devi provides a personalized diet plan based on your constitution and the Panchakarma procedures you underwent.",
+          "Paschatkarma — the post-treatment phase — typically lasts 7 to 14 days after the main procedures. During this time, food is considered medicine. Dr. Harsita Devi J.K. provides a personalized diet plan based on your constitution and the Panchakarma procedures you underwent.",
         ],
       },
       {
@@ -452,7 +452,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When Home Remedies Are Not Enough",
         paragraphs: [
           "Consult an Ayurvedic physician if you experience acidity more than twice a week, blood in vomit or stool, unexplained weight loss, difficulty swallowing, or if home remedies stop working after 2 weeks. These may indicate a deeper imbalance requiring herbal medicines and possibly Panchakarma.",
-          "Dr. Harsita Devi treats chronic Amlapitta with personalized herbal formulations, dietary plans, and stress management therapies at our Medavakkam clinic.",
+          "Dr. Harsita Devi J.K. treats chronic Amlapitta with personalized herbal formulations, dietary plans, and stress management therapies at our Medavakkam clinic.",
         ],
       },
     ],
@@ -480,7 +480,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "ayurveda-for-cervical-pain",
     title: `Ayurveda for Cervical Pain: Neck Pain Relief | ${SITE_NAME}`,
     metaDescription:
-      "Ayurvedic treatment for cervical pain and spondylosis — herbal oils, Greeva Basti, Abhyanga, and exercises. Natural neck pain relief in Chennai by Dr. Harsita Devi.",
+      "Ayurvedic treatment for cervical pain and spondylosis — herbal oils, Greeva Basti, Abhyanga, and exercises. Natural neck pain relief in Chennai by Dr. Harsita Devi J.K.",
     keywords:
       "Ayurveda for cervical pain, cervical spondylosis Ayurveda, neck pain treatment Ayurveda, Greeva Basti, Ayurvedic doctor Chennai",
     h1: "Ayurveda for Cervical Pain: Natural Relief for Neck Pain",
@@ -526,7 +526,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "When to Visit a Clinic",
         paragraphs: [
           "If cervical pain persists beyond 2 weeks, radiates to arms with numbness or tingling, or is accompanied by dizziness and headaches, professional treatment is recommended. Early intervention prevents progression to chronic spondylosis.",
-          `At ${SITE_NAME} in Medavakkam, Dr. Harsita Devi offers Greeva Basti, therapeutic massage, and personalized herbal treatment for cervical pain. Patients from ${LOCAL_AREAS} and across Chennai visit us for both acute and chronic neck pain management.`,
+          `At ${SITE_NAME} in Medavakkam, Dr. Harsita Devi J.K. offers Greeva Basti, therapeutic massage, and personalized herbal treatment for cervical pain. Patients from ${LOCAL_AREAS} and across Chennai visit us for both acute and chronic neck pain management.`,
         ],
       },
     ],

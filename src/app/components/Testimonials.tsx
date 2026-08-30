@@ -6,7 +6,7 @@ export function Testimonials() {
     {
       name: "Gowsalya",
       condition: "Chronic Migraine",
-      text: "After years of suffering from migraines, Dr. Harsita Devi's Ayurvedic treatment gave me relief within weeks. Her personalized approach made all the difference.",
+      text: "After years of suffering from migraines, Dr. Harsita Devi J.K.'s Ayurvedic treatment gave me relief within weeks. Her personalized approach made all the difference.",
       rating: 5,
       image: "👩",
       location: "Madurai",

@@ -14,7 +14,7 @@ export function TreatmentsIndexPage() {
     <div className="min-h-screen bg-white overflow-x-hidden">
       <SeoHead
         title={`Ayurvedic Treatments in Medavakkam, Chennai | ${SITE_NAME}`}
-        description={`Explore Ayurveda treatment in Medavakkam at Harsha Vedic — Panchakarma, joint pain care, Shirodhara, PCOS & PCOD Ayurveda, weight management, skin & hair care, and more. Dr. Harsita Devi, Medavakkam, Chennai.`}
+        description={`Explore Ayurveda treatment in Medavakkam at Harsha Vedic — Panchakarma, joint pain care, Shirodhara, PCOS & PCOD Ayurveda, weight management, skin & hair care, and more. Dr. Harsita Devi J.K., Medavakkam, Chennai.`}
         keywords="Ayurveda treatment Medavakkam, Panchakarma Medavakkam, Ayurvedic joint pain care, PCOS Ayurveda Medavakkam, Shirodhara Medavakkam, Ayurvedic wellness centre Medavakkam, Ayurvedic doctor Medavakkam"
         path="/treatments"
       />
@@ -46,7 +46,7 @@ export function TreatmentsIndexPage() {
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                 Harsha Vedic offers specialized Ayurveda treatment in Medavakkam
                 for joint pain, women's wellness, metabolic conditions, and
-                Panchakarma therapy. Dr. Harsita Devi provides personalized
+                Panchakarma therapy. Dr. Harsita Devi J.K. provides personalized
                 natural healing for patients from {LOCAL_AREAS}, and across
                 Chennai — in-person or online.
               </p>

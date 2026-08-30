@@ -179,7 +179,7 @@ export function OnlineConsultation() {
               Can't visit our Medavakkam clinic? Book an Ayurvedic consultation
               with{" "}
               <span className="font-semibold text-green-700">
-                Dr. Harsita Devi
+                Dr. Harsita Devi J.K.
               </span>
               , your Ayurveda doctor in Chennai — for pain management, women's
               health, stress relief, and more
@@ -235,7 +235,7 @@ export function OnlineConsultation() {
                     {
                       step: 3,
                       title: "Join Video Call",
-                      desc: "Connect with Dr. Harsita Devi at scheduled time",
+                      desc: "Connect with Dr. Harsita Devi J.K. at scheduled time",
                     },
                     {
                       step: 4,

@@ -12,7 +12,7 @@ const structuredData = {
       url: `${SITE_URL}/blog`,
       name: `Ayurveda Articles | ${SITE_NAME}`,
       description:
-        "Expert Ayurveda articles on Panchakarma, chronic conditions, diet, and natural remedies by Dr. Harsita Devi.",
+        "Expert Ayurveda articles on Panchakarma, chronic conditions, diet, and natural remedies by Dr. Harsita Devi J.K.",
       publisher: { "@id": `${SITE_URL}/#organization` },
       inLanguage: "en-IN",
     },

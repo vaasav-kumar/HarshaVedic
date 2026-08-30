@@ -25,7 +25,7 @@ export function BlogIndexPage() {
     <div className="min-h-screen bg-white overflow-x-hidden">
       <SeoHead
         title={`Ayurveda Articles & Health Guides | ${SITE_NAME}`}
-        description="Expert Ayurveda articles on Panchakarma, chronic conditions, diet, and natural remedies. Written by Dr. Harsita Devi — your trusted Ayurvedic physician in Chennai."
+        description="Expert Ayurveda articles on Panchakarma, chronic conditions, diet, and natural remedies. Written by Dr. Harsita Devi J.K. — your trusted Ayurvedic physician in Chennai."
         keywords="Ayurveda articles, Panchakarma guide, Ayurvedic health tips, Ayurveda blog Chennai, natural remedies Ayurveda"
         path="/blog"
       />

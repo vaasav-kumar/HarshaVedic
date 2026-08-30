@@ -47,13 +47,13 @@ export const SERVICE_PAGES: ServicePage[] = [
   {
     slug: "panchakarma",
     title: `Kerala Panchakarma in Medavakkam, Chennai | ${SITE_NAME}`,
-    metaDescription: `Authentic Kerala Panchakarma and Panchakarma therapy in Medavakkam, Chennai by Dr. Harsita Devi. Deep cleansing, toxin elimination & natural healing. Book Ayurvedic consultation in-person or online.`,
+    metaDescription: `Authentic Kerala Panchakarma and Panchakarma therapy in Medavakkam, Chennai by Dr. Harsita Devi J.K. Deep cleansing, toxin elimination & natural healing. Book Ayurvedic consultation in-person or online.`,
     keywords: `Panchakarma Medavakkam, Panchakarma therapy Chennai, Kerala Panchakarma, Ayurveda treatment Medavakkam, Ayurvedic clinic in Medavakkam, Ayurvedic consultation Medavakkam`,
     h1: "Kerala Panchakarma Treatment in Medavakkam, Chennai",
     subtitle:
       "Authentic Kerala Panchakarma detox therapy for deep cleansing, toxin elimination, and natural healing",
     heroImage: PanchakarmaDetox,
-    overview: `Kerala Panchakarma is Ayurveda's most comprehensive detox therapy and rejuvenation program. At ${SITE_NAME}, our Ayurvedic wellness centre in Medavakkam, Chennai, Dr. Harsita Devi offers authentic Panchakarma therapy tailored to your body constitution (Prakriti) and current imbalances. Whether you live in ${LOCAL_AREAS}, our clinic is easily accessible for in-person detox therapy, and Ayurvedic consultations are available online for pre-assessment and follow-up care.`,
+    overview: `Kerala Panchakarma is Ayurveda's most comprehensive detox therapy and rejuvenation program. At ${SITE_NAME}, our Ayurvedic wellness centre in Medavakkam, Chennai, Dr. Harsita Devi J.K. offers authentic Panchakarma therapy tailored to your body constitution (Prakriti) and current imbalances. Whether you live in ${LOCAL_AREAS}, our clinic is easily accessible for in-person detox therapy, and Ayurvedic consultations are available online for pre-assessment and follow-up care.`,
     benefits: [
       "Eliminates accumulated toxins (Ama) from deep tissues",
       "Restores digestive fire (Agni) and metabolic balance",
@@ -90,7 +90,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     ],
     whyChooseUs: [
       `Conveniently located on Velachery Main Road, Medavakkam – serving all of South Chennai`,
-      "Personalized Panchakarma protocols by certified Ayurvedic physician Dr. Harsita Devi",
+      "Personalized Panchakarma protocols by certified Ayurvedic physician Dr. Harsita Devi J.K.",
       "Authentic herbal preparations and traditional therapy techniques",
       "Flexible in-person and online consultation options",
     ],
@@ -98,7 +98,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: "How long does a Panchakarma program take?",
         answer:
-          "A standard Panchakarma program typically runs 7 to 21 days depending on your condition and constitution. Dr. Harsita Devi will recommend the ideal duration after your initial consultation.",
+          "A standard Panchakarma program typically runs 7 to 21 days depending on your condition and constitution. Dr. Harsita Devi J.K. will recommend the ideal duration after your initial consultation.",
       },
       {
         question: "Is Panchakarma safe?",
@@ -120,13 +120,13 @@ export const SERVICE_PAGES: ServicePage[] = [
   {
     slug: "knee-pain-treatment",
     title: `Ayurvedic Joint Pain Care in Medavakkam, Chennai | ${SITE_NAME}`,
-    metaDescription: `Natural Ayurvedic joint pain care in Medavakkam, Chennai by Dr. Harsita Devi. Abhyanga, Janu Basti, Panchakarma & personalized care for knee arthritis and stiffness. Book consultation.`,
+    metaDescription: `Natural Ayurvedic joint pain care in Medavakkam, Chennai by Dr. Harsita Devi J.K. Abhyanga, Janu Basti, Panchakarma & personalized care for knee arthritis and stiffness. Book consultation.`,
     keywords: `Ayurvedic joint pain care, knee pain Ayurvedic treatment, Abhyanga Medavakkam, Ayurvedic doctor Medavakkam, Janu Basti, Ayurveda treatment Medavakkam`,
     h1: "Ayurvedic Joint Pain Care in Medavakkam, Chennai",
     subtitle:
       "Natural Ayurvedic joint pain care for knee pain, arthritis, and stiffness — drug-free relief through Abhyanga, Janu Basti, and authentic therapies",
     heroImage: ChronicDiseaseManagement,
-    overview: `Chronic knee pain affects mobility and quality of life. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi provides Ayurvedic joint pain care at its root cause using Janu Basti, Abhyanga, herbal poultices, medicated oils, and Panchakarma. Patients from ${LOCAL_AREAS} and across Chennai trust our personalized approach for lasting relief from osteoarthritis, rheumatoid arthritis, and sports-related knee injuries.`,
+    overview: `Chronic knee pain affects mobility and quality of life. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi J.K. provides Ayurvedic joint pain care at its root cause using Janu Basti, Abhyanga, herbal poultices, medicated oils, and Panchakarma. Patients from ${LOCAL_AREAS} and across Chennai trust our personalized approach for lasting relief from osteoarthritis, rheumatoid arthritis, and sports-related knee injuries.`,
     benefits: [
       "Reduces inflammation and joint stiffness naturally",
       "Strengthens muscles and ligaments around the knee",
@@ -171,7 +171,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: "Can Ayurveda cure knee arthritis?",
         answer:
-          "Ayurveda can significantly reduce pain, improve mobility, and slow disease progression in knee arthritis. Early intervention yields the best results. Dr. Harsita Devi creates a tailored plan based on your condition severity.",
+          "Ayurveda can significantly reduce pain, improve mobility, and slow disease progression in knee arthritis. Early intervention yields the best results. Dr. Harsita Devi J.K. creates a tailored plan based on your condition severity.",
       },
       {
         question: "How many sessions of Janu Basti are needed?",
@@ -181,7 +181,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: "Is Ayurvedic knee treatment safe alongside allopathy?",
         answer:
-          "Yes, Ayurvedic therapies can complement conventional treatment. Inform Dr. Harsita Devi about any medications you are taking for a coordinated care plan.",
+          "Yes, Ayurvedic therapies can complement conventional treatment. Inform Dr. Harsita Devi J.K. about any medications you are taking for a coordinated care plan.",
       },
       {
         question: "Do you treat sports knee injuries?",
@@ -199,13 +199,13 @@ export const SERVICE_PAGES: ServicePage[] = [
   {
     slug: "migraine-treatment",
     title: `Shirodhara & Migraine Treatment in Medavakkam | ${SITE_NAME}`,
-    metaDescription: `Effective Ayurvedic migraine treatment with Shirodhara in Medavakkam, Chennai by Dr. Harsita Devi. Nasya, herbal medicine & root-cause care. Book Ayurvedic consultation today.`,
+    metaDescription: `Effective Ayurvedic migraine treatment with Shirodhara in Medavakkam, Chennai by Dr. Harsita Devi J.K. Nasya, herbal medicine & root-cause care. Book Ayurvedic consultation today.`,
     keywords: `Shirodhara Medavakkam, migraine Ayurvedic treatment, headache Ayurveda Chennai, Ayurvedic doctor Medavakkam, Ayurveda treatment Medavakkam`,
     h1: "Shirodhara & Migraine Treatment in Medavakkam, Chennai",
     subtitle:
       "Root-cause treatment for chronic migraines, headaches, and stress — natural healing, not just temporary pain relief",
     heroImage: StressAndAnxietyRelief,
-    overview: `Migraines are often linked to dosha imbalances, digestive issues, stress, and lifestyle factors. At ${SITE_NAME} in Medavakkam, Dr. Harsita Devi has helped patients across Chennai – including ${LOCAL_AREAS} – find lasting relief from chronic migraines through Shirodhara, Nasya, herbal formulations, and personalized diet plans. Our approach treats the underlying cause, reducing both frequency and intensity of migraine episodes.`,
+    overview: `Migraines are often linked to dosha imbalances, digestive issues, stress, and lifestyle factors. At ${SITE_NAME} in Medavakkam, Dr. Harsita Devi J.K. has helped patients across Chennai – including ${LOCAL_AREAS} – find lasting relief from chronic migraines through Shirodhara, Nasya, herbal formulations, and personalized diet plans. Our approach treats the underlying cause, reducing both frequency and intensity of migraine episodes.`,
     benefits: [
       "Reduces frequency and severity of migraine attacks",
       "Calms the nervous system and relieves stress-related triggers",
@@ -255,7 +255,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: "Can Ayurveda replace my migraine medication?",
         answer:
-          "Ayurveda can reduce your dependency on painkillers over time. Dr. Harsita Devi will guide you on gradually transitioning under medical supervision – never stop prescribed medication abruptly.",
+          "Ayurveda can reduce your dependency on painkillers over time. Dr. Harsita Devi J.K. will guide you on gradually transitioning under medical supervision – never stop prescribed medication abruptly.",
       },
       {
         question: "What causes migraines according to Ayurveda?",
@@ -273,13 +273,13 @@ export const SERVICE_PAGES: ServicePage[] = [
   {
     slug: "pcos-treatment",
     title: `PCOS & PCOD Ayurveda in Medavakkam | ${SITE_NAME}`,
-    metaDescription: `Holistic PCOS and PCOD Ayurveda in Medavakkam, Chennai by Dr. Harsita Devi. Women's wellness, hormone balance, weight management & fertility support. Book consultation.`,
+    metaDescription: `Holistic PCOS and PCOD Ayurveda in Medavakkam, Chennai by Dr. Harsita Devi J.K. Women's wellness, hormone balance, weight management & fertility support. Book consultation.`,
     keywords: `PCOS Ayurveda Medavakkam, PCOD Ayurveda Medavakkam, women's wellness Ayurveda, Ayurvedic doctor Medavakkam, hormonal imbalance Ayurveda, fertility Ayurveda Chennai`,
     h1: "Women's Wellness & PCOS Treatment in Medavakkam, Chennai",
     subtitle:
       "Women's wellness Ayurveda for PCOS, PCOD, hormonal balance, and fertility — natural healing that addresses root cause",
     heroImage: PCOSTreatment,
-    overview: `Polycystic Ovary Syndrome (PCOS) and PCOD affect hormonal balance, metabolism, and fertility. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi offers comprehensive women's wellness Ayurveda combining herbal medicine, Panchakarma, diet management, and lifestyle guidance. Women from ${LOCAL_AREAS} and across Chennai choose our clinic for a natural, personalized approach to managing PCOS and PCOD symptoms and restoring hormonal health.`,
+    overview: `Polycystic Ovary Syndrome (PCOS) and PCOD affect hormonal balance, metabolism, and fertility. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi J.K. offers comprehensive women's wellness Ayurveda combining herbal medicine, Panchakarma, diet management, and lifestyle guidance. Women from ${LOCAL_AREAS} and across Chennai choose our clinic for a natural, personalized approach to managing PCOS and PCOD symptoms and restoring hormonal health.`,
     benefits: [
       "Regulates menstrual cycles naturally",
       "Supports healthy weight management",
@@ -315,7 +315,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       },
     ],
     whyChooseUs: [
-      "Compassionate, women-focused care by Dr. Harsita Devi",
+      "Compassionate, women-focused care by Dr. Harsita Devi J.K.",
       "Integrative approach combining herbs, detox, and lifestyle modification",
       "Online consultations available for busy professionals across India",
       "Located in Medavakkam – accessible from Velachery, Tambaram, and Pallikaranai",
@@ -329,13 +329,13 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: "How long does Ayurvedic PCOS treatment take?",
         answer:
-          "Most women see noticeable improvement in 3–6 months. Treatment duration varies based on severity, age, and lifestyle factors. Dr. Harsita Devi monitors progress and adjusts the plan accordingly.",
+          "Most women see noticeable improvement in 3–6 months. Treatment duration varies based on severity, age, and lifestyle factors. Dr. Harsita Devi J.K. monitors progress and adjusts the plan accordingly.",
       },
       {
         question:
           "Can I take Ayurvedic treatment alongside birth control pills?",
         answer:
-          "Yes, but inform Dr. Harsita Devi about all medications. Ayurvedic herbs can complement conventional treatment, and your plan will be adjusted for safe integration.",
+          "Yes, but inform Dr. Harsita Devi J.K. about all medications. Ayurvedic herbs can complement conventional treatment, and your plan will be adjusted for safe integration.",
       },
       {
         question: "Does Ayurveda help with PCOS-related weight gain?",
@@ -348,13 +348,13 @@ export const SERVICE_PAGES: ServicePage[] = [
   {
     slug: "weight-loss",
     title: `Ayurvedic Weight Management in Chennai | ${SITE_NAME}`,
-    metaDescription: `Natural Ayurvedic weight management in Chennai by Dr. Harsita Devi. Metabolic detox, Udvartana, personalized diet & herbal support. Clinic in Medavakkam. Book consultation.`,
+    metaDescription: `Natural Ayurvedic weight management in Chennai by Dr. Harsita Devi J.K. Metabolic detox, Udvartana, personalized diet & herbal support. Clinic in Medavakkam. Book consultation.`,
     keywords: `Ayurvedic weight management Chennai, weight loss Ayurveda, Ayurveda treatment Medavakkam, Ayurvedic doctor Medavakkam, metabolic detox Ayurveda`,
     h1: "Ayurvedic Weight Management in Chennai",
     subtitle:
       "Sustainable, natural weight management through metabolic balance – not crash diets or harmful supplements",
     heroImage: DietManagement,
-    overview: `Ayurvedic weight loss focuses on restoring metabolic fire (Agni), eliminating toxins, and balancing Kapha dosha – the root cause of weight gain in Ayurveda. At ${SITE_NAME} in Medavakkam, Dr. Harsita Devi creates personalized weight loss programs combining herbal medicine, Udvartana (herbal powder massage), Panchakarma, and constitution-based diet plans. Patients from ${LOCAL_AREAS} and across Chennai achieve sustainable results without extreme dieting.`,
+    overview: `Ayurvedic weight loss focuses on restoring metabolic fire (Agni), eliminating toxins, and balancing Kapha dosha – the root cause of weight gain in Ayurveda. At ${SITE_NAME} in Medavakkam, Dr. Harsita Devi J.K. creates personalized weight loss programs combining herbal medicine, Udvartana (herbal powder massage), Panchakarma, and constitution-based diet plans. Patients from ${LOCAL_AREAS} and across Chennai achieve sustainable results without extreme dieting.`,
     benefits: [
       "Boosts metabolism and digestive fire naturally",
       "Reduces fat accumulation without muscle loss",
@@ -392,7 +392,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     whyChooseUs: [
       "No harmful supplements or extreme calorie restriction",
       "Addresses underlying causes like thyroid issues, PCOS, and slow metabolism",
-      "Dr. Harsita Devi provides ongoing support and plan adjustments",
+      "Dr. Harsita Devi J.K. provides ongoing support and plan adjustments",
       "Convenient Medavakkam clinic with online consultation option",
     ],
     faq: [
@@ -404,7 +404,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: "Is Ayurvedic weight loss safe?",
         answer:
-          "Yes, Ayurvedic weight loss uses natural herbs, dietary changes, and traditional therapies with no harmful side effects when prescribed by a qualified physician like Dr. Harsita Devi.",
+          "Yes, Ayurvedic weight loss uses natural herbs, dietary changes, and traditional therapies with no harmful side effects when prescribed by a qualified physician like Dr. Harsita Devi J.K.",
       },
       {
         question: "Can Ayurveda help with weight gain due to PCOS or thyroid?",
@@ -414,7 +414,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: "Do I need to follow a strict diet?",
         answer:
-          "Dr. Harsita Devi provides practical, sustainable diet guidance based on your dosha – not restrictive fad diets. The focus is on eating the right foods at the right times.",
+          "Dr. Harsita Devi J.K. provides practical, sustainable diet guidance based on your dosha – not restrictive fad diets. The focus is on eating the right foods at the right times.",
       },
     ],
     relatedSlugs: ["panchakarma", "pcos-treatment", "knee-pain-treatment"],
@@ -422,13 +422,13 @@ export const SERVICE_PAGES: ServicePage[] = [
   {
     slug: "skin-care",
     title: `Ayurvedic Skin & Hair Care in Medavakkam | ${SITE_NAME}`,
-    metaDescription: `Natural Ayurvedic skin and hair care in Medavakkam, Chennai by Dr. Harsita Devi. Acne, eczema, psoriasis, hair fall & pigmentation. Herbal facials & internal medicine.`,
+    metaDescription: `Natural Ayurvedic skin and hair care in Medavakkam, Chennai by Dr. Harsita Devi J.K. Acne, eczema, psoriasis, hair fall & pigmentation. Herbal facials & internal medicine.`,
     keywords: `Ayurvedic skin and hair care, Ayurvedic skin care Chennai, acne Ayurveda Medavakkam, hair fall Ayurveda, Ayurvedic doctor Medavakkam, psoriasis Ayurveda`,
     h1: "Ayurvedic Skin & Hair Care in Medavakkam, Chennai",
     subtitle:
       "Ayurvedic skin and hair care — heal acne, eczema, pigmentation, and hair fall from within with authentic treatments",
     heroImage: SkinCare,
-    overview: `Healthy skin and hair reflect internal balance. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi treats skin and hair conditions at their root cause using Ayurvedic internal medicine, herbal facials, Panchakarma, and personalized diet plans. Whether you struggle with acne, eczema, psoriasis, hair fall, pigmentation, or premature aging, our holistic approach delivers lasting results. Patients from ${LOCAL_AREAS} and across Chennai trust our natural, side-effect-free skin and hair care treatments.`,
+    overview: `Healthy skin and hair reflect internal balance. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi J.K. treats skin and hair conditions at their root cause using Ayurvedic internal medicine, herbal facials, Panchakarma, and personalized diet plans. Whether you struggle with acne, eczema, psoriasis, hair fall, pigmentation, or premature aging, our holistic approach delivers lasting results. Patients from ${LOCAL_AREAS} and across Chennai trust our natural, side-effect-free skin and hair care treatments.`,
     benefits: [
       "Treats root cause of skin issues, not just surface symptoms",
       "Safe, natural alternatives to harsh chemical treatments",
@@ -483,7 +483,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: "Is Ayurvedic skin treatment safe for all skin types?",
         answer:
-          "Yes, all treatments are customized to your skin type and dosha constitution. Dr. Harsita Devi selects herbs and therapies appropriate for sensitive, oily, or dry skin.",
+          "Yes, all treatments are customized to your skin type and dosha constitution. Dr. Harsita Devi J.K. selects herbs and therapies appropriate for sensitive, oily, or dry skin.",
       },
       {
         question: "Do you treat pigmentation and dark spots?",
@@ -496,13 +496,13 @@ export const SERVICE_PAGES: ServicePage[] = [
   {
     slug: "back-pain-treatment",
     title: `Back Pain Ayurvedic Treatment in Chennai | ${SITE_NAME}`,
-    metaDescription: `Natural Ayurvedic back pain treatment in Chennai by Dr. Harsita Devi. Kati Basti, herbal oils, Panchakarma & personalized care for sciatica and lumbar pain. Book consultation.`,
+    metaDescription: `Natural Ayurvedic back pain treatment in Chennai by Dr. Harsita Devi J.K. Kati Basti, herbal oils, Panchakarma & personalized care for sciatica and lumbar pain. Book consultation.`,
     keywords: `Back pain Ayurvedic treatment, Ayurvedic joint pain care, Kati Basti Medavakkam, sciatica Ayurveda Chennai, Ayurvedic doctor Medavakkam, lumbar pain Ayurveda`,
     h1: "Ayurvedic Back Pain Treatment in Chennai",
     subtitle:
       "Natural pain management for lower back pain, sciatica, and cervical spondylosis — drug-free relief through authentic Ayurvedic therapies",
     heroImage: ChronicDiseaseManagement,
-    overview: `Chronic back pain limits daily life and often stems from Vata imbalance, poor posture, or accumulated toxins. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi treats back pain at its root using Kati Basti, Pinda Sweda, medicated oils, and Panchakarma. Patients from ${LOCAL_AREAS} and across Chennai find lasting relief from lumbar pain, sciatica, disc problems, and cervical spondylosis through our personalized Ayurvedic approach.`,
+    overview: `Chronic back pain limits daily life and often stems from Vata imbalance, poor posture, or accumulated toxins. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi J.K. treats back pain at its root using Kati Basti, Pinda Sweda, medicated oils, and Panchakarma. Patients from ${LOCAL_AREAS} and across Chennai find lasting relief from lumbar pain, sciatica, disc problems, and cervical spondylosis through our personalized Ayurvedic approach.`,
     benefits: [
       "Relieves muscle spasms and nerve compression naturally",
       "Improves spinal flexibility and posture",
@@ -558,7 +558,7 @@ export const SERVICE_PAGES: ServicePage[] = [
         question:
           "Is Ayurvedic back pain treatment safe alongside physiotherapy?",
         answer:
-          "Yes, Ayurvedic therapies complement physiotherapy well. Dr. Harsita Devi can coordinate your care plan for optimal recovery.",
+          "Yes, Ayurvedic therapies complement physiotherapy well. Dr. Harsita Devi J.K. can coordinate your care plan for optimal recovery.",
       },
       {
         question: "Do you treat cervical spondylosis?",
@@ -571,13 +571,13 @@ export const SERVICE_PAGES: ServicePage[] = [
   {
     slug: "diabetes-treatment",
     title: `Ayurvedic Diabetes Treatment in Chennai | ${SITE_NAME}`,
-    metaDescription: `Holistic Ayurvedic diabetes treatment in Chennai by Dr. Harsita Devi. Blood sugar management, metabolic detox & personalized diet. Clinic in Medavakkam. Book consultation.`,
+    metaDescription: `Holistic Ayurvedic diabetes treatment in Chennai by Dr. Harsita Devi J.K. Blood sugar management, metabolic detox & personalized diet. Clinic in Medavakkam. Book consultation.`,
     keywords: `Ayurveda for diabetes, Ayurvedic diabetes treatment Chennai, blood sugar Ayurveda Medavakkam, Ayurvedic doctor near me, diabetes management Ayurveda, Ayurvedic clinic Chennai`,
     h1: "Ayurvedic Diabetes Treatment in Chennai",
     subtitle:
       "Natural blood sugar management through metabolic balance, herbal medicine, and lifestyle transformation — not just symptom control",
     heroImage: AyurvedicDiabetesTreatment,
-    overview: `Ayurveda views diabetes (Madhumeha) as a metabolic disorder rooted in Kapha and Pitta imbalances. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi offers comprehensive Ayurvedic diabetes treatment combining herbal formulations, Panchakarma detox, personalized diet plans, and lifestyle guidance. Patients from ${LOCAL_AREAS} and across Chennai achieve better blood sugar control and reduced medication dependency through our holistic, root-cause approach.`,
+    overview: `Ayurveda views diabetes (Madhumeha) as a metabolic disorder rooted in Kapha and Pitta imbalances. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi J.K. offers comprehensive Ayurvedic diabetes treatment combining herbal formulations, Panchakarma detox, personalized diet plans, and lifestyle guidance. Patients from ${LOCAL_AREAS} and across Chennai achieve better blood sugar control and reduced medication dependency through our holistic, root-cause approach.`,
     benefits: [
       "Supports healthy blood sugar levels naturally",
       "Improves insulin sensitivity and metabolic function",
@@ -614,7 +614,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     ],
     whyChooseUs: [
       "Integrative approach safe alongside conventional diabetes medication",
-      "Dr. Harsita Devi monitors progress and adjusts treatment plans regularly",
+      "Dr. Harsita Devi J.K. monitors progress and adjusts treatment plans regularly",
       "Focus on preventing complications, not just lowering numbers",
       "Convenient Medavakkam clinic with online consultation for follow-ups",
     ],
@@ -622,12 +622,12 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: "Can Ayurveda cure diabetes?",
         answer:
-          "Ayurveda can significantly improve blood sugar control and, in early-stage Type 2 diabetes, may help achieve remission with consistent lifestyle adherence. Dr. Harsita Devi creates realistic, personalized goals based on your condition.",
+          "Ayurveda can significantly improve blood sugar control and, in early-stage Type 2 diabetes, may help achieve remission with consistent lifestyle adherence. Dr. Harsita Devi J.K. creates realistic, personalized goals based on your condition.",
       },
       {
         question: "Is Ayurvedic diabetes treatment safe with metformin?",
         answer:
-          "Yes, but inform Dr. Harsita Devi about all medications. Ayurvedic herbs can complement conventional treatment, and your plan will be adjusted for safe integration with regular blood sugar monitoring.",
+          "Yes, but inform Dr. Harsita Devi J.K. about all medications. Ayurvedic herbs can complement conventional treatment, and your plan will be adjusted for safe integration with regular blood sugar monitoring.",
       },
       {
         question: "How long before I see improvement in blood sugar?",
@@ -645,13 +645,13 @@ export const SERVICE_PAGES: ServicePage[] = [
   {
     slug: "fatty-liver-treatment",
     title: `Ayurvedic Fatty Liver Treatment in Chennai | ${SITE_NAME}`,
-    metaDescription: `Natural Ayurvedic fatty liver treatment in Chennai by Dr. Harsita Devi. Liver detox, herbal medicine & diet management. Clinic in Medavakkam. Book consultation today.`,
+    metaDescription: `Natural Ayurvedic fatty liver treatment in Chennai by Dr. Harsita Devi J.K. Liver detox, herbal medicine & diet management. Clinic in Medavakkam. Book consultation today.`,
     keywords: `Ayurveda for fatty liver, fatty liver treatment Chennai, liver detox Ayurveda Medavakkam, Ayurvedic doctor near me, NAFLD Ayurveda, Ayurvedic clinic Chennai`,
     h1: "Ayurvedic Fatty Liver Treatment in Chennai",
     subtitle:
       "Restore liver health naturally through detox therapy, herbal medicine, and metabolic balance — addressing NAFLD at its root",
     heroImage: AyurvedicFattyLiverTreatment,
-    overview: `Fatty liver disease (NAFLD) is increasingly common and often linked to metabolic syndrome, obesity, and poor diet. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi treats fatty liver through Ayurvedic liver detox, herbal formulations, Panchakarma, and personalized diet plans. Patients from ${LOCAL_AREAS} and across Chennai achieve improved liver function and reduced fat accumulation through our holistic approach targeting Pitta and Kapha imbalances.`,
+    overview: `Fatty liver disease (NAFLD) is increasingly common and often linked to metabolic syndrome, obesity, and poor diet. At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi J.K. treats fatty liver through Ayurvedic liver detox, herbal formulations, Panchakarma, and personalized diet plans. Patients from ${LOCAL_AREAS} and across Chennai achieve improved liver function and reduced fat accumulation through our holistic approach targeting Pitta and Kapha imbalances.`,
     benefits: [
       "Supports liver detoxification and regeneration naturally",
       "Reduces fat accumulation in liver tissue",
@@ -696,7 +696,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: "Can Ayurveda reverse fatty liver?",
         answer:
-          "Yes, early and moderate fatty liver can often be reversed with consistent Ayurvedic treatment, diet changes, and weight management. Dr. Harsita Devi assesses your stage and creates a realistic recovery plan.",
+          "Yes, early and moderate fatty liver can often be reversed with consistent Ayurvedic treatment, diet changes, and weight management. Dr. Harsita Devi J.K. assesses your stage and creates a realistic recovery plan.",
       },
       {
         question: "How long does Ayurvedic fatty liver treatment take?",
@@ -706,13 +706,13 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: "Is Virechana safe for fatty liver?",
         answer:
-          "Virechana is performed under strict medical supervision by Dr. Harsita Devi after a thorough assessment. It is one of the most effective Ayurvedic therapies for liver detox when properly administered.",
+          "Virechana is performed under strict medical supervision by Dr. Harsita Devi J.K. after a thorough assessment. It is one of the most effective Ayurvedic therapies for liver detox when properly administered.",
       },
       {
         question:
           "Can I take Ayurvedic treatment alongside my hepatologist's care?",
         answer:
-          "Yes, Ayurvedic treatment complements conventional monitoring. Share your latest liver function reports with Dr. Harsita Devi for a coordinated care plan.",
+          "Yes, Ayurvedic treatment complements conventional monitoring. Share your latest liver function reports with Dr. Harsita Devi J.K. for a coordinated care plan.",
       },
     ],
     relatedSlugs: ["panchakarma", "weight-loss", "diabetes-treatment"],
@@ -720,13 +720,13 @@ export const SERVICE_PAGES: ServicePage[] = [
   {
     slug: "wellness-programs",
     title: `Ayurvedic Wellness Programs in Medavakkam, Chennai | ${SITE_NAME}`,
-    metaDescription: `Personalised Ayurvedic wellness programs in Medavakkam, Chennai by Dr. Harsita Devi. Weekend rejuvenation, 7-day reset, women's wellness, weight management & stress relief. Book consultation.`,
+    metaDescription: `Personalised Ayurvedic wellness programs in Medavakkam, Chennai by Dr. Harsita Devi J.K. Weekend rejuvenation, 7-day reset, women's wellness, weight management & stress relief. Book consultation.`,
     keywords: `Ayurvedic wellness programs Medavakkam, wellness centre Chennai, Ayurveda rejuvenation program, weekend wellness Ayurveda, women's wellness program, stress relief wellness Ayurveda, Ayurvedic lifestyle program Medavakkam`,
     h1: "Ayurvedic Wellness Programs in Medavakkam, Chennai",
     subtitle:
       "Personalised multi-day wellness programmes combining traditional therapies, lifestyle guidance, and rejuvenation — what sets Harsha Vedic apart in Medavakkam",
     heroImage: TherapeuticMassages,
-    overview: `Structured wellness programmes go beyond single therapy sessions to deliver lasting transformation. At ${SITE_NAME}, our Ayurvedic wellness centre in Medavakkam, Chennai, Dr. Harsita Devi designs personalised programmes that combine selected therapies such as Abhyanga, Shirodhara, and Swedana with diet guidance, daily routines, and relaxation practices. Whether you need a weekend reset or a two-week weight management journey, our programmes help you build healthier habits — a key differentiator from other Ayurvedic clinics in ${LOCAL_AREAS}. In-person programmes are available at our Medavakkam clinic, with online consultations for assessment and follow-up.`,
+    overview: `Structured wellness programmes go beyond single therapy sessions to deliver lasting transformation. At ${SITE_NAME}, our Ayurvedic wellness centre in Medavakkam, Chennai, Dr. Harsita Devi J.K. designs personalised programmes that combine selected therapies such as Abhyanga, Shirodhara, and Swedana with diet guidance, daily routines, and relaxation practices. Whether you need a weekend reset or a two-week weight management journey, our programmes help you build healthier habits — a key differentiator from other Ayurvedic clinics in ${LOCAL_AREAS}. In-person programmes are available at our Medavakkam clinic, with online consultations for assessment and follow-up.`,
     treatmentsSectionTitle: "Our Wellness Programs",
     treatmentsSectionSubtitle:
       "Choose a structured programme tailored to your goals — from a weekend rejuvenation to a two-week wellness journey",
@@ -797,7 +797,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     ],
     whyChooseUs: [
       "Comprehensive wellness programmes rarely offered at other Medavakkam clinics",
-      "Every programme is personalised by Dr. Harsita Devi after Prakriti assessment",
+      "Every programme is personalised by Dr. Harsita Devi J.K. after Prakriti assessment",
       "Authentic therapies including Abhyanga, Shirodhara, and Swedana under physician supervision",
       "Convenient Velachery Main Road location — serving all of South Chennai",
     ],
@@ -805,7 +805,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: "Which wellness program is right for me?",
         answer:
-          "Dr. Harsita Devi recommends the ideal programme after assessing your constitution, health goals, and schedule. A brief consultation — in-person or online — helps determine whether a weekend rejuvenation, 7-day reset, or longer programme suits you best.",
+          "Dr. Harsita Devi J.K. recommends the ideal programme after assessing your constitution, health goals, and schedule. A brief consultation — in-person or online — helps determine whether a weekend rejuvenation, 7-day reset, or longer programme suits you best.",
       },
       {
         question: "How is a wellness program different from a single therapy session?",
@@ -815,7 +815,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       {
         question: "Can I do a wellness program while working?",
         answer:
-          "Weekend rejuvenation programmes (2–3 days) are designed for busy schedules. Longer programmes may require dedicated time — Dr. Harsita Devi will help you choose an option that fits your lifestyle.",
+          "Weekend rejuvenation programmes (2–3 days) are designed for busy schedules. Longer programmes may require dedicated time — Dr. Harsita Devi J.K. will help you choose an option that fits your lifestyle.",
       },
       {
         question: "Where are wellness programmes conducted?",

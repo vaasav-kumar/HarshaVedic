@@ -18,7 +18,7 @@ export const LOCAL_AREAS =
   "Medavakkam, Tambaram, Pallikaranai, Velachery, and Perumbakkam";
 
 export const DEFAULT_DESCRIPTION =
-  "Harsha Vedic is your trusted Ayurvedic clinic in Medavakkam, Chennai, serving Tambaram, Pallikaranai, Velachery, Perumbakkam, and surrounding areas. Dr. Harsita Devi offers Kerala Panchakarma detox therapy, pain management, women's health care, stress relief, and natural healing through personalized Ayurvedic consultation — in-person or online.";
+  "Harsha Vedic is your trusted Ayurvedic clinic in Medavakkam, Chennai, serving Tambaram, Pallikaranai, Velachery, Perumbakkam, and surrounding areas. Dr. Harsita Devi J.K. offers Kerala Panchakarma detox therapy, pain management, women's health care, stress relief, and natural healing through personalized Ayurvedic consultation — in-person or online.";
 
 export const SEO_KEYWORDS =
   "Ayurvedic clinic in Medavakkam, Ayurveda clinic Medavakkam, Ayurvedic doctor Medavakkam, Ayurveda treatment Medavakkam, Panchakarma Medavakkam, Ayurvedic consultation Medavakkam, Ayurvedic wellness centre Medavakkam, Harsha Vedic, Chennai";
@@ -52,7 +52,7 @@ export const LOCAL_SEO_KEYWORDS = {
 
 export const BUSINESS = {
   name: SITE_NAME,
-  doctor: "Dr. Harsita Devi",
+  doctor: "Dr. Harsita Devi J.K.",
   email: "harshavedic@gmail.com",
   phone: "+91-7904094949",
   phoneTel: "tel:+917904094949",
@@ -173,7 +173,7 @@ export const SERVICES = [
   {
     name: "Ayurvedic Consultation",
     description:
-      "Book an Ayurvedic consultation Medavakkam with Dr. Harsita Devi — in-person at our wellness centre or online",
+      "Book an Ayurvedic consultation Medavakkam with Dr. Harsita Devi J.K. — in-person at our wellness centre or online",
   },
   {
     name: "Wellness Programs",
@@ -187,7 +187,7 @@ export const TESTIMONIALS = [
   {
     name: "Gowsalya",
     location: "Madurai",
-    text: "After years of suffering from migraines, Dr. Harsita Devi's Ayurvedic treatment gave me relief within weeks. Her personalized approach made all the difference.",
+    text: "After years of suffering from migraines, Dr. Harsita Devi J.K.'s Ayurvedic treatment gave me relief within weeks. Her personalized approach made all the difference.",
     rating: 5,
   },
   {
@@ -214,17 +214,17 @@ export const FAQ_ITEMS = [
   {
     question: "What is Ayurveda and how can it help me?",
     answer:
-      "Ayurveda is a 5,000-year-old holistic healing system from India that treats the root cause of illness rather than symptoms. At Harsha Vedic, our Ayurvedic clinic in Medavakkam, Chennai, Dr. Harsita Devi uses personalized natural healing treatments based on your unique body constitution (Prakriti) to restore balance and promote long-term wellness.",
+      "Ayurveda is a 5,000-year-old holistic healing system from India that treats the root cause of illness rather than symptoms. At Harsha Vedic, our Ayurvedic clinic in Medavakkam, Chennai, Dr. Harsita Devi J.K. uses personalized natural healing treatments based on your unique body constitution (Prakriti) to restore balance and promote long-term wellness.",
   },
   {
     question: "How do I book an Ayurvedic consultation?",
     answer:
-      "You can book an Ayurvedic consultation directly on this website using the consultation form, call us at +91-7904094949, or message us on WhatsApp. Dr. Harsita Devi, an experienced Ayurveda doctor, offers video consultations with the same personalized care as in-person visits at our Medavakkam clinic.",
+      "You can book an Ayurvedic consultation directly on this website using the consultation form, call us at +91-7904094949, or message us on WhatsApp. Dr. Harsita Devi J.K., an experienced Ayurveda doctor, offers video consultations with the same personalized care as in-person visits at our Medavakkam clinic.",
   },
   {
     question: "What is a Prakriti assessment?",
     answer:
-      "Prakriti is your unique Ayurvedic body constitution determined by the balance of three doshas: Vata, Pitta, and Kapha. Our Prakriti assessment helps identify your constitution and current imbalances, enabling Dr. Harsita Devi to create a tailored treatment and diet plan.",
+      "Prakriti is your unique Ayurvedic body constitution determined by the balance of three doshas: Vata, Pitta, and Kapha. Our Prakriti assessment helps identify your constitution and current imbalances, enabling Dr. Harsita Devi J.K. to create a tailored treatment and diet plan.",
   },
   {
     question: "What conditions does Harsha Vedic treat?",
@@ -238,6 +238,6 @@ export const FAQ_ITEMS = [
   {
     question: "Are Ayurvedic treatments safe?",
     answer:
-      "Yes. When prescribed by a certified Ayurvedic physician like Dr. Harsita Devi, treatments use natural herbs and therapies tailored to your constitution. All treatments are personalized after a thorough consultation to ensure safety and effectiveness.",
+      "Yes. When prescribed by a certified Ayurvedic physician like Dr. Harsita Devi J.K., treatments use natural herbs and therapies tailored to your constitution. All treatments are personalized after a thorough consultation to ensure safety and effectiveness.",
   },
 ] as const;

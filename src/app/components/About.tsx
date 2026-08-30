@@ -68,7 +68,7 @@ export function About() {
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm shadow-md">
               <Sparkles size={16} className="text-green-600" />
-              <span className="font-semibold">About Dr. Harsita Devi</span>
+              <span className="font-semibold">About Dr. Harsita Devi J.K.</span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
               Your Ayurveda Doctor for{" "}
@@ -88,7 +88,7 @@ export function About() {
             <p className="text-gray-600 leading-relaxed">
               Led by{" "}
               <span className="font-semibold text-green-700">
-                Dr. Harsita Devi
+                Dr. Harsita Devi J.K.
               </span>
               , a certified Ayurveda doctor, we provide personalized treatment
               plans based on your unique body constitution (Prakriti). Whether

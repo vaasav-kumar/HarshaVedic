@@ -325,7 +325,7 @@ export function Footer() {
             <p className="text-sm text-green-300 text-center md:text-right">
               Led by{" "}
               <span className="font-semibold text-amber-300">
-                Dr. Harsita Devi
+                Dr. Harsita Devi J.K.
               </span>{" "}
               - Certified Ayurvedic Physician
             </p>

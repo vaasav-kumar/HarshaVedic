@@ -51,7 +51,7 @@ export function Hero() {
               Perumbakkam. Experience Kerala Panchakarma, detox therapy, pain
               management, and women's health care with{" "}
               <span className="font-semibold text-green-700">
-                Dr. Harsita Devi
+                Dr. Harsita Devi J.K.
               </span>
               , an experienced Ayurveda doctor. Book an Ayurvedic consultation
               in-person or online.
@@ -127,7 +127,7 @@ export function Hero() {
                   </div>
                   <div className="min-w-0">
                     <div className="font-bold text-gray-900 text-sm sm:text-base">
-                      Dr. Harsita Devi
+                      Dr. Harsita Devi J.K.
                     </div>
                     <div className="text-xs sm:text-sm text-green-700">
                       Certified Ayurvedic Physician

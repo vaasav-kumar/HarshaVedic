@@ -169,7 +169,7 @@ export function PrakritiAssessment() {
                   <p className="text-green-50 mb-6 leading-relaxed">
                     Complete our detailed questionnaire to discover your unique
                     Ayurvedic constitution. This assessment takes only 5-7
-                    minutes and will help Dr. Harsita Devi provide you with
+                    minutes and will help Dr. Harsita Devi J.K. provide you with
                     personalized treatment recommendations.
                   </p>
 
@@ -260,7 +260,7 @@ export function PrakritiAssessment() {
               </div>
               <h4 className="font-bold text-gray-900 mb-2">Expert Review</h4>
               <p className="text-sm text-gray-600">
-                Dr. Harsita Devi will review your assessment and provide
+                Dr. Harsita Devi J.K. will review your assessment and provide
                 personalized guidance
               </p>
             </CardContent>
