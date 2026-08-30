@@ -1,7 +1,6 @@
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Button } from "./ui/button";
 import { ArrowRight, Star, Leaf } from "lucide-react";
-import AyurvedaFlower from "../../assets/ayurveda-flower.webp";
+import PanchakarmaGif from "../../assets/doctor-patient-panchakarma-conversation.gif";
 
 export function Hero() {
   const scrollToConsultation = () => {
@@ -112,26 +111,27 @@ export function Hero() {
               </div>
             </div>
           </div>
-          <div className="relative animate-fade-in animation-delay-500">
-            <div className="relative rounded-2xl md:rounded-[3rem] overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-500">
-              <div className="absolute inset-0 bg-gradient-to-tr from-green-600/20 to-transparent z-10"></div>
-              <ImageWithFallback
-                src={AyurvedaFlower}
-                alt="Ayurvedic herbs and treatments"
-                className="w-full h-auto object-cover"
-              />
-            </div>
-            <div className="absolute -bottom-8 -left-8 bg-gradient-to-br from-white to-green-50 p-6 rounded-3xl shadow-2xl hidden md:block border border-green-100">
-              <div className="flex items-center gap-3">
-                <div className="w-14 h-14 bg-gradient-to-br from-green-600 to-green-700 rounded-2xl flex items-center justify-center shadow-lg">
-                  <span className="text-3xl">🌿</span>
-                </div>
-                <div>
-                  <div className="font-bold text-gray-900">
-                    Dr. Harsita Devi
+          <div className="relative animate-fade-in animation-delay-500 flex justify-center md:justify-center lg:justify-end">
+            <div className="relative w-full max-w-[300px] sm:max-w-[340px] md:max-w-[380px] lg:max-w-[400px]">
+              <div className="rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-2xl border-[6px] border-gray-800 bg-gray-800">
+                <img
+                  src={PanchakarmaGif}
+                  alt="Doctor and patient Panchakarma consultation chat at Harsha Vedic"
+                  className="w-full h-auto block"
+                />
+              </div>
+              <div className="mt-5 bg-gradient-to-br from-white to-green-50 p-4 sm:p-5 rounded-2xl sm:rounded-3xl shadow-xl border border-green-100">
+                <div className="flex items-center gap-3">
+                  <div className="w-11 h-11 sm:w-14 sm:h-14 bg-gradient-to-br from-green-600 to-green-700 rounded-xl sm:rounded-2xl flex items-center justify-center shadow-lg shrink-0">
+                    <span className="text-2xl sm:text-3xl">🌿</span>
                   </div>
-                  <div className="text-sm text-green-700">
-                    Certified Ayurvedic Physician
+                  <div className="min-w-0">
+                    <div className="font-bold text-gray-900 text-sm sm:text-base">
+                      Dr. Harsita Devi
+                    </div>
+                    <div className="text-xs sm:text-sm text-green-700">
+                      Certified Ayurvedic Physician
+                    </div>
                   </div>
                 </div>
               </div>

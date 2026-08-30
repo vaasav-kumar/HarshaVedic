@@ -148,6 +148,14 @@ export function Footer() {
               </li>
               <li>
                 <Link
+                  to="/wellness-programs"
+                  className="text-green-100 hover:text-white transition hover:pl-2 inline-block"
+                >
+                  → Wellness Programs
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/blog"
                   className="text-green-100 hover:text-white transition hover:pl-2 inline-block"
                 >
