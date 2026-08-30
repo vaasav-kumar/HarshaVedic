@@ -112,7 +112,7 @@ export function Hero() {
             </div>
           </div>
           <div className="relative animate-fade-in animation-delay-500 flex justify-center md:justify-center lg:justify-end">
-            <div className="relative w-full max-w-[300px] sm:max-w-[340px] md:max-w-[380px] lg:max-w-[400px]">
+            <div className="relative w-full max-w-[300px] sm:max-w-[340px] md:max-w-[400px] lg:max-w-[460px] xl:max-w-[480px]">
               <div className="rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-2xl border-[6px] border-gray-800 bg-gray-800">
                 <img
                   src={PanchakarmaGif}

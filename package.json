@@ -6,7 +6,8 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite",
-    "compress-images": "node scripts/compress-images.mjs"
+    "compress-images": "node scripts/compress-images.mjs",
+    "compress-gif": "node scripts/compress-gif.mjs"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
