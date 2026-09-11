@@ -78,10 +78,10 @@ export const BUSINESS = {
         "Friday",
         "Saturday",
       ],
-      opens: "09:00",
-      closes: "21:00",
+      opens: "10:00",
+      closes: "20:30",
     },
-    { days: ["Sunday"], opens: "09:00", closes: "21:00" },
+    { days: ["Sunday"], opens: "10:00", closes: "17:00" },
   ],
   social: {
     instagram: "https://www.instagram.com/harsha_vedic",
@@ -233,7 +233,7 @@ export const FAQ_ITEMS = [
   },
   {
     question: "Where is Harsha Vedic clinic located?",
-    answer: `Harsha Vedic is located at Plot no 4, shop no 7, 1st floor, Velachery main road, Medavakkam, Chennai – 600100. We serve patients from ${LOCAL_AREAS}, and across Chennai. We are open daily, 9:00 AM – 9:00 PM. Online consultations are available for patients across India.`,
+    answer: `Harsha Vedic is located at Plot no 4, shop no 7, 1st floor, Velachery main road, Medavakkam, Chennai – 600100. We serve patients from ${LOCAL_AREAS}, and across Chennai. We are open Mon–Sat 10:00 AM – 8:30 PM and Sun 10:00 AM – 5:00 PM. Online consultations are available for patients across India.`,
   },
   {
     question: "Are Ayurvedic treatments safe?",
