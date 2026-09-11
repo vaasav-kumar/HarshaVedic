@@ -60,28 +60,28 @@ export function Header() {
           <nav className="hidden md:flex items-center gap-8">
             <button
               onClick={() => goToSection("home")}
-              className="text-gray-700 hover:text-green-700 transition font-medium relative group"
+              className="cursor-pointer text-gray-700 hover:text-green-700 transition font-medium relative group"
             >
               Home
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-700 group-hover:w-full transition-all"></span>
             </button>
             <button
               onClick={() => goToSection("about")}
-              className="text-gray-700 hover:text-green-700 transition font-medium relative group"
+              className="cursor-pointer text-gray-700 hover:text-green-700 transition font-medium relative group"
             >
               About
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-700 group-hover:w-full transition-all"></span>
             </button>
             <button
               onClick={() => goToSection("prakriti")}
-              className="text-gray-700 hover:text-green-700 transition font-medium relative group"
+              className="cursor-pointer text-gray-700 hover:text-green-700 transition font-medium relative group"
             >
               Prakriti Test
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-700 group-hover:w-full transition-all"></span>
             </button>
             <button
               onClick={() => goToSection("services")}
-              className="text-gray-700 hover:text-green-700 transition font-medium relative group"
+              className="cursor-pointer text-gray-700 hover:text-green-700 transition font-medium relative group"
             >
               Services
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-700 group-hover:w-full transition-all"></span>
@@ -89,7 +89,7 @@ export function Header() {
             <div className="relative" ref={treatmentsRef}>
               <button
                 onClick={() => setIsTreatmentsOpen(!isTreatmentsOpen)}
-                className="flex items-center gap-1 text-gray-700 hover:text-green-700 transition font-medium"
+                className="cursor-pointer flex items-center gap-1 text-gray-700 hover:text-green-700 transition font-medium"
                 aria-expanded={isTreatmentsOpen}
                 aria-haspopup="true"
               >
@@ -103,7 +103,7 @@ export function Header() {
                 <div className="absolute top-full left-0 mt-2 w-72 bg-white rounded-xl shadow-xl border border-green-100 py-2 z-50 max-h-96 overflow-y-auto">
                   <Link
                     to="/treatments"
-                    className="block px-4 py-2 text-sm font-semibold text-green-700 hover:bg-green-50 transition"
+                    className="block cursor-pointer px-4 py-2 text-sm font-semibold text-green-700 hover:bg-green-50 transition"
                     onClick={() => setIsTreatmentsOpen(false)}
                   >
                     All Treatments
@@ -113,7 +113,7 @@ export function Header() {
                     <Link
                       key={page.slug}
                       to={`/${page.slug}`}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition"
+                      className="block cursor-pointer px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition"
                       onClick={() => setIsTreatmentsOpen(false)}
                     >
                       {page.h1
@@ -126,14 +126,14 @@ export function Header() {
             </div>
             <button
               onClick={() => goToSection("testimonials")}
-              className="text-gray-700 hover:text-green-700 transition font-medium relative group"
+              className="cursor-pointer text-gray-700 hover:text-green-700 transition font-medium relative group"
             >
               Testimonials
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-700 group-hover:w-full transition-all"></span>
             </button>
             <Link
               to="/blog"
-              className="text-gray-700 hover:text-green-700 transition font-medium relative group"
+              className="cursor-pointer text-gray-700 hover:text-green-700 transition font-medium relative group"
               onClick={() => setIsMenuOpen(false)}
             >
               Articles
@@ -141,14 +141,14 @@ export function Header() {
             </Link>
             <button
               onClick={() => goToSection("consultation")}
-              className="text-gray-700 hover:text-green-700 transition font-medium relative group"
+              className="cursor-pointer text-gray-700 hover:text-green-700 transition font-medium relative group"
             >
               Consultation
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-700 group-hover:w-full transition-all"></span>
             </button>
             <button
               onClick={() => goToSection("contact")}
-              className="text-gray-700 hover:text-green-700 transition font-medium relative group"
+              className="cursor-pointer text-gray-700 hover:text-green-700 transition font-medium relative group"
             >
               Contact
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-700 group-hover:w-full transition-all"></span>
@@ -192,7 +192,7 @@ export function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-gray-700"
+            className="md:hidden cursor-pointer text-gray-700"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -203,25 +203,25 @@ export function Header() {
           <nav className="md:hidden mt-4 pb-4 flex flex-col gap-3">
             <button
               onClick={() => goToSection("home")}
-              className="text-gray-700 hover:text-green-700 transition text-left py-2"
+              className="cursor-pointer text-gray-700 hover:text-green-700 transition text-left py-2"
             >
               Home
             </button>
             <button
               onClick={() => goToSection("about")}
-              className="text-gray-700 hover:text-green-700 transition text-left py-2"
+              className="cursor-pointer text-gray-700 hover:text-green-700 transition text-left py-2"
             >
               About
             </button>
             <button
               onClick={() => goToSection("prakriti")}
-              className="text-gray-700 hover:text-green-700 transition text-left py-2"
+              className="cursor-pointer text-gray-700 hover:text-green-700 transition text-left py-2"
             >
               Prakriti Test
             </button>
             <button
               onClick={() => goToSection("services")}
-              className="text-gray-700 hover:text-green-700 transition text-left py-2"
+              className="cursor-pointer text-gray-700 hover:text-green-700 transition text-left py-2"
             >
               Services
             </button>
@@ -229,7 +229,7 @@ export function Header() {
               onClick={() => {
                 setIsMobileTreatmentsOpen(!isMobileTreatmentsOpen);
               }}
-              className="flex items-center justify-between text-gray-700 hover:text-green-700 transition text-left py-2"
+              className="cursor-pointer flex items-center justify-between text-gray-700 hover:text-green-700 transition text-left py-2"
             >
               Treatments
               <ChevronDown
@@ -241,7 +241,7 @@ export function Header() {
               <div className="pl-4 flex flex-col gap-1 pb-2">
                 <Link
                   to="/treatments"
-                  className="text-gray-600 hover:text-green-700 transition text-left py-1 text-sm font-medium"
+                  className="cursor-pointer text-gray-600 hover:text-green-700 transition text-left py-1 text-sm font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   All Treatments
@@ -250,7 +250,7 @@ export function Header() {
                   <Link
                     key={page.slug}
                     to={`/${page.slug}`}
-                    className="text-gray-600 hover:text-green-700 transition text-left py-1 text-sm"
+                    className="cursor-pointer text-gray-600 hover:text-green-700 transition text-left py-1 text-sm"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {page.h1
@@ -262,26 +262,26 @@ export function Header() {
             )}
             <button
               onClick={() => goToSection("testimonials")}
-              className="text-gray-700 hover:text-green-700 transition text-left py-2"
+              className="cursor-pointer text-gray-700 hover:text-green-700 transition text-left py-2"
             >
               Testimonials
             </button>
             <Link
               to="/blog"
-              className="text-gray-700 hover:text-green-700 transition text-left py-2"
+              className="cursor-pointer text-gray-700 hover:text-green-700 transition text-left py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Articles
             </Link>
             <button
               onClick={() => goToSection("consultation")}
-              className="text-gray-700 hover:text-green-700 transition text-left py-2"
+              className="cursor-pointer text-gray-700 hover:text-green-700 transition text-left py-2"
             >
               Consultation
             </button>
             <button
               onClick={() => goToSection("contact")}
-              className="text-gray-700 hover:text-green-700 transition text-left py-2"
+              className="cursor-pointer text-gray-700 hover:text-green-700 transition text-left py-2"
             >
               Contact
             </button>
