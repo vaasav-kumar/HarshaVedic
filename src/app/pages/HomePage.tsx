@@ -3,6 +3,7 @@ import { Hero } from "../components/Hero";
 import { About } from "../components/About";
 import { PrakritiAssessment } from "../components/PrakritiAssessment";
 import { Services } from "../components/Services";
+import { ClinicFacilities } from "../components/ClinicFacilities";
 import { Testimonials } from "../components/Testimonials";
 import { OnlineConsultation } from "../components/OnlineConsultation";
 import { Footer } from "../components/Footer";
@@ -34,6 +35,7 @@ export function HomePage() {
         <About />
         <PrakritiAssessment />
         <Services />
+        <ClinicFacilities />
         <Testimonials />
         <FaqSection />
         <OnlineConsultation />

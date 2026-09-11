@@ -140,6 +140,14 @@ export function Footer() {
               </li>
               <li>
                 <Link
+                  to="/#clinic"
+                  className="text-green-100 hover:text-white transition hover:pl-2 inline-block"
+                >
+                  → Our Clinic
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/treatments"
                   className="text-green-100 hover:text-white transition hover:pl-2 inline-block"
                 >
