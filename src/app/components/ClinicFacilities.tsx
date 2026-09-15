@@ -49,10 +49,36 @@ export function ClinicFacilities() {
               Wellness Centre
             </span>
           </h2>
-          <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-2">
-            A calm, fully equipped Ayurvedic space in Medavakkam — from
-            Panchakarma and Shirodhara to herbal steam therapy, designed for
-            authentic care.
+          <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-2">
+            A calm, fully equipped Ayurvedic space on Velachery Main Road,
+            Medavakkam — from dedicated Panchakarma and Shirodhara rooms to
+            herbal steam therapy, designed for authentic care by Dr. Harsita
+            Devi J.K.
+          </p>
+        </div>
+
+        <div className="max-w-3xl mx-auto mb-10 md:mb-12 space-y-4 text-gray-600 text-base leading-relaxed px-2">
+          <p>
+            Our treatment rooms are prepared for classical Kerala therapies:
+            warm herbal oil applications, Shirodhara for nervous-system calm,
+            and supervised Panchakarma protocols tailored to your Prakriti.
+            The herbal steam cabinet supports Swedana after oleation, helping
+            open channels and prepare the body for deeper cleansing when
+            indicated.
+          </p>
+          <p>
+            Patients from Tambaram, Pallikaranai, Velachery, Perumbakkam, and
+            across South Chennai visit for in-person consultations and therapy
+            courses. The clinic is easy to reach by road, with a quiet setting
+            suited to rest between sessions. Hygiene, fresh linen, and
+            physician-supervised procedures are standard for every visit.
+          </p>
+          <p>
+            Whether you are beginning a multi-day detox, seeking relief from
+            joint or cervical pain, or continuing follow-up care after an online
+            consultation, the Medavakkam wellness centre is set up for
+            comfortable, authentic Ayurvedic treatment from assessment through
+            aftercare guidance.
           </p>
         </div>
 
@@ -81,8 +107,8 @@ export function ClinicFacilities() {
         <p className="mt-8 md:mt-10 flex items-center justify-center gap-2 text-sm sm:text-base text-gray-600 text-center">
           <MapPin size={18} className="text-green-700 shrink-0" />
           <span>
-            Harsha Vedic Ayurveda Clinic &amp; Wellness Center, Medavakkam,
-            Chennai
+            Harsha Vedic Ayurveda Clinic &amp; Wellness Center, Plot no 4, shop
+            no 7, 1st floor, Velachery Main Road, Medavakkam, Chennai – 600100
           </span>
         </p>
       </div>

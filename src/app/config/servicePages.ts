@@ -41,19 +41,20 @@ export type ServicePage = {
   whyChooseUs: string[];
   faq: { question: string; answer: string }[];
   relatedSlugs: string[];
+  relatedBlogSlugs: string[];
 };
 
 export const SERVICE_PAGES: ServicePage[] = [
   {
     slug: "panchakarma",
     title: `Kerala Panchakarma in Medavakkam, Chennai | ${SITE_NAME}`,
-    metaDescription: `Authentic Kerala Panchakarma and Panchakarma therapy in Medavakkam, Chennai by Dr. Harsita Devi J.K. Deep cleansing, toxin elimination & natural healing. Book Ayurvedic consultation in-person or online.`,
+    metaDescription: `Kerala Panchakarma in Medavakkam, Chennai by Dr. Harsita Devi J.K. Deep detox, toxin elimination & natural healing. Book in-person or online.`,
     keywords: `Panchakarma Medavakkam, Panchakarma therapy Chennai, Kerala Panchakarma, Ayurveda treatment Medavakkam, Ayurvedic clinic in Medavakkam, Ayurvedic consultation Medavakkam`,
     h1: "Kerala Panchakarma Treatment in Medavakkam, Chennai",
     subtitle:
       "Authentic Kerala Panchakarma detox therapy for deep cleansing, toxin elimination, and natural healing",
     heroImage: PanchakarmaDetox,
-    overview: `Kerala Panchakarma is Ayurveda's most comprehensive detox therapy and rejuvenation program. At ${SITE_NAME}, our Ayurvedic wellness centre in Medavakkam, Chennai, Dr. Harsita Devi J.K. offers authentic Panchakarma therapy tailored to your body constitution (Prakriti) and current imbalances. Whether you live in ${LOCAL_AREAS}, our clinic is easily accessible for in-person detox therapy, and Ayurvedic consultations are available online for pre-assessment and follow-up care.`,
+    overview: `Kerala Panchakarma is Ayurveda's most comprehensive detox therapy and rejuvenation program. At ${SITE_NAME}, our Ayurvedic wellness centre in Medavakkam, Chennai, Dr. Harsita Devi J.K. offers authentic Panchakarma therapy tailored to your body constitution (Prakriti) and current imbalances. Whether you live in ${LOCAL_AREAS}, our clinic is easily accessible for in-person detox therapy, and Ayurvedic consultations are available online for pre-assessment and follow-up care. A typical program moves through preparation (Snehana and Swedana), carefully selected main procedures such as Vamana, Virechana, Basti, or Nasya, and post-care diet guidance so results last. Patients often seek Panchakarma for chronic fatigue, digestive sluggishness, skin concerns, joint stiffness, stress, or as a seasonal reset — always under physician supervision for safety and effectiveness.`,
     benefits: [
       "Eliminates accumulated toxins (Ama) from deep tissues",
       "Restores digestive fire (Agni) and metabolic balance",
@@ -115,12 +116,17 @@ export const SERVICE_PAGES: ServicePage[] = [
         answer: `Our clinic is at ${FORMATTED_ADDRESS}. We serve patients from ${LOCAL_AREAS}, and across Chennai.`,
       },
     ],
-    relatedSlugs: ["weight-loss", "skin-care", "migraine-treatment"],
+    relatedSlugs: ["weight-loss", "skin-care", "wellness-programs"],
+    relatedBlogSlugs: [
+      "benefits-of-panchakarma",
+      "is-panchakarma-painful",
+      "best-foods-after-panchakarma",
+    ],
   },
   {
     slug: "knee-pain-treatment",
     title: `Ayurvedic Joint Pain Care in Medavakkam, Chennai | ${SITE_NAME}`,
-    metaDescription: `Natural Ayurvedic joint pain care in Medavakkam, Chennai by Dr. Harsita Devi J.K. Abhyanga, Janu Basti, Panchakarma & personalized care for knee arthritis and stiffness. Book consultation.`,
+    metaDescription: `Ayurvedic joint pain care in Medavakkam, Chennai by Dr. Harsita Devi J.K. Abhyanga, Janu Basti & Panchakarma for knee arthritis. Book consultation.`,
     keywords: `Ayurvedic joint pain care, knee pain Ayurvedic treatment, Abhyanga Medavakkam, Ayurvedic doctor Medavakkam, Janu Basti, Ayurveda treatment Medavakkam`,
     h1: "Ayurvedic Joint Pain Care in Medavakkam, Chennai",
     subtitle:
@@ -193,13 +199,14 @@ export const SERVICE_PAGES: ServicePage[] = [
       "panchakarma",
       "back-pain-treatment",
       "weight-loss",
-      "migraine-treatment",
+      "wellness-programs",
     ],
+    relatedBlogSlugs: ["ayurveda-for-cervical-pain", "benefits-of-panchakarma"],
   },
   {
     slug: "migraine-treatment",
     title: `Shirodhara & Migraine Treatment in Medavakkam | ${SITE_NAME}`,
-    metaDescription: `Effective Ayurvedic migraine treatment with Shirodhara in Medavakkam, Chennai by Dr. Harsita Devi J.K. Nasya, herbal medicine & root-cause care. Book Ayurvedic consultation today.`,
+    metaDescription: `Ayurvedic migraine treatment with Shirodhara in Medavakkam, Chennai by Dr. Harsita Devi J.K. Nasya, herbs & root-cause care. Book today.`,
     keywords: `Shirodhara Medavakkam, migraine Ayurvedic treatment, headache Ayurveda Chennai, Ayurvedic doctor Medavakkam, Ayurveda treatment Medavakkam`,
     h1: "Shirodhara & Migraine Treatment in Medavakkam, Chennai",
     subtitle:
@@ -268,12 +275,17 @@ export const SERVICE_PAGES: ServicePage[] = [
           "Yes, Shirodhara is one of the most effective Ayurvedic therapies for migraines. It calms the mind, balances Vata-Pitta, and provides deep nervous system relaxation.",
       },
     ],
-    relatedSlugs: ["panchakarma", "pcos-treatment", "skin-care"],
+    relatedSlugs: ["panchakarma", "back-pain-treatment", "wellness-programs"],
+    relatedBlogSlugs: [
+      "ayurveda-for-cervical-pain",
+      "is-panchakarma-painful",
+      "benefits-of-panchakarma",
+    ],
   },
   {
     slug: "pcos-treatment",
     title: `PCOS & PCOD Ayurveda in Medavakkam | ${SITE_NAME}`,
-    metaDescription: `Holistic PCOS and PCOD Ayurveda in Medavakkam, Chennai by Dr. Harsita Devi J.K. Women's wellness, hormone balance, weight management & fertility support. Book consultation.`,
+    metaDescription: `PCOS & PCOD Ayurveda in Medavakkam, Chennai by Dr. Harsita Devi J.K. Hormone balance, weight care & fertility support. Book consultation.`,
     keywords: `PCOS Ayurveda Medavakkam, PCOD Ayurveda Medavakkam, women's wellness Ayurveda, Ayurvedic doctor Medavakkam, hormonal imbalance Ayurveda, fertility Ayurveda Chennai`,
     h1: "Women's Wellness & PCOS Treatment in Medavakkam, Chennai",
     subtitle:
@@ -343,12 +355,17 @@ export const SERVICE_PAGES: ServicePage[] = [
           "Yes, Ayurvedic PCOS treatment includes personalized diet plans and metabolic support herbs that address insulin resistance – a key driver of PCOS-related weight gain.",
       },
     ],
-    relatedSlugs: ["weight-loss", "skin-care", "migraine-treatment"],
+    relatedSlugs: ["weight-loss", "skin-care", "wellness-programs"],
+    relatedBlogSlugs: [
+      "benefits-of-panchakarma",
+      "ayurveda-for-diabetes",
+      "home-remedies-for-acidity",
+    ],
   },
   {
     slug: "weight-loss",
     title: `Ayurvedic Weight Management in Chennai | ${SITE_NAME}`,
-    metaDescription: `Natural Ayurvedic weight management in Chennai by Dr. Harsita Devi J.K. Metabolic detox, Udvartana, personalized diet & herbal support. Clinic in Medavakkam. Book consultation.`,
+    metaDescription: `Ayurvedic weight management in Chennai by Dr. Harsita Devi J.K. Metabolic detox, Udvartana & diet support at our Medavakkam clinic. Book now.`,
     keywords: `Ayurvedic weight management Chennai, weight loss Ayurveda, Ayurveda treatment Medavakkam, Ayurvedic doctor Medavakkam, metabolic detox Ayurveda`,
     h1: "Ayurvedic Weight Management in Chennai",
     subtitle:
@@ -417,12 +434,22 @@ export const SERVICE_PAGES: ServicePage[] = [
           "Dr. Harsita Devi J.K. provides practical, sustainable diet guidance based on your dosha – not restrictive fad diets. The focus is on eating the right foods at the right times.",
       },
     ],
-    relatedSlugs: ["panchakarma", "pcos-treatment", "knee-pain-treatment"],
+    relatedSlugs: [
+      "panchakarma",
+      "pcos-treatment",
+      "wellness-programs",
+      "fatty-liver-treatment",
+    ],
+    relatedBlogSlugs: [
+      "benefits-of-panchakarma",
+      "ayurveda-for-diabetes",
+      "ayurveda-for-fatty-liver",
+    ],
   },
   {
     slug: "skin-care",
     title: `Ayurvedic Skin & Hair Care in Medavakkam | ${SITE_NAME}`,
-    metaDescription: `Natural Ayurvedic skin and hair care in Medavakkam, Chennai by Dr. Harsita Devi J.K. Acne, eczema, psoriasis, hair fall & pigmentation. Herbal facials & internal medicine.`,
+    metaDescription: `Ayurvedic skin & hair care in Medavakkam, Chennai by Dr. Harsita Devi J.K. Acne, eczema, pigmentation & hair fall treated naturally.`,
     keywords: `Ayurvedic skin and hair care, Ayurvedic skin care Chennai, acne Ayurveda Medavakkam, hair fall Ayurveda, Ayurvedic doctor Medavakkam, psoriasis Ayurveda`,
     h1: "Ayurvedic Skin & Hair Care in Medavakkam, Chennai",
     subtitle:
@@ -491,12 +518,17 @@ export const SERVICE_PAGES: ServicePage[] = [
           "Yes, we treat hyperpigmentation, melasma, and dark spots using herbal facials, internal blood-purifying medicines, and sun protection guidance.",
       },
     ],
-    relatedSlugs: ["panchakarma", "pcos-treatment", "migraine-treatment"],
+    relatedSlugs: ["panchakarma", "pcos-treatment", "wellness-programs"],
+    relatedBlogSlugs: [
+      "benefits-of-panchakarma",
+      "home-remedies-for-acidity",
+      "best-foods-after-panchakarma",
+    ],
   },
   {
     slug: "back-pain-treatment",
     title: `Back Pain Ayurvedic Treatment in Chennai | ${SITE_NAME}`,
-    metaDescription: `Natural Ayurvedic back pain treatment in Chennai by Dr. Harsita Devi J.K. Kati Basti, herbal oils, Panchakarma & personalized care for sciatica and lumbar pain. Book consultation.`,
+    metaDescription: `Ayurvedic back pain treatment in Chennai by Dr. Harsita Devi J.K. Kati Basti, herbal oils & Panchakarma for sciatica. Clinic in Medavakkam.`,
     keywords: `Back pain Ayurvedic treatment, Ayurvedic joint pain care, Kati Basti Medavakkam, sciatica Ayurveda Chennai, Ayurvedic doctor Medavakkam, lumbar pain Ayurveda`,
     h1: "Ayurvedic Back Pain Treatment in Chennai",
     subtitle:
@@ -566,12 +598,22 @@ export const SERVICE_PAGES: ServicePage[] = [
           "Yes, we treat neck pain and cervical spondylosis using Greeva Basti, Nasya, herbal medicine, and posture correction guidance.",
       },
     ],
-    relatedSlugs: ["knee-pain-treatment", "panchakarma", "migraine-treatment"],
+    relatedSlugs: [
+      "knee-pain-treatment",
+      "panchakarma",
+      "migraine-treatment",
+      "wellness-programs",
+    ],
+    relatedBlogSlugs: [
+      "ayurveda-for-cervical-pain",
+      "benefits-of-panchakarma",
+      "is-panchakarma-painful",
+    ],
   },
   {
     slug: "diabetes-treatment",
     title: `Ayurvedic Diabetes Treatment in Chennai | ${SITE_NAME}`,
-    metaDescription: `Holistic Ayurvedic diabetes treatment in Chennai by Dr. Harsita Devi J.K. Blood sugar management, metabolic detox & personalized diet. Clinic in Medavakkam. Book consultation.`,
+    metaDescription: `Ayurvedic diabetes treatment in Chennai by Dr. Harsita Devi J.K. Blood sugar balance, metabolic detox & diet at our Medavakkam clinic.`,
     keywords: `Ayurveda for diabetes, Ayurvedic diabetes treatment Chennai, blood sugar Ayurveda Medavakkam, Ayurvedic doctor near me, diabetes management Ayurveda, Ayurvedic clinic Chennai`,
     h1: "Ayurvedic Diabetes Treatment in Chennai",
     subtitle:
@@ -640,12 +682,22 @@ export const SERVICE_PAGES: ServicePage[] = [
           "Yes, Ayurvedic therapies including herbal medicine, Abhyanga, and Basti can help manage tingling, numbness, and nerve pain associated with diabetic neuropathy.",
       },
     ],
-    relatedSlugs: ["weight-loss", "fatty-liver-treatment", "panchakarma"],
+    relatedSlugs: [
+      "weight-loss",
+      "fatty-liver-treatment",
+      "panchakarma",
+      "wellness-programs",
+    ],
+    relatedBlogSlugs: [
+      "ayurveda-for-diabetes",
+      "ayurveda-for-fatty-liver",
+      "home-remedies-for-acidity",
+    ],
   },
   {
     slug: "fatty-liver-treatment",
     title: `Ayurvedic Fatty Liver Treatment in Chennai | ${SITE_NAME}`,
-    metaDescription: `Natural Ayurvedic fatty liver treatment in Chennai by Dr. Harsita Devi J.K. Liver detox, herbal medicine & diet management. Clinic in Medavakkam. Book consultation today.`,
+    metaDescription: `Ayurvedic fatty liver treatment in Chennai by Dr. Harsita Devi J.K. Liver detox, herbs & diet support at our Medavakkam clinic. Book today.`,
     keywords: `Ayurveda for fatty liver, fatty liver treatment Chennai, liver detox Ayurveda Medavakkam, Ayurvedic doctor near me, NAFLD Ayurveda, Ayurvedic clinic Chennai`,
     h1: "Ayurvedic Fatty Liver Treatment in Chennai",
     subtitle:
@@ -715,12 +767,22 @@ export const SERVICE_PAGES: ServicePage[] = [
           "Yes, Ayurvedic treatment complements conventional monitoring. Share your latest liver function reports with Dr. Harsita Devi J.K. for a coordinated care plan.",
       },
     ],
-    relatedSlugs: ["panchakarma", "weight-loss", "diabetes-treatment"],
+    relatedSlugs: [
+      "panchakarma",
+      "weight-loss",
+      "diabetes-treatment",
+      "wellness-programs",
+    ],
+    relatedBlogSlugs: [
+      "ayurveda-for-fatty-liver",
+      "ayurveda-for-diabetes",
+      "best-foods-after-panchakarma",
+    ],
   },
   {
     slug: "wellness-programs",
     title: `Ayurvedic Wellness Programs in Medavakkam, Chennai | ${SITE_NAME}`,
-    metaDescription: `Personalised Ayurvedic wellness programs in Medavakkam, Chennai by Dr. Harsita Devi J.K. Weekend rejuvenation, 7-day reset, women's wellness, weight management & stress relief. Book consultation.`,
+    metaDescription: `Ayurvedic wellness programs in Medavakkam, Chennai by Dr. Harsita Devi J.K. Weekend reset, women's wellness & stress relief. Book now.`,
     keywords: `Ayurvedic wellness programs Medavakkam, wellness centre Chennai, Ayurveda rejuvenation program, weekend wellness Ayurveda, women's wellness program, stress relief wellness Ayurveda, Ayurvedic lifestyle program Medavakkam`,
     h1: "Ayurvedic Wellness Programs in Medavakkam, Chennai",
     subtitle:
@@ -822,7 +884,12 @@ export const SERVICE_PAGES: ServicePage[] = [
         answer: `All in-person programmes take place at our clinic at ${FORMATTED_ADDRESS}. We serve patients from ${LOCAL_AREAS}, and across Chennai.`,
       },
     ],
-    relatedSlugs: ["panchakarma", "weight-loss", "pcos-treatment"],
+    relatedSlugs: ["panchakarma", "weight-loss", "pcos-treatment", "migraine-treatment"],
+    relatedBlogSlugs: [
+      "benefits-of-panchakarma",
+      "is-panchakarma-painful",
+      "best-foods-after-panchakarma",
+    ],
   },
 ];
 

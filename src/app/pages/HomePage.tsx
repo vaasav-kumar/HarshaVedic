@@ -5,6 +5,7 @@ import { PrakritiAssessment } from "../components/PrakritiAssessment";
 import { Services } from "../components/Services";
 import { ClinicFacilities } from "../components/ClinicFacilities";
 import { Testimonials } from "../components/Testimonials";
+import { LatestArticles } from "../components/LatestArticles";
 import { OnlineConsultation } from "../components/OnlineConsultation";
 import { Footer } from "../components/Footer";
 import { FloatingCTA } from "../components/FloatingCTA";
@@ -37,6 +38,7 @@ export function HomePage() {
         <Services />
         <ClinicFacilities />
         <Testimonials />
+        <LatestArticles />
         <FaqSection />
         <OnlineConsultation />
       </main>

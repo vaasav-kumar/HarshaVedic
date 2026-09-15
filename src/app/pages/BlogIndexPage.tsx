@@ -54,12 +54,30 @@ export function BlogIndexPage() {
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
                 Ayurveda Articles & Wellness Guides
               </h1>
-              <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+              <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
                 Evidence-informed Ayurvedic insights on Panchakarma, chronic
                 conditions, diet, and natural remedies — written by{" "}
                 {SITE_NAME}'s certified physician to help you make informed health
                 decisions.
               </p>
+              <p className="text-base text-gray-600 leading-relaxed mb-4">
+                These guides explain what classical therapies involve, who they
+                help, and which daily habits support recovery. They are written
+                for patients and families in Medavakkam, Tambaram, Pallikaranai,
+                Velachery, Perumbakkam, and across Chennai.
+              </p>
+              <p className="text-base text-gray-600 leading-relaxed mb-6">
+                Use the articles to prepare for a consultation or deepen
+                follow-up care — and always seek personalized advice before
+                starting intensive detox or herbal protocols on your own.
+              </p>
+              <Link
+                to="/treatments"
+                className="inline-flex items-center gap-2 text-green-700 font-semibold hover:gap-3 transition-all"
+              >
+                Explore our Ayurvedic treatments
+                <ArrowRight size={18} />
+              </Link>
             </div>
           </div>
         </section>

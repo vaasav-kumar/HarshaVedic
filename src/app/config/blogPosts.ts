@@ -39,7 +39,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "benefits-of-panchakarma",
     title: `Benefits of Panchakarma | ${SITE_NAME}`,
     metaDescription:
-      "Discover the proven benefits of Panchakarma — deep detox, improved digestion, stronger immunity, and mental clarity. Learn how Kerala Panchakarma works and who should consider it.",
+      "Proven Panchakarma benefits — deep detox, better digestion, immunity & clarity. How Kerala Panchakarma works and who should try it.",
     keywords:
       "benefits of Panchakarma, Panchakarma detox benefits, Kerala Panchakarma, Ayurvedic detox therapy, Panchakarma Chennai, Ayurveda wellness",
     h1: "Benefits of Panchakarma: Why Ayurveda's Detox Therapy Transforms Health",
@@ -102,14 +102,18 @@ export const BLOG_POSTS: BlogPost[] = [
           "Yes, but it must be supervised by a qualified Ayurvedic physician who can coordinate with your existing treatment plan. Dr. Harsita Devi J.K. reviews all medications during your consultation.",
       },
     ],
-    relatedSlugs: ["is-panchakarma-painful", "best-foods-after-panchakarma"],
-    relatedServiceSlugs: ["panchakarma", "weight-loss", "skin-care"],
+    relatedSlugs: [
+      "is-panchakarma-painful",
+      "best-foods-after-panchakarma",
+      "ayurveda-for-cervical-pain",
+    ],
+    relatedServiceSlugs: ["panchakarma", "weight-loss", "wellness-programs"],
   },
   {
     slug: "is-panchakarma-painful",
     title: `Is Panchakarma Painful? What to Expect | ${SITE_NAME}`,
     metaDescription:
-      "Worried Panchakarma might be painful? Learn what each procedure feels like, common side effects, and how Dr. Harsita Devi J.K. ensures a comfortable, safe detox experience.",
+      "Is Panchakarma painful? What each procedure feels like, side effects, and how Dr. Harsita Devi J.K. keeps detox comfortable and safe.",
     keywords:
       "is Panchakarma painful, Panchakarma side effects, Panchakarma experience, Virechana, Basti therapy, Panchakarma Chennai",
     h1: "Is Panchakarma Painful? What Patients Actually Experience",
@@ -171,14 +175,18 @@ export const BLOG_POSTS: BlogPost[] = [
           "Inform your therapist or doctor immediately. Treatment intensity can be reduced, and supportive therapies like rest, warm fluids, and gentle massage are provided.",
       },
     ],
-    relatedSlugs: ["benefits-of-panchakarma", "best-foods-after-panchakarma"],
-    relatedServiceSlugs: ["panchakarma"],
+    relatedSlugs: [
+      "benefits-of-panchakarma",
+      "best-foods-after-panchakarma",
+      "ayurveda-for-cervical-pain",
+    ],
+    relatedServiceSlugs: ["panchakarma", "wellness-programs"],
   },
   {
     slug: "ayurveda-for-fatty-liver",
     title: `Ayurveda for Fatty Liver: Natural Treatment Guide | ${SITE_NAME}`,
     metaDescription:
-      "Ayurvedic approach to fatty liver (NAFLD) — herbal medicines, diet changes, Panchakarma detox, and lifestyle tips. Root-cause treatment by Dr. Harsita Devi J.K. in Chennai.",
+      "Ayurveda for fatty liver (NAFLD) — herbs, diet, Panchakarma & lifestyle tips. Root-cause care by Dr. Harsita Devi J.K. in Chennai.",
     keywords:
       "Ayurveda for fatty liver, fatty liver treatment Ayurveda, NAFLD Ayurvedic treatment, liver detox Ayurveda, Medavakkam Ayurvedic clinic",
     h1: "Ayurveda for Fatty Liver: A Root-Cause Approach to NAFLD",
@@ -240,14 +248,23 @@ export const BLOG_POSTS: BlogPost[] = [
           "Yes, but inform both your Ayurvedic physician and allopathic doctor. Dr. Harsita Devi J.K. coordinates treatment plans to avoid interactions.",
       },
     ],
-    relatedSlugs: ["ayurveda-for-diabetes", "benefits-of-panchakarma"],
-    relatedServiceSlugs: ["fatty-liver-treatment", "panchakarma", "weight-loss"],
+    relatedSlugs: [
+      "ayurveda-for-diabetes",
+      "benefits-of-panchakarma",
+      "best-foods-after-panchakarma",
+    ],
+    relatedServiceSlugs: [
+      "fatty-liver-treatment",
+      "panchakarma",
+      "weight-loss",
+      "diabetes-treatment",
+    ],
   },
   {
     slug: "ayurveda-for-diabetes",
     title: `Ayurveda for Diabetes: Madhumeha Management | ${SITE_NAME}`,
     metaDescription:
-      "Ayurvedic treatment for diabetes (Madhumeha) — herbal medicines, diet plan, Panchakarma, and lifestyle changes. Personalized care by Dr. Harsita Devi J.K. in Chennai.",
+      "Ayurveda for diabetes (Madhumeha) — herbs, diet, Panchakarma & lifestyle changes. Personalized care by Dr. Harsita Devi J.K. in Chennai.",
     keywords:
       "Ayurveda for diabetes, Madhumeha treatment, Ayurvedic diabetes management, diabetes diet Ayurveda, Ayurvedic doctor Chennai",
     h1: "Ayurveda for Diabetes: Managing Madhumeha Naturally",
@@ -312,8 +329,17 @@ export const BLOG_POSTS: BlogPost[] = [
           "Virechana (Pitta cleansing) and Basti (Vata balancing) are most commonly recommended. The choice depends on your doshic profile and current blood sugar control.",
       },
     ],
-    relatedSlugs: ["ayurveda-for-fatty-liver", "home-remedies-for-acidity"],
-    relatedServiceSlugs: ["diabetes-treatment", "weight-loss", "panchakarma"],
+    relatedSlugs: [
+      "ayurveda-for-fatty-liver",
+      "home-remedies-for-acidity",
+      "benefits-of-panchakarma",
+    ],
+    relatedServiceSlugs: [
+      "diabetes-treatment",
+      "weight-loss",
+      "panchakarma",
+      "fatty-liver-treatment",
+    ],
   },
   {
     slug: "best-foods-after-panchakarma",
@@ -399,8 +425,12 @@ export const BLOG_POSTS: BlogPost[] = [
           "Avoid coffee for at least 2 weeks as it aggravates Vata and Pitta. Mild herbal teas and ginger tea are fine from day one.",
       },
     ],
-    relatedSlugs: ["benefits-of-panchakarma", "is-panchakarma-painful"],
-    relatedServiceSlugs: ["panchakarma"],
+    relatedSlugs: [
+      "benefits-of-panchakarma",
+      "is-panchakarma-painful",
+      "home-remedies-for-acidity",
+    ],
+    relatedServiceSlugs: ["panchakarma", "wellness-programs", "weight-loss"],
   },
   {
     slug: "home-remedies-for-acidity",
@@ -473,14 +503,22 @@ export const BLOG_POSTS: BlogPost[] = [
           "Yes. Stress aggravates Vata, which disturbs Agni and can push Pitta upward, causing acid reflux. Stress management is a key part of Ayurvedic acidity treatment.",
       },
     ],
-    relatedSlugs: ["ayurveda-for-diabetes", "ayurveda-for-fatty-liver"],
-    relatedServiceSlugs: ["panchakarma"],
+    relatedSlugs: [
+      "ayurveda-for-diabetes",
+      "ayurveda-for-fatty-liver",
+      "best-foods-after-panchakarma",
+    ],
+    relatedServiceSlugs: [
+      "panchakarma",
+      "wellness-programs",
+      "fatty-liver-treatment",
+    ],
   },
   {
     slug: "ayurveda-for-cervical-pain",
     title: `Ayurveda for Cervical Pain: Neck Pain Relief | ${SITE_NAME}`,
     metaDescription:
-      "Ayurvedic treatment for cervical pain and spondylosis — herbal oils, Greeva Basti, Abhyanga, and exercises. Natural neck pain relief in Chennai by Dr. Harsita Devi J.K.",
+      "Ayurvedic care for cervical pain & spondylosis — herbal oils, Greeva Basti & Abhyanga. Natural neck relief in Chennai.",
     keywords:
       "Ayurveda for cervical pain, cervical spondylosis Ayurveda, neck pain treatment Ayurveda, Greeva Basti, Ayurvedic doctor Chennai",
     h1: "Ayurveda for Cervical Pain: Natural Relief for Neck Pain",
@@ -547,8 +585,17 @@ export const BLOG_POSTS: BlogPost[] = [
           "Yes. Cervical nerve compression can trigger cervicogenic headaches. Nasya and Greeva Basti often help both neck pain and associated migraines.",
       },
     ],
-    relatedSlugs: ["benefits-of-panchakarma", "home-remedies-for-acidity"],
-    relatedServiceSlugs: ["back-pain-treatment", "knee-pain-treatment", "migraine-treatment"],
+    relatedSlugs: [
+      "benefits-of-panchakarma",
+      "is-panchakarma-painful",
+      "home-remedies-for-acidity",
+    ],
+    relatedServiceSlugs: [
+      "back-pain-treatment",
+      "knee-pain-treatment",
+      "migraine-treatment",
+      "panchakarma",
+    ],
   },
 ];
 

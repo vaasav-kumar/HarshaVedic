@@ -1,7 +1,6 @@
 import {
   BUSINESS,
   FAQ_ITEMS,
-  LOCAL_AREAS,
   SERVICES,
   SITE_NAME,
   SITE_URL,
@@ -26,7 +25,7 @@ const structuredData = {
       "@id": `${SITE_URL}/#organization`,
       name: SITE_NAME,
       description:
-        `Harsha Vedic is an Ayurvedic clinic in Medavakkam, Chennai serving ${LOCAL_AREAS}. Kerala Panchakarma detox therapy, pain management, women's health care, stress relief, and natural healing by Dr. Harsita Devi J.K.`,
+        "Ayurvedic Clinic & Wellness Center in Medavakkam, Chennai offering Kerala Panchakarma, pain management, women's health, and natural healing by Dr. Harsita Devi J.K.",
       url: SITE_URL,
       logo: `${SITE_URL}/logo.png`,
       image: `${SITE_URL}/og-image.jpg`,
@@ -106,7 +105,7 @@ const structuredData = {
       "@type": "WebSite",
       "@id": `${SITE_URL}/#website`,
       url: SITE_URL,
-      name: `${SITE_NAME} – Ayurvedic Clinic in Medavakkam, Chennai`,
+      name: `${SITE_NAME} – Ayurveda Clinic & Wellness Center in Medavakkam, Chennai`,
       description:
         "Kerala Panchakarma detox therapy, pain management, women's health, stress relief, and Ayurvedic consultation by Dr. Harsita Devi J.K.",
       publisher: { "@id": `${SITE_URL}/#organization` },

@@ -41,6 +41,9 @@ export function Hero() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-800">
                 Harsha Vedic
               </span>
+              <span className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 mt-2 md:mt-3">
+                Ayurveda Clinic & Wellness Center in Medavakkam, Chennai
+              </span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
               Your trusted{" "}

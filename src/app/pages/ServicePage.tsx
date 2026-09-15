@@ -29,6 +29,8 @@ import {
 } from "../components/ui/accordion";
 import { BUSINESS, FORMATTED_ADDRESS } from "../config/seo";
 import { CLINIC_LOCATION_TEXT, getServicePage } from "../config/servicePages";
+import { getBlogPost } from "../config/blogPosts";
+import { Badge } from "../components/ui/badge";
 
 type ServicePageProps = {
   slug: string;
@@ -54,6 +56,10 @@ export function ServicePageView({ slug }: ServicePageProps) {
 
   const relatedPages = page.relatedSlugs
     .map((s) => getServicePage(s))
+    .filter(Boolean);
+
+  const relatedArticles = page.relatedBlogSlugs
+    .map((s) => getBlogPost(s))
     .filter(Boolean);
 
   return (
@@ -338,6 +344,57 @@ export function ServicePageView({ slug }: ServicePageProps) {
                       </Link>
                     ),
                 )}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Related Articles — strengthens incoming internal links to blog content */}
+        {relatedArticles.length > 0 && (
+          <section className="py-12 md:py-16 bg-white">
+            <div className="container mx-auto px-4 sm:px-6">
+              <div className="text-center mb-8">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+                  Related Ayurveda Articles
+                </h2>
+                <p className="text-gray-600 max-w-2xl mx-auto">
+                  Learn more about this treatment and related health topics from
+                  Dr. Harsita Devi J.K.
+                </p>
+              </div>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+                {relatedArticles.map(
+                  (article) =>
+                    article && (
+                      <Link
+                        key={article.slug}
+                        to={`/blog/${article.slug}`}
+                        className="group bg-gradient-to-br from-green-50 to-amber-50 p-5 rounded-xl shadow-sm hover:shadow-lg transition-all border border-green-100 hover:border-green-300"
+                      >
+                        <Badge
+                          variant="outline"
+                          className="text-green-700 border-green-300 mb-2"
+                        >
+                          {article.category}
+                        </Badge>
+                        <h3 className="font-semibold text-gray-900 group-hover:text-green-700 transition-colors">
+                          {article.h1}
+                        </h3>
+                        <p className="text-sm text-gray-500 mt-2 line-clamp-2">
+                          {article.excerpt}
+                        </p>
+                      </Link>
+                    ),
+                )}
+              </div>
+              <div className="text-center mt-8">
+                <Link
+                  to="/blog"
+                  className="inline-flex items-center gap-1 text-green-700 font-semibold hover:gap-2 transition-all"
+                >
+                  Browse all articles
+                  <ArrowRight size={16} />
+                </Link>
               </div>
             </div>
           </section>

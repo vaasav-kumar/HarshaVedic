@@ -4,8 +4,9 @@ export const SITE_NAME = "Harsha Vedic";
 export const SITE_TAGLINE =
   "Ayurveda Clinic & Wellness Center in Medavakkam, Chennai";
 
+/** Keep ≤70 chars so search engines do not truncate the SERP title. */
 export const DEFAULT_TITLE =
-  "Harsha Vedic | Ayurveda Clinic & Wellness Center in Medavakkam, Chennai – Kerala Panchakarma, Pain Management & Women's Health";
+  "Harsha Vedic | Ayurveda Clinic & Wellness Center in Medavakkam, Chennai";
 
 export const SURROUNDING_AREAS = [
   "Tambaram",
@@ -17,8 +18,9 @@ export const SURROUNDING_AREAS = [
 export const LOCAL_AREAS =
   "Medavakkam, Tambaram, Pallikaranai, Velachery, and Perumbakkam";
 
+/** Keep ≤155 chars so search engines do not truncate the SERP snippet. */
 export const DEFAULT_DESCRIPTION =
-  "Harsha Vedic is your trusted Ayurvedic clinic in Medavakkam, Chennai, serving Tambaram, Pallikaranai, Velachery, Perumbakkam, and surrounding areas. Dr. Harsita Devi J.K. offers Kerala Panchakarma detox therapy, pain management, women's health care, stress relief, and natural healing through personalized Ayurvedic consultation — in-person or online.";
+  "Ayurvedic Clinic & Wellness Center in Medavakkam, Chennai by Dr. Harsita Devi J.K. Kerala Panchakarma, pain care & women's health. Book in-person or online.";
 
 export const SEO_KEYWORDS =
   "Ayurvedic clinic in Medavakkam, Ayurveda clinic Medavakkam, Ayurvedic doctor Medavakkam, Ayurveda treatment Medavakkam, Panchakarma Medavakkam, Ayurvedic consultation Medavakkam, Ayurvedic wellness centre Medavakkam, Harsha Vedic, Chennai";

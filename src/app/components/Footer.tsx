@@ -7,8 +7,11 @@ import {
   GOOGLE_MAPS_EMBED_URL,
 } from "../config/seo";
 import { SERVICE_PAGES } from "../config/servicePages";
+import { getAllBlogPosts } from "../config/blogPosts";
 
 export function Footer() {
+  const featuredArticles = getAllBlogPosts().slice(0, 5);
+
   return (
     <footer id="contact" className="relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-green-900 via-green-800 to-green-900"></div>
@@ -170,6 +173,16 @@ export function Footer() {
                   → Articles
                 </Link>
               </li>
+              {featuredArticles.map((post) => (
+                <li key={post.slug}>
+                  <Link
+                    to={`/blog/${post.slug}`}
+                    className="text-green-100 hover:text-white transition hover:pl-2 inline-block text-sm"
+                  >
+                    → {post.h1.split(":")[0]}
+                  </Link>
+                </li>
+              ))}
               <li>
                 <Link
                   to="/#testimonials"

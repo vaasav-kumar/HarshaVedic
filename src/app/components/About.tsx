@@ -55,7 +55,7 @@ export function About() {
               <div className="absolute inset-0 bg-gradient-to-br from-green-600/10 to-transparent z-10"></div>
               <ImageWithFallback
                 src={Doctor}
-                alt="Ayurvedic consultation"
+                alt="Dr. Harsita Devi J.K., Ayurvedic doctor at Harsha Vedic clinic in Medavakkam, Chennai"
                 className="w-full h-auto object-cover"
               />
             </div>
