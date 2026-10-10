@@ -32,10 +32,10 @@ export function FloatingCTA() {
         </button>
         <div className="flex-1 min-w-0 pr-6">
           <p className="text-sm font-semibold text-brand-green">
-            Ready to heal naturally?
+            Book a consultation
           </p>
           <p className="text-xs text-muted-foreground">
-            Same-week appointments available
+            In-person or online
           </p>
         </div>
         <Button

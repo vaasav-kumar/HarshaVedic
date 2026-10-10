@@ -4,7 +4,6 @@ import { About } from "../components/About";
 import { PrakritiAssessment } from "../components/PrakritiAssessment";
 import { Services } from "../components/Services";
 import { ClinicFacilities } from "../components/ClinicFacilities";
-import { Testimonials } from "../components/Testimonials";
 import { LatestArticles } from "../components/LatestArticles";
 import { OnlineConsultation } from "../components/OnlineConsultation";
 import { Footer } from "../components/Footer";
@@ -37,7 +36,6 @@ export function HomePage() {
         <PrakritiAssessment />
         <Services />
         <ClinicFacilities />
-        <Testimonials />
         <LatestArticles />
         <FaqSection />
         <OnlineConsultation />

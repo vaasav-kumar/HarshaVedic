@@ -46,18 +46,16 @@ export function Hero() {
               </span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-gray-700 leading-relaxed">
-              Your trusted{" "}
               <span className="font-semibold text-green-700">
                 Ayurveda Clinic & Wellness Center in Medavakkam, Chennai
               </span>
               , easily accessible from Tambaram, Pallikaranai, Velachery, and
-              Perumbakkam. Experience Kerala Panchakarma, detox therapy, pain
-              management, and women's health care with{" "}
+              Perumbakkam. Kerala Panchakarma, detox therapy, pain management,
+              and women's health care with{" "}
               <span className="font-semibold text-green-700">
                 Dr. Harsita Devi J.K.
               </span>
-              , an experienced Ayurveda doctor. Book an Ayurvedic consultation
-              in-person or online.
+              . Ayurvedic consultation is available in-person or online.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button
@@ -83,10 +81,10 @@ export function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-amber-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition"></div>
                 <div className="relative bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-2xl shadow-lg">
                   <div className="text-2xl sm:text-3xl font-bold text-green-700">
-                    100+
+                    In-person
                   </div>
                   <div className="text-gray-600 text-xs sm:text-sm">
-                    Happy Patients
+                    & online consultation
                   </div>
                 </div>
               </div>
@@ -94,10 +92,10 @@ export function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-amber-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition"></div>
                 <div className="relative bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-2xl shadow-lg">
                   <div className="text-2xl sm:text-3xl font-bold text-green-700">
-                    75+
+                    Chennai
                   </div>
                   <div className="text-gray-600 text-xs sm:text-sm">
-                    Online Consultations
+                    Medavakkam clinic
                   </div>
                 </div>
               </div>
@@ -105,10 +103,10 @@ export function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-amber-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition"></div>
                 <div className="relative bg-white/80 backdrop-blur-sm p-3 sm:p-4 rounded-2xl shadow-lg">
                   <div className="text-2xl sm:text-3xl font-bold text-green-700">
-                    100%
+                    Mon–Sat
                   </div>
                   <div className="text-gray-600 text-xs sm:text-sm">
-                    Natural Care
+                    10 AM – 8:30 PM
                   </div>
                 </div>
               </div>
@@ -119,7 +117,7 @@ export function Hero() {
               <div className="rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-2xl border-[6px] border-gray-800 bg-gray-800">
                 <img
                   src={PanchakarmaGif}
-                  alt="Doctor and patient Panchakarma consultation chat at Harsha Vedic"
+                  alt="Online consultation screen for Dr. Harsita at Harsha Vedic"
                   className="w-full h-auto block"
                 />
               </div>
@@ -133,7 +131,7 @@ export function Hero() {
                       Dr. Harsita Devi J.K.
                     </div>
                     <div className="text-xs sm:text-sm text-green-700">
-                      Certified Ayurvedic Physician
+                      Ayurvedic Physician
                     </div>
                   </div>
                 </div>

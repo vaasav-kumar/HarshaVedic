@@ -55,10 +55,9 @@ export function BlogIndexPage() {
                 Ayurveda Articles & Wellness Guides
               </h1>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                Evidence-informed Ayurvedic insights on Panchakarma, chronic
-                conditions, diet, and natural remedies — written by{" "}
-                {SITE_NAME}'s certified physician to help you make informed health
-                decisions.
+                Ayurvedic notes on Panchakarma, diet, and everyday health.
+                These articles are general information and are not a substitute
+                for a consultation.
               </p>
               <p className="text-base text-gray-600 leading-relaxed mb-4">
                 These guides explain what classical therapies involve, who they

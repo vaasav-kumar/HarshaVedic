@@ -89,10 +89,6 @@ export const BUSINESS = {
     instagram: "https://www.instagram.com/harsha_vedic",
     linkedin: "https://www.linkedin.com/in/dr-harsita-kamlesh-335a4b238/",
   },
-  rating: {
-    value: 4.9,
-    count: 100,
-  },
 } as const;
 
 export const FORMATTED_ADDRESS = `${BUSINESS.address.street}, ${BUSINESS.address.city} - ${BUSINESS.address.postalCode}`;
@@ -118,19 +114,19 @@ export const SERVICES = [
   {
     name: "Migraine Ayurvedic Treatment",
     description:
-      "Root-cause Ayurvedic treatment for chronic migraines and headaches",
+      "Ayurvedic consultation and therapies for chronic migraines and headaches",
     url: "/migraine-treatment",
   },
   {
     name: "Women's Health",
     description:
-      "Women's wellness Ayurveda for PCOS, PCOD, hormonal balance, and fertility support by an experienced Ayurveda doctor in Medavakkam",
+      "Women's wellness Ayurveda for PCOS, PCOD, and hormonal health with an Ayurveda physician in Medavakkam",
     url: "/pcos-treatment",
   },
   {
     name: "Weight Loss Ayurveda",
     description:
-      "Ayurvedic weight management through metabolic balance and detox — sustainable results in Chennai",
+      "Ayurvedic weight management through diet, lifestyle guidance, and selected therapies in Chennai",
     url: "/weight-loss",
   },
   {
@@ -148,7 +144,7 @@ export const SERVICES = [
   {
     name: "Ayurvedic Diabetes Treatment",
     description:
-      "Holistic Ayurvedic diabetes treatment for blood sugar management and metabolic balance",
+      "Ayurvedic consultation, diet guidance, and herbal support for people with diabetes",
     url: "/diabetes-treatment",
   },
   {
@@ -185,33 +181,6 @@ export const SERVICES = [
   },
 ] as const;
 
-export const TESTIMONIALS = [
-  {
-    name: "Gowsalya",
-    location: "Madurai",
-    text: "After years of suffering from migraines, Dr. Harsita Devi J.K.'s Ayurvedic treatment gave me relief within weeks. Her personalized approach made all the difference.",
-    rating: 5,
-  },
-  {
-    name: "Promod",
-    location: "Chennai",
-    text: "The Panchakarma detox program was life-changing. I feel energized and my digestive problems have completely resolved. Highly recommend!",
-    rating: 5,
-  },
-  {
-    name: "Prathiba",
-    location: "Madurai",
-    text: "The holistic treatments and Dr. Harsita's compassionate care helped me overcome anxiety naturally. I'm grateful for the online consultation option.",
-    rating: 5,
-  },
-  {
-    name: "Vikram",
-    location: "Chennai",
-    text: "My arthritis pain reduced significantly with the Ayurvedic therapies. The herbal oils and massages work wonders. Thank you, Harsha Vedic!",
-    rating: 5,
-  },
-] as const;
-
 export const FAQ_ITEMS = [
   {
     question: "What is Ayurveda and how can it help me?",
@@ -221,7 +190,7 @@ export const FAQ_ITEMS = [
   {
     question: "How do I book an Ayurvedic consultation?",
     answer:
-      "You can book an Ayurvedic consultation directly on this website using the consultation form, call us at +91-7904094949, or message us on WhatsApp. Dr. Harsita Devi J.K., an experienced Ayurveda doctor, offers video consultations with the same personalized care as in-person visits at our Medavakkam clinic.",
+      "You can request an Ayurvedic consultation on this website, call +91-7904094949, or message on WhatsApp. Dr. Harsita Devi J.K. offers video consultations and in-person visits at the Medavakkam clinic.",
   },
   {
     question: "What is a Prakriti assessment?",
@@ -240,6 +209,6 @@ export const FAQ_ITEMS = [
   {
     question: "Are Ayurvedic treatments safe?",
     answer:
-      "Yes. When prescribed by a certified Ayurvedic physician like Dr. Harsita Devi J.K., treatments use natural herbs and therapies tailored to your constitution. All treatments are personalized after a thorough consultation to ensure safety and effectiveness.",
+      "When prescribed by an Ayurvedic physician such as Dr. Harsita Devi J.K., treatments use herbs and therapies selected for your constitution. Each plan is set after a consultation.",
   },
 ] as const;

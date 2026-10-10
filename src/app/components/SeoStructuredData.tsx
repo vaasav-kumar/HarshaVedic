@@ -5,7 +5,6 @@ import {
   SITE_NAME,
   SITE_URL,
   SURROUNDING_AREAS,
-  TESTIMONIALS,
 } from "../config/seo";
 
 function openingHoursSpecification() {
@@ -73,30 +72,13 @@ const structuredData = {
           },
         })),
       },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: BUSINESS.rating.value,
-        reviewCount: BUSINESS.rating.count,
-        bestRating: 5,
-        worstRating: 1,
-      },
-      review: TESTIMONIALS.map((t) => ({
-        "@type": "Review",
-        author: { "@type": "Person", name: t.name },
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: t.rating,
-          bestRating: 5,
-        },
-        reviewBody: t.text,
-      })),
     },
     {
       "@type": "Physician",
       "@id": `${SITE_URL}/#physician`,
       name: BUSINESS.doctor,
       description:
-        "Experienced Ayurveda doctor at Harsha Vedic, Medavakkam, Chennai. Personalized natural healing through Ayurvedic consultation — in-person and online.",
+        "Ayurveda physician at Harsha Vedic, Medavakkam, Chennai. In-person and online consultation.",
       url: SITE_URL,
       medicalSpecialty: "Ayurvedic medicine",
       worksFor: { "@id": `${SITE_URL}/#organization` },

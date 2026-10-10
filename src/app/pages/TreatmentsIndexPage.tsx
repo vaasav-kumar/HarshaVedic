@@ -44,11 +44,10 @@ export function TreatmentsIndexPage() {
                 Ayurvedic Treatments in Medavakkam, Chennai
               </h1>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
-                Harsha Vedic offers specialized Ayurveda treatment in Medavakkam
-                for joint pain, women's wellness, metabolic conditions, and
-                Panchakarma therapy. Dr. Harsita Devi J.K. provides personalized
-                natural healing for patients from {LOCAL_AREAS}, and across
-                Chennai — in-person or online.
+                Harsha Vedic offers Ayurveda consultations in Medavakkam for
+                joint pain, women's wellness, metabolic conditions, and
+                Panchakarma. Dr. Harsita Devi J.K. sees people from{" "}
+                {LOCAL_AREAS}, and across Chennai, in person or online.
               </p>
               <p className="text-base text-gray-600 leading-relaxed mb-4">
                 Every plan begins with a Prakriti assessment so therapies match

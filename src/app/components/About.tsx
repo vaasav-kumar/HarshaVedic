@@ -6,9 +6,9 @@ export function About() {
   const features = [
     {
       icon: GraduationCap,
-      title: "Certified Expertise",
+      title: "Physician Consultation",
       description:
-        "Experienced and certified Ayurvedic doctor with years of practice",
+        "Care is planned by Dr. Harsita Devi J.K. after an in-person or online consultation",
       color: "from-green-500 to-emerald-600",
     },
     {
@@ -19,9 +19,9 @@ export function About() {
     },
     {
       icon: Award,
-      title: "Proven Results",
+      title: "Individual Assessment",
       description:
-        "Successful treatment of numerous health conditions naturally",
+        "Each plan follows a consultation and a Prakriti assessment",
       color: "from-green-600 to-teal-600",
     },
     {
@@ -90,7 +90,7 @@ export function About() {
               <span className="font-semibold text-green-700">
                 Dr. Harsita Devi J.K.
               </span>
-              , a certified Ayurveda doctor, we provide personalized treatment
+              , an Ayurveda physician, we provide personalized treatment
               plans based on your unique body constitution (Prakriti). Whether
               you visit our Medavakkam clinic or book an Ayurvedic consultation
               online, you receive the same quality of care and attention.

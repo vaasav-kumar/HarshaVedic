@@ -54,7 +54,7 @@ export function Services() {
       icon: Stethoscope,
       title: "Pain Management",
       description:
-        "Natural pain management for arthritis, joint pain, and chronic conditions without dependency on painkillers",
+        "Ayurvedic care for arthritis, joint pain, and related chronic conditions",
       image: ChronicDiseaseManagement,
       color: "from-orange-500 to-red-600",
     },
@@ -110,11 +110,11 @@ export function Services() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map((service, index) => (
             <Card
               key={index}
-              className="group hover:shadow-2xl transition-all duration-500 border-0 bg-white overflow-hidden relative transform hover:-translate-y-2"
+              className="group gap-0 hover:shadow-2xl transition-all duration-500 border-0 bg-white overflow-hidden relative transform hover:-translate-y-2 cursor-text select-text"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <div className="relative h-44 sm:h-52 md:h-56 overflow-hidden">
@@ -135,13 +135,13 @@ export function Services() {
                   </div>
                 </div>
               </div>
-              <CardHeader className="pb-3">
+              <CardHeader className="px-4 pt-3 pb-1">
                 <CardTitle className="text-xl group-hover:text-green-700 transition-colors">
                   {service.title}
                 </CardTitle>
               </CardHeader>
-              <CardContent>
-                <CardDescription className="text-gray-600 leading-relaxed pb-5">
+              <CardContent className="px-4 pb-4">
+                <CardDescription className="text-gray-600 leading-relaxed">
                   {service.description}
                 </CardDescription>
               </CardContent>
@@ -162,8 +162,8 @@ export function Services() {
               </span>
             </h3>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Targeted Ayurvedic care in Medavakkam, Chennai — book a consultation
-              for your specific health concern
+              Targeted Ayurvedic care in Medavakkam, Chennai — book a
+              consultation for your specific health concern
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
@@ -175,7 +175,9 @@ export function Services() {
               >
                 <div className="min-w-0 pr-3">
                   <h4 className="font-semibold text-gray-900 group-hover:text-green-700 transition-colors">
-                    {page.h1.replace(" in Chennai", "").replace(" in Medavakkam, Chennai", "")}
+                    {page.h1
+                      .replace(" in Chennai", "")
+                      .replace(" in Medavakkam, Chennai", "")}
                   </h4>
                   <p className="text-sm text-gray-500 mt-1 line-clamp-2">
                     {page.subtitle}

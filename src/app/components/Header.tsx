@@ -124,13 +124,6 @@ export function Header() {
                 </div>
               )}
             </div>
-            <button
-              onClick={() => goToSection("testimonials")}
-              className="cursor-pointer text-gray-700 hover:text-green-700 transition font-medium relative group"
-            >
-              Testimonials
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-700 group-hover:w-full transition-all"></span>
-            </button>
             <Link
               to="/blog"
               className="cursor-pointer text-gray-700 hover:text-green-700 transition font-medium relative group"
@@ -260,12 +253,6 @@ export function Header() {
                 ))}
               </div>
             )}
-            <button
-              onClick={() => goToSection("testimonials")}
-              className="cursor-pointer text-gray-700 hover:text-green-700 transition text-left py-2"
-            >
-              Testimonials
-            </button>
             <Link
               to="/blog"
               className="cursor-pointer text-gray-700 hover:text-green-700 transition text-left py-2"

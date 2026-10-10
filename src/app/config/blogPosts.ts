@@ -6,7 +6,6 @@ import TherapeuticMassages from "../../assets/therapeutic-massages.webp";
 import StressAndAnxietyRelief from "../../assets/stress-and-anxiety-relief.webp";
 import {
   BUSINESS,
-  LOCAL_AREAS,
   SITE_NAME,
   SITE_URL,
 } from "./seo";
@@ -39,12 +38,12 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "benefits-of-panchakarma",
     title: `Benefits of Panchakarma | ${SITE_NAME}`,
     metaDescription:
-      "Proven Panchakarma benefits — deep detox, better digestion, immunity & clarity. How Kerala Panchakarma works and who should try it.",
+      "What Kerala Panchakarma involves: the five procedures, preparation, and post-care diet. General information, not a treatment promise.",
     keywords:
       "benefits of Panchakarma, Panchakarma detox benefits, Kerala Panchakarma, Ayurvedic detox therapy, Panchakarma Chennai, Ayurveda wellness",
-    h1: "Benefits of Panchakarma: Why Ayurveda's Detox Therapy Transforms Health",
+    h1: "What Kerala Panchakarma Involves",
     excerpt:
-      "Panchakarma is Ayurveda's most complete detox and rejuvenation program. From toxin elimination to mental clarity, here are the key benefits — and what to expect during treatment.",
+      "Panchakarma is a classical Ayurvedic detox and rejuvenation programme. This guide explains the procedures and what a typical programme includes.",
     publishedAt: "2026-06-23",
     author: BUSINESS.doctor,
     category: "Panchakarma",
@@ -54,20 +53,20 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "What Is Panchakarma?",
         paragraphs: [
           "Panchakarma — meaning 'five actions' in Sanskrit — is Ayurveda's flagship detox and rejuvenation therapy. Developed over thousands of years in Kerala, it uses five primary cleansing procedures (Vamana, Virechana, Basti, Nasya, and Raktamokshana) along with preparatory and follow-up therapies to remove accumulated toxins (Ama) from deep tissues.",
-          `At ${SITE_NAME} in Medavakkam, Chennai, Dr. Harsita Devi J.K. offers authentic Kerala Panchakarma tailored to each patient's Prakriti (body constitution) and current imbalances. Unlike quick detox fads, Panchakarma works systematically — preparing the body, eliminating toxins, and restoring balance over 7 to 21 days.`,
+          "A programme is matched to Prakriti (body constitution) and current imbalance. It usually runs 7 to 21 days and moves through preparation, the main procedures, and post-care diet. Suitability is decided by a physician.",
         ],
       },
       {
         heading: "Top Benefits of Panchakarma",
         bullets: [
-          "Deep toxin elimination — Removes Ama from tissues, joints, and digestive channels that regular cleansing cannot reach",
-          "Restored digestive fire (Agni) — Improves metabolism, reduces bloating, and enhances nutrient absorption",
-          "Stronger immunity — Rejuvenates Ojas (vital essence), making the body more resilient to seasonal illnesses",
-          "Chronic condition relief — Helps manage arthritis, skin disorders, migraines, PCOS, and lifestyle-related diseases at the root cause",
-          "Mental clarity and emotional balance — Shirodhara and Nasya calm the nervous system, reducing stress and anxiety",
-          "Rejuvenation and anti-ageing — Rasayana therapies post-Panchakarma promote cellular renewal and vitality",
-          "Weight management support — Corrects metabolic imbalances that contribute to stubborn weight gain",
-          "Better sleep and energy — Patients often report deeper sleep and sustained energy within the first week",
+          "Ama — Classical texts describe Panchakarma as a way to clear accumulated toxins from tissues and digestive channels",
+          "Agni — Preparation and diet are used to support digestion",
+          "Ojas — Rejuvenation therapies are sometimes added after the main procedures",
+          "Chronic concerns — Physicians may consider it for arthritis, skin conditions, migraines, PCOS, and lifestyle-related imbalance after assessment",
+          "Nervous system — Shirodhara and Nasya are used when stress is part of the picture",
+          "Rasayana — Post-procedure rejuvenation is a separate step, not a promise of anti-ageing",
+          "Weight — Metabolic patterns may be reviewed; weight change is not guaranteed",
+          "Sleep and energy — These are discussed at follow-up. Change varies from person to person",
         ],
       },
       {
@@ -80,8 +79,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "What Happens During a Panchakarma Program?",
         paragraphs: [
-          "A typical program at our clinic follows three phases: Purvakarma (preparation with oil massage and steam), Pradhanakarma (main cleansing procedures selected for your dosha), and Paschatkarma (post-treatment diet and lifestyle guidance). Each phase is supervised by Dr. Harsita Devi J.K. to ensure safety and maximum benefit.",
-          `Patients from ${LOCAL_AREAS} and across Chennai visit our Medavakkam clinic for in-person Panchakarma. Online consultations are available for pre-assessment and follow-up care.`,
+          "A typical programme has three phases: Purvakarma (preparation with oil massage and steam), Pradhanakarma (main cleansing procedures selected for the dosha), and Paschatkarma (post-treatment diet and lifestyle guidance). A physician should supervise each phase.",
         ],
       },
     ],
@@ -94,12 +92,12 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         question: "Are the benefits of Panchakarma permanent?",
         answer:
-          "The benefits can be long-lasting when combined with the recommended post-treatment diet and lifestyle changes. Without follow-up care, toxins can re-accumulate over time.",
+          "Diet and lifestyle after treatment affect how a person feels afterwards. Toxins can build up again without those follow-up habits. Lasting change is not guaranteed.",
       },
       {
         question: "Can I do Panchakarma if I am on medication?",
         answer:
-          "Yes, but it must be supervised by a qualified Ayurvedic physician who can coordinate with your existing treatment plan. Dr. Harsita Devi J.K. reviews all medications during your consultation.",
+          "Only with a qualified Ayurvedic physician who can coordinate with the existing treatment plan. Share all current medicines at the consultation, and do not stop a prescribed medicine on your own.",
       },
     ],
     relatedSlugs: [
@@ -113,22 +111,22 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "is-panchakarma-painful",
     title: `Is Panchakarma Painful? What to Expect | ${SITE_NAME}`,
     metaDescription:
-      "Is Panchakarma painful? What each procedure feels like, side effects, and how Dr. Harsita Devi J.K. keeps detox comfortable and safe.",
+      "What Panchakarma can feel like, including temporary discomfort and common short-term effects. Comfort varies by procedure and person.",
     keywords:
       "is Panchakarma painful, Panchakarma side effects, Panchakarma experience, Virechana, Basti therapy, Panchakarma Chennai",
-    h1: "Is Panchakarma Painful? What Patients Actually Experience",
+    h1: "What Panchakarma Can Feel Like",
     excerpt:
-      "Many people hesitate to try Panchakarma because they fear pain or discomfort. Here is an honest look at what each procedure feels like — and why most patients find it deeply relaxing.",
+      "Comfort during Panchakarma varies by procedure and person. This guide describes common sensations, including temporary discomfort.",
     publishedAt: "2026-06-30",
     author: BUSINESS.doctor,
     category: "Panchakarma",
     heroImage: TherapeuticMassages,
     sections: [
       {
-        heading: "The Short Answer: Panchakarma Is Not Painful",
+        heading: "Comfort Varies by Procedure",
         paragraphs: [
-          "Panchakarma is a therapeutic cleansing process, not a painful medical procedure. Most patients describe the experience as deeply relaxing — especially the preparatory therapies like Abhyanga (oil massage) and Shirodhara (warm oil stream on the forehead). Some procedures cause temporary discomfort, but this is manageable and monitored closely by your physician.",
-          "At Harsha Vedic, Dr. Harsita Devi J.K. customizes every protocol to your tolerance level. If you feel excessive discomfort at any point, the treatment is adjusted immediately.",
+          "Panchakarma is a therapeutic cleansing process. Preparatory therapies such as Abhyanga (oil massage) and Shirodhara (warm oil on the forehead) are often described as calming. Other procedures can cause nausea, loose motions, or short-term discomfort. A physician should watch the response and adjust the protocol.",
+          "Tell the physician about pain tolerance, anxiety, and existing conditions before the programme starts.",
         ],
       },
       {
@@ -138,23 +136,23 @@ export const BLOG_POSTS: BlogPost[] = [
           "Swedana (herbal steam) — Mild warmth and sweating. Feels like a gentle sauna session",
           "Vamana (therapeutic emesis) — Can cause nausea during the process, but is over within 1–2 hours. Patients feel lighter afterward",
           "Virechana (purgation) — Mild to moderate loose motions for several hours. Rest and hydration are provided at the clinic",
-          "Basti (medicated enema) — Minimal discomfort. The warm herbal decoction often provides immediate relief from constipation and Vata pain",
-          "Nasya (nasal drops) — Brief tingling or warmth in the sinuses. Very effective for headaches and sinus issues",
-          "Shirodhara — Completely painless and often described as the most blissful part of Panchakarma",
+          "Basti (medicated enema) — Often brief discomfort. Warm herbal decoction is used for constipation and Vata-related pain; response varies",
+          "Nasya (nasal drops) — Brief tingling or warmth in the sinuses. Used for headaches and sinus complaints",
+          "Shirodhara — A continuous stream of warm oil on the forehead. Many people find it calming; comfort varies",
         ],
       },
       {
         heading: "Common Temporary Side Effects",
         paragraphs: [
           "During Panchakarma, it is normal to experience mild fatigue, increased sleep, changes in appetite, or emotional release. These are signs that the body is actively detoxifying — not side effects to worry about. Your physician monitors you daily and adjusts food, rest, and therapies accordingly.",
-          "Serious adverse effects are extremely rare when Panchakarma is performed under qualified supervision with proper preparation (Purvakarma). Self-administered or improperly performed Panchakarma is where problems occur — which is why choosing a certified clinic matters.",
+          "Panchakarma needs qualified supervision and proper preparation (Purvakarma). Self-administered or poorly prepared procedures carry more risk. Discuss your health conditions before starting.",
         ],
       },
       {
-        heading: "How We Keep You Comfortable",
+        heading: "What to Tell Your Physician",
         paragraphs: [
-          "Our Medavakkam clinic provides a calm, private treatment environment. Each patient has a dedicated treatment room, warm herbal oils prepared fresh, and daily check-ins with Dr. Harsita Devi J.K. We also provide detailed pre- and post-treatment dietary guidelines to minimize discomfort.",
-          "If you have specific concerns — such as a low pain threshold, anxiety, or a chronic condition — share them during your consultation. Protocols can be modified without compromising effectiveness.",
+          "Share pain tolerance, anxiety, chronic illness, and current medicines before treatment. The physician can change the protocol, the pace, or the diet plan.",
+          "Pre- and post-treatment diet guidance is part of keeping the procedure tolerable. Comfort is monitored; it is not guaranteed.",
         ],
       },
     ],
@@ -162,12 +160,12 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         question: "Can I work during Panchakarma?",
         answer:
-          "We recommend taking leave during the main cleansing procedures (3–5 days). Preparatory and follow-up phases are gentler and some patients manage part-time work.",
+          "Plan leave for the main cleansing procedures, often a few days. Preparatory and follow-up phases are usually lighter, and some people manage part-time work. Ask the supervising physician.",
       },
       {
         question: "Is Panchakarma safe for elderly patients?",
         answer:
-          "Yes, with modified protocols. Gentle oleation, mild Swedana, and Basti are often preferred over stronger procedures like Vamana for older patients.",
+          "Only after an individual assessment. Gentler oleation, mild Swedana, and Basti are often discussed instead of stronger procedures such as Vamana.",
       },
       {
         question: "What if I feel sick during treatment?",
@@ -186,12 +184,12 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "ayurveda-for-fatty-liver",
     title: `Ayurveda for Fatty Liver: Natural Treatment Guide | ${SITE_NAME}`,
     metaDescription:
-      "Ayurveda for fatty liver (NAFLD) — herbs, diet, Panchakarma & lifestyle tips. Root-cause care by Dr. Harsita Devi J.K. in Chennai.",
+      "Ayurveda for fatty liver (NAFLD): herbs, diet, Panchakarma, and lifestyle notes. General information, not a treatment promise.",
     keywords:
       "Ayurveda for fatty liver, fatty liver treatment Ayurveda, NAFLD Ayurvedic treatment, liver detox Ayurveda, Medavakkam Ayurvedic clinic",
-    h1: "Ayurveda for Fatty Liver: A Root-Cause Approach to NAFLD",
+    h1: "Ayurveda for Fatty Liver: How NAFLD Is Approached",
     excerpt:
-      "Fatty liver disease is rising across India, often linked to diet and lifestyle. Ayurveda treats it by correcting Pitta and Kapha imbalances, strengthening Agni, and supporting liver function naturally.",
+      "Fatty liver disease is often linked with diet and lifestyle. Ayurveda describes it through Pitta, Kapha, and Agni, and a physician decides whether diet, herbs, or Panchakarma are suitable.",
     publishedAt: "2026-07-07",
     author: BUSINESS.doctor,
     category: "Chronic Conditions",
@@ -207,10 +205,10 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Ayurvedic Treatment for Fatty Liver",
         bullets: [
-          "Herbal formulations — Kutki, Bhumi Amla, Punarnava, and Kalmegh are classical herbs that support liver function and reduce fat accumulation",
+          "Herbal formulations — Kutki, Bhumi Amla, Punarnava, and Kalmegh are classical herbs discussed in Ayurvedic liver care",
           "Diet correction — A Kapha-Pitta pacifying diet with bitter and astringent tastes (leafy greens, bitter gourd, barley, moong dal)",
           "Agni restoration — Light, warm, easily digestible meals eaten at regular times to rebuild metabolic fire",
-          "Panchakarma — Virechana (Pitta cleansing) and Basti are particularly effective for liver detox",
+          "Panchakarma — Virechana (Pitta cleansing) and Basti are classical procedures a physician may consider for liver care",
           "Exercise and Yoga — Regular walking, Surya Namaskar, and twisting asanas improve circulation and fat metabolism",
           "Stress management — Chronic stress elevates cortisol, which worsens fatty liver. Shirodhara and meditation help",
         ],
@@ -226,26 +224,25 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "When to Seek Professional Help",
         paragraphs: [
-          "If your ultrasound or blood tests show elevated liver enzymes or grade 2–3 fatty liver, professional Ayurvedic treatment is recommended alongside regular medical monitoring. Dr. Harsita Devi J.K. creates personalized protocols based on your Prakriti, liver status, and associated conditions like diabetes or obesity.",
-          `Our clinic in Medavakkam serves patients from ${LOCAL_AREAS} with both in-person treatment and online consultations for diet and herbal guidance.`,
+          "If an ultrasound or blood tests show elevated liver enzymes or grade 2–3 fatty liver, speak with both your physician and an Ayurvedic physician. Any Ayurvedic plan should sit alongside regular medical monitoring. Share reports, current medicines, and related conditions such as diabetes or obesity.",
         ],
       },
     ],
     faq: [
       {
-        question: "Can Ayurveda reverse fatty liver?",
+        question: "How does Ayurveda approach fatty liver?",
         answer:
-          "Early-stage (Grade 1) fatty liver often shows significant improvement with consistent Ayurvedic treatment, diet changes, and exercise. Advanced stages require longer treatment and regular monitoring.",
+          "Ayurvedic care may include diet changes, activity, herbal support, and selected therapies after reports are reviewed. Improvement is not the same at every stage. Advanced fatty liver needs longer follow-up and regular medical monitoring.",
       },
       {
         question: "How long does Ayurvedic fatty liver treatment take?",
         answer:
-          "Most patients see improvements in liver enzymes within 3–6 months. A full reversal program typically runs 6–12 months depending on severity.",
+          "Duration depends on the stage, related conditions, and how consistently diet and activity guidance are followed. A physician should review liver reports rather than promise a fixed timeline.",
       },
       {
         question: "Can I take Ayurvedic herbs alongside my doctor's medication?",
         answer:
-          "Yes, but inform both your Ayurvedic physician and allopathic doctor. Dr. Harsita Devi J.K. coordinates treatment plans to avoid interactions.",
+          "Only after both your Ayurvedic physician and your other doctors know the full medicine list, so interactions can be checked.",
       },
     ],
     relatedSlugs: [
@@ -264,12 +261,12 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "ayurveda-for-diabetes",
     title: `Ayurveda for Diabetes: Madhumeha Management | ${SITE_NAME}`,
     metaDescription:
-      "Ayurveda for diabetes (Madhumeha) — herbs, diet, Panchakarma & lifestyle changes. Personalized care by Dr. Harsita Devi J.K. in Chennai.",
+      "Ayurveda for diabetes (Madhumeha): herbs, diet, Panchakarma, and lifestyle notes. Do not change prescribed medicine on your own.",
     keywords:
       "Ayurveda for diabetes, Madhumeha treatment, Ayurvedic diabetes management, diabetes diet Ayurveda, Ayurvedic doctor Chennai",
-    h1: "Ayurveda for Diabetes: Managing Madhumeha Naturally",
+    h1: "Ayurveda for Diabetes: How Madhumeha Is Approached",
     excerpt:
-      "Diabetes (Madhumeha) in Ayurveda is a metabolic disorder rooted in Kapha and Meda vitiation. Learn how herbal medicine, diet, and Panchakarma help manage blood sugar at the root cause.",
+      "Ayurveda describes diabetes (Madhumeha) as a metabolic disorder linked with Kapha and Meda. This note covers diet, herbs, and Panchakarma as topics to discuss with a physician. Do not change prescribed medicine on your own.",
     publishedAt: "2026-07-14",
     author: BUSINESS.doctor,
     category: "Chronic Conditions",
@@ -285,9 +282,9 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Ayurvedic Treatment Approach",
         bullets: [
-          "Herbal medicines — Gudmar (Gymnema sylvestre), Vijaysar, Methi, Jamun seed, and Neem are classical anti-diabetic herbs",
+          "Herbal medicines — Gudmar (Gymnema sylvestre), Vijaysar, Methi, Jamun seed, and Neem are classical herbs discussed for Madhumeha",
           "Diet management — A Kapha-reducing diet with low glycemic foods, bitter vegetables, and controlled portions",
-          "Panchakarma — Virechana and Basti help remove Ama and reset metabolism. Particularly effective for Type 2 diabetes",
+          "Panchakarma — Virechana and Basti are classical procedures a physician may consider. They do not replace diabetes medicine",
           "Exercise — Daily walking (30–45 minutes), Yoga, and Pranayama improve insulin sensitivity",
           "Rasayana therapy — Amalaki, Shilajit, and Chyawanprash help rebuild Ojas and prevent complications",
           "Regular monitoring — Blood sugar tracking combined with Ayurvedic pulse diagnosis (Nadi Pariksha)",
@@ -307,16 +304,16 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Integrating Ayurveda with Modern Diabetes Care",
         paragraphs: [
-          "Ayurveda works best as a complementary approach alongside conventional diabetes management. Many patients at Harsha Vedic successfully reduce medication dependency over time under medical supervision — but never stop prescribed medications without your doctor's approval.",
-          "Dr. Harsita Devi J.K. creates individualized treatment plans considering your HbA1c levels, BMI, comorbidities, and Prakriti. Regular follow-ups track progress through both blood reports and Ayurvedic assessment.",
+          "Ayurveda is used as a complementary approach alongside conventional diabetes management. Do not stop or reduce prescribed diabetes medicine unless the prescribing doctor advises it.",
+          "An Ayurvedic plan should consider HbA1c, BMI, other conditions, and Prakriti, and follow-up should include blood reports.",
         ],
       },
     ],
     faq: [
       {
-        question: "Can Ayurveda cure Type 2 diabetes?",
+        question: "How does Ayurveda approach Type 2 diabetes?",
         answer:
-          "Early-stage Type 2 diabetes often shows significant improvement with Ayurvedic treatment, sometimes allowing reduced medication. Advanced or long-standing diabetes is managed to prevent complications and improve quality of life.",
+          "Ayurveda describes Type 2 diabetes as Madhumeha and may use diet, activity, and herbal support after assessment. Blood sugar response varies. Do not reduce prescribed medicine unless your doctor advises it. Long-standing diabetes still needs conventional monitoring.",
       },
       {
         question: "Is Ayurvedic treatment safe for Type 1 diabetes?",
@@ -324,9 +321,9 @@ export const BLOG_POSTS: BlogPost[] = [
           "Ayurveda can support Type 1 diabetes management through diet, stress relief, and complication prevention, but insulin remains essential. Always coordinate with your endocrinologist.",
       },
       {
-        question: "Which Panchakarma is best for diabetes?",
+        question: "Which Panchakarma procedures are used in diabetes care?",
         answer:
-          "Virechana (Pitta cleansing) and Basti (Vata balancing) are most commonly recommended. The choice depends on your doshic profile and current blood sugar control.",
+          "Virechana (Pitta cleansing) and Basti (Vata balancing) are the procedures most often discussed. The choice depends on dosha and current blood sugar control, and only after a physician reviews your reports.",
       },
     ],
     relatedSlugs: [
@@ -360,7 +357,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Why Post-Panchakarma Diet Matters",
         paragraphs: [
           "After Panchakarma, your digestive fire (Agni) is in a delicate reset state. The channels (Srotas) are open and clean, but your body is also weakened from the cleansing process. Eating the wrong foods at this stage can reintroduce toxins and undo weeks of treatment.",
-          "Paschatkarma — the post-treatment phase — typically lasts 7 to 14 days after the main procedures. During this time, food is considered medicine. Dr. Harsita Devi J.K. provides a personalized diet plan based on your constitution and the Panchakarma procedures you underwent.",
+          "Paschatkarma — the post-treatment phase — typically lasts 7 to 14 days after the main procedures. During this time, food is treated carefully. A physician should give a diet plan based on constitution and the procedures used.",
         ],
       },
       {
@@ -441,7 +438,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "home remedies for acidity, Ayurveda for acidity, GERD home remedies, acid reflux Ayurveda, natural acidity relief",
     h1: "Home Remedies for Acidity: Ayurvedic Solutions That Work",
     excerpt:
-      "Occasional acidity can often be managed with simple Ayurvedic home remedies. Here are safe, effective solutions — and when you should see a doctor instead.",
+      "Kitchen measures sometimes used for occasional acidity, and the symptoms that need a physician instead.",
     publishedAt: "2026-07-28",
     author: BUSINESS.doctor,
     category: "Home Remedies",
@@ -457,7 +454,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "Effective Home Remedies for Acidity",
         bullets: [
-          "Fennel seeds (Saunf) — Chew 1 teaspoon after meals. One of the simplest and most effective remedies",
+          "Fennel seeds (Saunf) — Chew 1 teaspoon after meals. A commonly used kitchen remedy",
           "Ginger tea — Boil fresh ginger in water. Drink 30 minutes before meals to kindle Agni without aggravating Pitta",
           "Amla (Indian gooseberry) — 1 teaspoon fresh amla juice or amla powder with honey on an empty stomach",
           "Cold milk — Half a cup of cold (not chilled) milk provides temporary relief by neutralizing stomach acid",
@@ -481,8 +478,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "When Home Remedies Are Not Enough",
         paragraphs: [
-          "Consult an Ayurvedic physician if you experience acidity more than twice a week, blood in vomit or stool, unexplained weight loss, difficulty swallowing, or if home remedies stop working after 2 weeks. These may indicate a deeper imbalance requiring herbal medicines and possibly Panchakarma.",
-          "Dr. Harsita Devi J.K. treats chronic Amlapitta with personalized herbal formulations, dietary plans, and stress management therapies at our Medavakkam clinic.",
+          "Consult a physician if acidity occurs more than twice a week, or if there is blood in vomit or stool, unexplained weight loss, difficulty swallowing, or home measures stop helping after 2 weeks. These need an assessment before herbal medicines or Panchakarma.",
         ],
       },
     ],
@@ -518,12 +514,12 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "ayurveda-for-cervical-pain",
     title: `Ayurveda for Cervical Pain: Neck Pain Relief | ${SITE_NAME}`,
     metaDescription:
-      "Ayurvedic care for cervical pain & spondylosis — herbal oils, Greeva Basti & Abhyanga. Natural neck relief in Chennai.",
+      "Ayurvedic notes on cervical pain and spondylosis: herbal oils, Greeva Basti, and Abhyanga. General information, not a pain promise.",
     keywords:
       "Ayurveda for cervical pain, cervical spondylosis Ayurveda, neck pain treatment Ayurveda, Greeva Basti, Ayurvedic doctor Chennai",
     h1: "Ayurveda for Cervical Pain: Natural Relief for Neck Pain",
     excerpt:
-      "Cervical pain from desk work, poor posture, or spondylosis responds well to Ayurvedic therapies. Learn about Greeva Basti, medicated oils, and exercises for lasting relief.",
+      "How Ayurveda describes cervical pain from desk work, posture, or spondylosis, including Greeva Basti, medicated oils, and simple exercises.",
     publishedAt: "2026-08-04",
     author: BUSINESS.doctor,
     category: "Pain Management",
@@ -533,7 +529,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Cervical Pain in Ayurveda",
         paragraphs: [
           "Cervical pain — including cervical spondylosis, muscle strain, and nerve compression — is primarily a Vata disorder in Ayurveda. Prolonged sitting, poor posture, cold exposure, and stress aggravate Vata in the neck region (Greeva), causing stiffness, pain, and reduced mobility.",
-          "Many patients in Chennai suffer from tech neck due to long hours at computers and mobile phones. Ayurveda offers effective, drug-free treatment that addresses both the symptoms and the underlying Vata imbalance.",
+          "Long hours at a computer or phone are a common reason for neck pain. Ayurveda describes this pattern as a Vata imbalance and may use oil therapies, herbal support, and posture advice after assessment.",
         ],
       },
       {
@@ -543,8 +539,8 @@ export const BLOG_POSTS: BlogPost[] = [
           "Abhyanga — Full-body or local oil massage with Mahanarayan or Karpasasthyadi tailam reduces muscle tension",
           "Swedana — Herbal steam after oil massage improves circulation and flexibility",
           "Nasya — Medicated nasal drops treat cervical pain with associated headaches or vertigo",
-          "Panchakarma — Basti (medicated enema) is the most effective Panchakarma for chronic Vata disorders",
-          "Herbal medicines — Yograj Guggulu, Rasna, Guggulu, and Shallaki reduce inflammation and strengthen joints",
+          "Panchakarma — Basti (medicated enema) is a classical procedure used for chronic Vata disorders",
+          "Herbal medicines — Yograj Guggulu, Rasna, Guggulu, and Shallaki are classical medicines a physician may consider for joints",
           "Kati/Greeva Pichu — Local oil application with cotton soaked in warm medicated oil",
         ],
       },
@@ -563,8 +559,7 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: "When to Visit a Clinic",
         paragraphs: [
-          "If cervical pain persists beyond 2 weeks, radiates to arms with numbness or tingling, or is accompanied by dizziness and headaches, professional treatment is recommended. Early intervention prevents progression to chronic spondylosis.",
-          `At ${SITE_NAME} in Medavakkam, Dr. Harsita Devi J.K. offers Greeva Basti, therapeutic massage, and personalized herbal treatment for cervical pain. Patients from ${LOCAL_AREAS} and across Chennai visit us for both acute and chronic neck pain management.`,
+          "See a physician if cervical pain lasts beyond 2 weeks, spreads to the arms with numbness or tingling, or comes with dizziness and headaches. Assessment comes before a decision about Greeva Basti, massage, or herbal medicine.",
         ],
       },
     ],
@@ -572,17 +567,17 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         question: "How many Greeva Basti sessions are needed?",
         answer:
-          "Typically 7–14 sessions depending on severity. Acute pain may resolve in 5 sessions; chronic spondylosis often needs 14–21 sessions combined with oral medicines.",
+          "A physician usually discusses a course of several sessions. The number depends on severity and is not a promise that pain will stop after a set visit.",
       },
       {
         question: "Can Ayurveda treat cervical spondylosis?",
         answer:
-          "Ayurveda cannot reverse bone changes, but it effectively manages pain, stiffness, and nerve symptoms. Many patients achieve significant relief and improved mobility without surgery.",
+          "Ayurveda does not reverse established bone changes. Oil therapies and herbal support are sometimes used for pain, stiffness, and nerve symptoms after assessment. They do not replace surgical advice when a specialist recommends it.",
       },
       {
         question: "Is cervical pain related to migraines?",
         answer:
-          "Yes. Cervical nerve compression can trigger cervicogenic headaches. Nasya and Greeva Basti often help both neck pain and associated migraines.",
+          "Cervical nerve irritation can be linked with cervicogenic headaches. Nasya and Greeva Basti are therapies a physician may consider for neck pain with headache. Suitability is individual.",
       },
     ],
     relatedSlugs: [

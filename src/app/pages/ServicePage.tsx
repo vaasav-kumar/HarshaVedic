@@ -260,7 +260,7 @@ export function ServicePageView({ slug }: ServicePageProps) {
             <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold mb-6">
-                  Why Choose Harsha Vedic?
+                  Care at Harsha Vedic
                 </h2>
                 <ul className="space-y-4">
                   {page.whyChooseUs.map((item, i) => (
